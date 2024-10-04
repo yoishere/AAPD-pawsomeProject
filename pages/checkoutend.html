@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>index</title>
+    <!-- google-icon-->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+
+<body style="background: #F0F0F0;">
+    <%- include('./layout/header'); -%>
+        <div class="checkout-ing mx-auto container-fluid" style="padding-top: 74px; max-width: 1440px;">
+            <header class="my-6 my-md-0">
+                <div class="container px-md-0 px-5 py-4 py-md-7">
+                    <div class="d-flex justify-content-md-center justify-content-between">
+                        <div class="me-md-8 mb-2 mb-md-0 d-flex flex-column flex-md-row align-items-center">
+                            <div
+                                class="checkout-number bg-primary-300 me-3 d-flex align-items-center justify-content-center">
+                                <span class="material-symbols-outlined fs-5">
+                                    check
+                                </span>
+                            </div>
+                            <span class="fs-2 fw-medium fs-md-3 text-nowrap">查看購物車</span>
+                        </div>
+                        <span class="material-symbols-outlined me-md-8">
+                            chevron_right
+                        </span>
+                        <div class="me-md-8 mb-2 mb-md-0 d-flex flex-column flex-md-row align-items-center">
+                            <div
+                                class="checkout-number bg-primary-300 me-3 d-flex align-items-center justify-content-center">
+                                <span class="material-symbols-outlined fs-5">
+                                    check
+                                </span>
+                            </div>
+                            <span class="fs-2 fw-medium fs-md-3 text-nowrap">訂單確認</span>
+                        </div>
+                        <span class="material-symbols-outlined me-md-8">
+                            chevron_right
+                        </span>
+                        <div class="me-md-8 mb-2 mb-md-0 d-flex flex-column flex-md-row align-items-center">
+                            <div
+                                class="checkout-number bg-neutral-800 me-md-3 d-flex align-items-center justify-content-center">
+                                <span>3</span>
+                            </div>
+                            <span class="fs-2 fw-medium fs-md-3 text-nowrap">訂單結算</span>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <div class="container p-5 p-md-6 mb-6 bg-neutral-0 rounded-2" style="box-shadow: 0px 4.15px 12.46px -2.08px #18274B14;
+            box-shadow: 0px 3.11px 6.23px -3.11px #18274B1F;
+            ">
+                <div class="d-flex flex-column align-items-center text-center">
+                    <h2 class="fs-5 mb-5">感謝您的購買</h2>
+                    <img class="mb-5" src="../assets/images/Illustration/end.png" alt="結帳完成">
+                    <div class="mb-6">
+                        <p class="fw-medium mb-0">商品訂購完成</p>
+                        <p class="fw-medium mb-0">你的訂單編號是 <span class="text-primary-300">MO3AC550001199</span></p>
+                        <p class="fw-medium mb-0">歡迎您隨時到站上查詢到貨</p>
+                    </div>
+                    <div class="py-3 checkouting-btn text-center rounded-full" style="width: 133px;"><a class="d-block"
+                            href="index.html">回首頁</a></div>
+                </div>
+            </div>
+        </div>
+        <%- include('./layout/footer'); -%>
+            <script type="module" src="../main.js"></script>
+            <!-- //swiper -->
+            <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+            <script>
+                var swiper = new Swiper(".checkout-swiper-1", {
+                    spaceBetween: 12,
+                    slidesPerView: '2.2',
+                    // slidesOffsetAfter: -900,
+                    navigation: {
+                        nextEl: '.swiper-button-next-1',
+                        prevEl: '.swiper-button-prev-1',
+                    },
+                    breakpoints: {
+
+                        768: {  //当屏幕宽度大于等于768 
+                            spaceBetween: 16,
+                            slidesPerView: '3.2',
+                        },
+                    },
+                    loop: true,
+                });
+            </script>
+</body>
+
+</html>

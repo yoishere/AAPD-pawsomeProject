@@ -1,0 +1,1115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>index</title>
+    <!-- google-icon-->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+
+<body style="background: #F0F0F0;">
+    <%- include('./layout/header'); -%>
+        <div class="checkout-start mx-auto container  px-md-4 s-md-p" style="padding-top: 74px; max-width: 1440px;">
+            <header class="my-6 my-md-0">
+                <div class="checkout-header px-md-0 px-5 py-4 py-md-7">
+                    <div class="d-flex justify-content-md-center justify-content-between align-items-center">
+                        <div class="me-md-8 mb-2 mb-md-0 d-flex flex-column flex-md-row align-items-center">
+                            <div
+                                class="checkout-number bg-neutral-800 me-3 d-flex align-items-center justify-content-center">
+                                <span>1</span>
+                            </div>
+                            <span class="fs-2 fw-medium fs-md-3 text-nowrap">查看購物車</span>
+                        </div>
+                        <span class="material-symbols-outlined me-md-8">
+                            chevron_right
+                        </span>
+                        <div class="me-md-8 mb-2 mb-md-0 d-flex flex-column flex-md-row align-items-center">
+                            <div
+                                class="checkout-number bg-neutral-400 me-md-3 d-flex align-items-center justify-content-center">
+                                <span>2</span>
+                            </div>
+                            <span class="fs-2 fw-medium fs-md-3 text-neutral-400 text-nowrap">訂單確認</span>
+                        </div>
+                        <span class="material-symbols-outlined me-md-8">
+                            chevron_right
+                        </span>
+                        <div class="me-md-8 mb-2 mb-md-0 d-flex flex-column flex-md-row align-items-center">
+                            <div
+                                class="checkout-number bg-neutral-400 me-md-3 d-flex align-items-center justify-content-center">
+                                <span>3</span>
+                            </div>
+                            <span class="fs-2 fw-medium fs-md-3 text-neutral-400 text-nowrap">訂單結算</span>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <div class=" mb-6 ">
+                <div class="row gx-lg-6 gx-md-2 s-md-m">
+                    <div class="col-md-9 col-12 mb-6 s-md-p">
+                        <table
+                            class="table table-borderless rounded-2 d-none d-lg-block overflow-hidden bg-neutral-0 w-100"
+                            style="box-shadow: 0px 4.15px 12.46px -2.08px #18274B14;
+                            box-shadow: 0px 3.11px 6.23px -3.11px #18274B1F;
+                            ">
+                            <thead class="d-flex border-bottom border-neutarl-400 " style="min-width: 720px;">
+                                <tr class="d-flex justify-content-between w-100">
+                                    <th class="py-5 px-4 col" colspan="" style="min-width: 280px;">
+                                        商品項目
+                                    </th>
+                                    <th class="py-5 px-4 col">規格</th>
+                                    <th class="py-5 px-4 col" scope="col">售價</th>
+                                    <th class="py-5 px-4 col" scope="col" style="min-width: 124px;">數量</th>
+                                    <th class="py-5 px-4 col" scope="col">合計</th>
+                                    <th class="py-5 px-4 col text-nowrap" scope="col" style="min-width: 124px;">操作訂單
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody class="d-flex flex-column">
+                                <tr class="border-bottom border-neutral-100 d-flex justify-content-between">
+                                    <th scope="row" colspan="1" class="p-0">
+                                        <div class="d-flex p-4 col" style="min-width: 280px;">
+                                            <div class="table-img me-3 overflow-hidden">
+                                                <img class="object" src="../assets/images/Cat-30.png"
+                                                    alt="歐睿健 幼貓 雞肉特調食譜 1.59公斤 (貓飼料)">
+                                            </div>
+                                            <div class="d-flex flex-column" style="max-width: 168px;">
+                                                <h4 class="fs-2 ">歐睿健 幼貓 雞肉特調食譜 1.59公斤 (貓飼料)</h4>
+                                                <p class="fs-1 d-flex align-items-center text-danger-500">
+                                                    未符合條件(2包75折活動中)</p>
+                                            </div>
+                                        </div>
+                                    </th>
+
+                                    <td class="p-4 fs-2 fw-medium align-middle col d-flex align-items-center">500<br
+                                            class="d-xxl-none d-lg-block">公克
+                                    </td>
+                                    <td class="p-4 col d-flex align-items-center">
+                                        <div class="d-flex flex-column">
+                                            <span class="fw-medium fs-2">$ 791</span>
+                                            <span class="fw-medium fs-1 text-neutral-500">原價</span>
+                                            <span class="fs-2 text-neutral-500">$ 930</span>
+                                        </div>
+                                    </td>
+                                    <td class="p-0 d-flex align-items-center col p-4" style="min-width: 124px;">
+                                        <div class="w-100 border border-neutarl-400 d-flex rounded-1 overflow-hidden"
+                                            style="min-width: 91px; max-width: 91px;">
+                                            <div
+                                                class="w-25 p-2 d-flex justify-content-center align-items-center border-end border-neutarl-400 bg-neutral-100">
+                                                <span class="material-symbols-outlined fs-3 text-neutral-400 ">
+                                                    remove
+                                                </span>
+                                            </div>
+                                            <div
+                                                class="w-50 px-3 fs-1 d-flex justify-content-center align-items-center">
+                                                1</div>
+                                            <div
+                                                class="w-25 p-2 d-flex justify-content-center align-items-center border-start border-neutarl-400 bg-neutral-100">
+                                                <span class="material-symbols-outlined fs-3">
+                                                    add
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="p-4  col d-flex align-items-center ">$791</td>
+                                    <td class="p-4  col d-flex align-items-center" style="min-width: 124px;">
+                                        <div class="d-flex flex-column">
+                                            <div class="d-flex py-2 align-items-center">
+                                                <span class="material-symbols-outlined fs-3">
+                                                    favorite
+                                                </span>
+                                                <a class="fs-2 fw-medium text-nowrap" href="#">移至最愛</a>
+                                            </div>
+                                            <div class="d-flex py-2 align-items-center">
+                                                <a class="fs-2 fw-medium" href="#"><img
+                                                        src="../assets/images/icon/Outline  Fill/next-buy.svg"
+                                                        alt="下次購買">下次購買
+                                                </a>
+                                            </div>
+                                            <div class="d-flex py-2 align-items-center">
+                                                <span class="material-symbols-outlined fs-3">
+                                                    delete
+                                                </span>
+                                                <a class="fs-2 fw-medium" href="#">刪除</a>
+                                            </div>
+                                        </div>
+
+                                </tr>
+                                <tr class="border-bottom border-neutral-100 d-flex justify-content-between">
+                                    <th class="p-0" scope="row" colspan="1">
+                                        <div class="d-flex p-4 col" style="min-width: 280px;">
+                                            <div class="table-img me-3 overflow-hidden">
+                                                <img class="object" src="../assets/images/dogdog.png"
+                                                    alt="西莎 犬用精緻乾糧 澳洲牛肉與低敏鮭魚(1公斤)">
+                                            </div>
+                                            <div class="d-flex flex-column" style="max-width: 168px;">
+                                                <h4 class="fs-2 ">西莎 犬用精緻乾糧 澳洲牛肉與低敏鮭魚(1公斤) (狗飼料)</h4>
+                                                <p class="fs-1 d-flex align-items-center text-danger-500">
+                                                    未符合條件(4包85折活動中) </p>
+                                            </div>
+                                        </div>
+                                    </th>
+                                    <td class="p-4 fs-2 fw-medium align-middle col d-flex align-items-center">1000公克
+                                    </td>
+                                    <td class="p-4 col d-flex align-items-center">
+                                        <div class="d-flex flex-column">
+                                            <span class="fw-medium fs-2">$ 470</span>
+                                            <span class="fw-medium fs-1 text-neutral-500">原價</span>
+                                            <span class="fs-2 text-neutral-500">$ 520</span>
+                                        </div>
+                                    </td>
+                                    <td class="p-0 align-middle col d-flex align-items-center p-4"
+                                        style="min-width: 124px;">
+                                        <div class="w-100 border border-neutarl-400 d-flex rounded-1 overflow-hidden"
+                                            style="min-width: 91px; max-width: 91px;">
+                                            <div
+                                                class="w-25 p-2 d-flex justify-content-center align-items-center border-end border-neutarl-400 bg-neutral-100">
+                                                <span class="material-symbols-outlined fs-3 text-neutral-400 ">
+                                                    remove
+                                                </span>
+                                            </div>
+                                            <div
+                                                class="w-50 px-3 fs-1 d-flex justify-content-center align-items-center">
+                                                1</div>
+                                            <div
+                                                class="w-25 p-2 d-flex justify-content-center align-items-center border-start border-neutarl-400 bg-neutral-100">
+                                                <span class="material-symbols-outlined fs-3">
+                                                    add
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="p-4 align-middle col d-flex align-items-center">$470</td>
+                                    <td class="p-4 align-middle col d-flex align-items-center"
+                                        style="min-width: 124px;">
+                                        <div class="d-flex flex-column">
+                                            <div class="d-flex py-2 align-items-center">
+                                                <span class="material-symbols-outlined fs-3">
+                                                    favorite
+                                                </span>
+                                                <a class="fs-2 fw-medium text-nowrap" href="#">移至最愛</a>
+                                            </div>
+                                            <div class="d-flex py-2 align-items-center">
+                                                <a class="fs-2 fw-medium" href="#"><img
+                                                        src="../assets/images/icon/Outline  Fill/next-buy.svg"
+                                                        alt="下次購買">下次購買
+                                                </a>
+                                            </div>
+                                            <div class="d-flex py-2 align-items-center">
+                                                <span class="material-symbols-outlined fs-3">
+                                                    delete
+                                                </span>
+                                                <a class="fs-2 fw-medium" href="#">刪除</a>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="border-bottom border-neutral-100 d-flex justify-content-between">
+                                    <th class="p-0" scope="row" colspan="1">
+                                        <div class="d-flex p-4 col" style="min-width: 280px;">
+                                            <div class="table-img me-3 overflow-hidden">
+                                                <img class="object" src="../assets/images/checkout.png"
+                                                    alt="艾可 1.5mm極細豆腐貓砂7L 活性炭(1入)">
+                                            </div>
+                                            <div class="d-flex flex-column" style="max-width: 168px;">
+                                                <h4 class="fs-2 ">艾可 1.5mm極細豆腐貓砂7L 活性炭(1入)</h4>
+                                                <p class="fs-1 d-flex align-items-center text-danger-500">
+                                                    未符合條件(10包75折活動中) </p>
+                                            </div>
+                                        </div>
+                                    </th>
+                                    <td class="p-4 fs-2 fw-medium align-middle col d-flex align-items-center">500<br
+                                            class="d-xxl-none d-lg-block">公克
+                                    </td>
+                                    <td class="p-4 col d-flex align-items-center">
+                                        <div class="d-flex flex-column col">
+                                            <span class="fw-medium fs-2">$ 249</span>
+                                            <span class="fw-medium fs-1 text-neutral-500">原價</span>
+                                            <span class="fs-2 text-neutral-500">$ 335</span>
+                                        </div>
+                                    </td>
+                                    <td class="p-0 align-middle col d-flex align-items-center p-4"
+                                        style="min-width: 124px;">
+                                        <div class="w-100 border border-neutarl-400 d-flex rounded-1 overflow-hidden"
+                                            style="min-width: 91px; max-width: 91px;">
+                                            <div
+                                                class="w-25 p-2 d-flex justify-content-center align-items-center border-end border-neutarl-400 bg-neutral-100">
+                                                <span class="material-symbols-outlined fs-3 text-neutral-400 ">
+                                                    remove
+                                                </span>
+                                            </div>
+                                            <div
+                                                class="w-50 px-3 fs-1 d-flex justify-content-center align-items-center">
+                                                6</div>
+                                            <div
+                                                class="w-25 p-2 d-flex justify-content-center align-items-center border-start border-neutarl-400 bg-neutral-100">
+                                                <span class="material-symbols-outlined fs-3">
+                                                    add
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="p-4 align-middle col d-flex align-items-center">$1494</td>
+                                    <td class="p-4 align-middle col d-flex align-items-center"
+                                        style="min-width: 124px;">
+                                        <div class="d-flex flex-column">
+                                            <div class="d-flex py-2 align-items-center">
+                                                <span class="material-symbols-outlined fs-3">
+                                                    favorite
+                                                </span>
+                                                <a class="fs-2 fw-medium text-nowrap" href="#">移至最愛</a>
+                                            </div>
+                                            <div class="d-flex py-2 align-items-center">
+                                                <a class="fs-2 fw-medium" href="#"><img
+                                                        src="../assets/images/icon/Outline  Fill/next-buy.svg"
+                                                        alt="下次購買">下次購買
+                                                </a>
+                                            </div>
+                                            <div class="d-flex py-2 align-items-center">
+                                                <span class="material-symbols-outlined fs-3">
+                                                    delete
+                                                </span>
+                                                <a class="fs-2 fw-medium" href="#">刪除</a>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="border-bottom border-neutral-100 d-flex justify-content-between">
+                                    <th class="p-0" scope="row" colspan="1">
+                                        <div class="d-flex p-4 col" style="min-width: 280px;">
+                                            <div class="table-img me-3 overflow-hidden">
+                                                <img class="object" src="../assets/images/checkout-1.png"
+                                                    alt="尾巴與我 Tails&me 經典尼龍帶 基本款胸背帶 深紫灰紫(L)">
+                                            </div>
+                                            <div class="d-flex flex-column" style="max-width: 168px;">
+                                                <h4 class="fs-2 ">尾巴與我 Tails&me 經典尼龍帶 基本款胸背帶 深紫灰紫(L)</h4>
+                                            </div>
+                                        </div>
+                                    </th>
+                                    <td class="p-4 fs-2 fw-medium  col d-flex align-items-center">500<br
+                                            class="d-xxl-none d-lg-block">公克
+                                    </td>
+                                    <td class="p-4 col d-flex align-items-center">
+                                        <div class="d-flex flex-column ">
+                                            <span class="fw-medium fs-2">$ 672</span>
+                                            <span class="fw-medium fs-1 text-neutral-500">原價</span>
+                                            <span class="fs-2 text-neutral-500">$ 730</span>
+                                        </div>
+                                    </td>
+                                    <td class="p-0 align-middle col d-flex align-items-center p-4"
+                                        style="min-width: 124px;">
+                                        <div class="w-100 border border-neutarl-400 d-flex rounded-1 overflow-hidden"
+                                            style="min-width: 91px; max-width: 91px;">
+                                            <div
+                                                class="w-25 p-2 d-flex justify-content-center align-items-center border-end border-neutarl-400 bg-neutral-100">
+                                                <span class="material-symbols-outlined fs-3 text-neutral-400 ">
+                                                    remove
+                                                </span>
+                                            </div>
+                                            <div
+                                                class="w-50 px-3 fs-1 d-flex justify-content-center align-items-center">
+                                                1</div>
+                                            <div
+                                                class="w-25 p-2 d-flex justify-content-center align-items-center border-start border-neutarl-400 bg-neutral-100">
+                                                <span class="material-symbols-outlined fs-3">
+                                                    add
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="p-4 align-middle col d-flex align-items-center">$672</td>
+                                    <td class="p-4 align-middle col d-flex align-items-center"
+                                        style="min-width: 124px;">
+                                        <div class="d-flex flex-column">
+                                            <div class="d-flex py-2 align-items-center">
+                                                <span class="material-symbols-outlined fs-3">
+                                                    favorite
+                                                </span>
+                                                <a class="fs-2 fw-medium text-nowrap" href="#">移至最愛</a>
+                                            </div>
+                                            <div class="d-flex py-2 align-items-center">
+                                                <a class="fs-2 fw-medium" href="#"><img
+                                                        src="../assets/images/icon/Outline  Fill/next-buy.svg"
+                                                        alt="下次購買">下次購買
+                                                </a>
+                                            </div>
+                                            <div class="d-flex py-2 align-items-center">
+                                                <span class="material-symbols-outlined fs-3">
+                                                    delete
+                                                </span>
+                                                <a class="fs-2 fw-medium" href="#">刪除</a>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="border-bottom border-neutral-100 d-flex justify-content-between">
+                                    <th class="p-0" scope="row" colspan="1">
+                                        <div class="d-flex p-4 col" style="min-width: 280px;">
+                                            <div class="table-img me-3 overflow-hidden">
+                                                <img class="object" src="../assets/images/checkout-2.png"
+                                                    alt="KitCat 呼嚕嚕肉泥 15公克/4入 雞肉+纖維素(化毛配方) (貓零食)">
+                                            </div>
+                                            <div class="d-flex flex-column" style="max-width: 168px;">
+                                                <h4 class="fs-2 ">KitCat 呼嚕嚕肉泥 15公克/4入 雞肉+纖維素(化毛配方) (貓零食)</h4>
+                                            </div>
+                                        </div>
+                                    </th>
+                                    <td class="p-4 fs-2 fw-medium col d-flex align-items-center">500<br
+                                            class="d-xxl-none d-lg-block">公克
+                                    </td>
+                                    <td class="p-4 col d-flex align-items-center">
+                                        <div class="d-flex flex-column">
+                                            <span class="fw-medium fs-2">$ 49</span>
+                                            <span class="fw-medium fs-1 text-neutral-500">原價</span>
+                                            <span class="fs-2 text-neutral-500">$ 85</span>
+                                        </div>
+                                    </td>
+                                    <td class="p-0 col d-flex align-items-center p-4" style="min-width: 124px;">
+                                        <div class="w-100 border border-neutarl-400 d-flex rounded-1 overflow-hidden"
+                                            style="min-width: 91px; max-width: 91px;">
+                                            <div
+                                                class="w-25 p-2 d-flex justify-content-center align-items-center border-end border-neutarl-400 bg-neutral-100">
+                                                <span class="material-symbols-outlined fs-3 text-neutral-400 ">
+                                                    remove
+                                                </span>
+                                            </div>
+                                            <div
+                                                class="w-50 px-3 fs-1 d-flex justify-content-center align-items-center">
+                                                2</div>
+                                            <div
+                                                class="w-25 p-2 d-flex justify-content-center align-items-center border-start border-neutarl-400 bg-neutral-100">
+                                                <span class="material-symbols-outlined fs-3">
+                                                    add
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="p-4 col d-flex align-items-center">$98</td>
+                                    <td class="p-4 col d-flex align-items-center" style="min-width: 124px;">
+                                        <div class="d-flex flex-column">
+                                            <div class="d-flex py-2 align-items-center">
+                                                <span class="material-symbols-outlined fs-3">
+                                                    favorite
+                                                </span>
+                                                <a class="fs-2 fw-medium text-nowrap" href="#">移至最愛</a>
+                                            </div>
+                                            <div class="d-flex py-2 align-items-center">
+                                                <a class="fs-2 fw-medium" href="#"><img
+                                                        src="../assets/images/icon/Outline  Fill/next-buy.svg"
+                                                        alt="下次購買">下次購買
+                                                </a>
+                                            </div>
+                                            <div class="d-flex py-2 align-items-center">
+                                                <span class="material-symbols-outlined fs-3">
+                                                    delete
+                                                </span>
+                                                <a class="fs-2 fw-medium" href="#">刪除</a>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr class="border-bottom border-neutral-100 d-flex justify-content-between">
+                                    <th class="p-0" scope="row" colspan="1">
+                                        <div class="d-flex p-4 col" style="min-width: 280px;">
+                                            <div class="table-img me-3 overflow-hidden">
+                                                <img class="object" src="../assets/images/checkout-3.png"
+                                                    alt="歐睿健 鮮雞幼貓 1.8公斤 (貓飼料)">
+                                            </div>
+                                            <div class="d-flex flex-column" style="max-width: 168px;">
+                                                <h4 class="fs-2 ">歐睿健 鮮雞幼貓 1.8公斤 (貓飼料)</h4>
+                                                <p class="fs-1 d-flex align-items-center text-success-400"><span
+                                                        class="material-symbols-outlined fs-3 me-2">
+                                                        check_circle
+                                                    </span>2包75折活動中</p>
+                                            </div>
+                                        </div>
+                                    </th>
+                                    <td class="p-4 fs-2 fw-medium d-flex align-items-center col">500<br
+                                            class="d-xxl-none d-lg-block">公克</td>
+                                    <td class="p-4 col d-flex align-items-center">
+                                        <div class="d-flex flex-column">
+                                            <span class="fw-medium fs-2">$ 791</span>
+                                            <span class="fw-medium fs-1 text-neutral-500">原價</span>
+                                            <span class="fs-2 text-neutral-500">$ 930</span>
+                                        </div>
+                                    </td>
+                                    <td class="p-0 d-flex align-items-center col p-4" style="min-width: 124px;">
+                                        <div class="w-100 border border-neutarl-400 d-flex rounded-1 overflow-hidden"
+                                            style="min-width: 91px; max-width: 91px;">
+                                            <div
+                                                class="w-25 p-2 d-flex justify-content-center align-items-center border-end border-neutarl-400 bg-neutral-100">
+                                                <span class="material-symbols-outlined fs-3 text-neutral-400 ">
+                                                    remove
+                                                </span>
+                                            </div>
+                                            <div
+                                                class="w-50 px-3 fs-1 d-flex justify-content-center align-items-center">
+                                                1</div>
+                                            <div
+                                                class="w-25 p-2 d-flex justify-content-center align-items-center border-start border-neutarl-400 bg-neutral-100">
+                                                <span class="material-symbols-outlined fs-3">
+                                                    add
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="p-4 d-flex align-items-center col">$791</td>
+                                    <td class="p-4 d-flex align-items-center col" colspan="3" style="min-width: 124px;">
+                                        <div class="d-flex flex-column">
+                                            <div class="d-flex py-2 align-items-center">
+                                                <span class="material-symbols-outlined fs-3">
+                                                    favorite
+                                                </span>
+                                                <a class="fs-2 fw-medium text-nowrap" href="#">移至最愛</a>
+                                            </div>
+                                            <div class="d-flex py-2 align-items-center">
+                                                <a class="fs-2 fw-medium" href="#"><img
+                                                        src="../assets/images/icon/Outline  Fill/next-buy.svg"
+                                                        alt="下次購買">下次購買
+                                                </a>
+                                            </div>
+                                            <div class="d-flex py-2 align-items-center">
+                                                <span class="material-symbols-outlined fs-3">
+                                                    delete
+                                                </span>
+                                                <a class="fs-2 fw-medium" href="#">刪除</a>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                            <tfoot class="p-6 d-flex align-items-center ">
+                                <tr>
+                                    <th class="p-0" scope="row">
+                                        <p class="fs-3 mb-0 d-flex align-items-center fw-normal"><span
+                                                class="material-symbols-outlined material-symbols-outlined-full fs-5 text-success-400 me-3">
+                                                check_circle
+                                            </span>全站滿 1,000 免運</p>
+                                    </th>
+                                </tr>
+                            </tfoot>
+                        </table>
+                        <div class="bg-neutral-0 rounded-md-2 p-5 d-md-block d-lg-none">
+                            <div class="">
+                                <div class="py-4 border-bottom border-neutral-100">
+                                    <div class="d-flex justify-content-md-between">
+                                        <div class="table-img me-3 overflow-hidden">
+                                            <img class="object" src="../assets/images/Cat-30.png"
+                                                alt="歐睿健 幼貓 雞肉特調食譜 1.59公斤 (貓飼料)">
+                                        </div>
+                                        <div class="d-flex justify-content-between w-100">
+                                            <div class="d-flex flex-column w-100">
+                                                <div class=" d-flex justify-content-between align-items-start">
+                                                    <div class="d-flex flex-column align-items-start">
+                                                        <h4 class="fs-2 mb-2">歐睿健 幼貓 雞肉特調食譜 1.59公斤 (貓飼料)</h4>
+                                                        <div
+                                                            class="text-nowrap rounded-3 mb-2 text-center checkout-card-btn text-primary-300">
+                                                            <span class="fs-2 fw-medium">500 g</span>
+                                                        </div>
+                                                        <p class="fs-1 d-flex align-items-center text-success-400">
+                                                            </span>2包75折活動中</p>
+                                                    </div>
+                                                    <span class="material-symbols-outlined p-4">
+                                                        delete
+                                                    </span>
+                                                </div>
+                                                <div class="d-flex align-items-center justify-content-between">
+                                                    <div class="d-flex flex-column">
+                                                        <span
+                                                            class="fs-2 text-neutral-500 text-decoration-line-through">$
+                                                            930</span>
+                                                        <span class="fw-medium fs-2">$ 791</span>
+                                                    </div>
+                                                    <div class="d-flex  border border-neutarl-400 d-flex rounded-1 overflow-hidden"
+                                                        style="min-width: 91px;">
+                                                        <div
+                                                            class="w-25 p-2 d-flex justify-content-center align-items-center border-end border-neutarl-400 bg-neutral-100">
+                                                            <span
+                                                                class="material-symbols-outlined fs-3 text-neutral-400 ">
+                                                                remove
+                                                            </span>
+                                                        </div>
+                                                        <div
+                                                            class="w-50 px-3 fs-1 d-flex justify-content-center align-items-center">
+                                                            1</div>
+                                                        <div
+                                                            class="w-25 p-2 d-flex justify-content-center align-items-center border-start border-neutarl-400 bg-neutral-100">
+                                                            <span class="material-symbols-outlined fs-3">
+                                                                add
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="">
+                                <div class="py-4 border-bottom border-neutral-100">
+                                    <div class="d-flex justify-content-between">
+                                        <div class="table-img me-3 overflow-hidden">
+                                            <img class="object" src="../assets/images/dogdog.png"
+                                                alt="西莎 犬用精緻乾糧 澳洲牛肉與低敏鮭魚(1公斤) (狗飼料)">
+                                        </div>
+                                        <div class="d-flex justify-content-md-between w-100">
+                                            <div class="d-flex flex-column w-100">
+                                                <div class=" d-flex justify-content-between align-items-start">
+                                                    <div class="d-flex flex-column align-items-start">
+                                                        <h4 class="fs-2 mb-2">西莎 犬用精緻乾糧 澳洲牛肉與低敏鮭魚(1公斤) (狗飼料)</h4>
+                                                        <div
+                                                            class="rounded-3 mb-2 text-center checkout-card-btn text-primary-300">
+                                                            <span class="fs-2 fw-medium">500 g</span>
+                                                        </div>
+                                                        <p class="fs-1 d-flex align-items-center text-danger-500">
+                                                            未符合條件(4包85折活動中) </p>
+                                                    </div>
+                                                    <span class="material-symbols-outlined p-4">
+                                                        delete
+                                                    </span>
+                                                </div>
+                                                <div class="d-flex align-items-center justify-content-between">
+                                                    <div class="d-flex flex-column">
+                                                        <span
+                                                            class="fs-2 text-neutral-500 text-decoration-line-through">$
+                                                            520</span>
+                                                        <span class="fw-medium fs-2">$ 470</span>
+                                                    </div>
+                                                    <div class=" d-flex border border-neutarl-400 d-flex rounded-1 overflow-hidden"
+                                                        style="min-width: 91px;">
+                                                        <div
+                                                            class="w-25 p-2 d-flex justify-content-center align-items-center border-end border-neutarl-400 bg-neutral-100">
+                                                            <span
+                                                                class="material-symbols-outlined fs-3 text-neutral-400 ">
+                                                                remove
+                                                            </span>
+                                                        </div>
+                                                        <div
+                                                            class="w-50 px-3 fs-1 d-flex justify-content-center align-items-center">
+                                                            1</div>
+                                                        <div
+                                                            class="w-25 p-2 d-flex justify-content-center align-items-center border-start border-neutarl-400 bg-neutral-100">
+                                                            <span class="material-symbols-outlined fs-3">
+                                                                add
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="">
+                                <div class="py-4 border-bottom border-neutral-100">
+                                    <div class="d-flex justify-content-between">
+                                        <div class="table-img me-3 overflow-hidden">
+                                            <img class="object" src="../assets/images/checkout.png"
+                                                alt="艾可 1.5mm極細豆腐貓砂7L 活性炭(1入)">
+                                        </div>
+                                        <div class="d-flex justify-content-md-between w-100">
+                                            <div class="d-flex w-100 flex-column">
+                                                <div class=" d-flex justify-content-between align-items-start">
+                                                    <div class="d-flex flex-column align-items-start">
+                                                        <h4 class="fs-2 mb-2">艾可 1.5mm極細豆腐貓砂7L 活性炭(1入)</h4>
+                                                        <div
+                                                            class=" rounded-3 mb-2 text-center checkout-card-btn text-primary-300">
+                                                            <span class="fs-2 fw-medium">500 g</span>
+                                                        </div>
+                                                        <p class="fs-1 d-flex align-items-center text-danger-500">
+                                                            未符合條件(10包75折活動中) </p>
+                                                    </div>
+                                                    <span class="material-symbols-outlined p-4">
+                                                        delete
+                                                    </span>
+                                                </div>
+                                                <div class="d-flex align-items-center justify-content-between">
+                                                    <div class="d-flex flex-column">
+                                                        <span
+                                                            class="fs-2 text-neutral-500 text-decoration-line-through">$
+                                                            335</span>
+                                                        <span class="fw-medium fs-2">$ 249</span>
+                                                    </div>
+                                                    <div class=" d-flex border border-neutarl-400 d-flex rounded-1 overflow-hidden"
+                                                        style="min-width: 91px;">
+                                                        <div
+                                                            class="w-25 p-2 d-flex justify-content-center align-items-center border-end border-neutarl-400 bg-neutral-100">
+                                                            <span
+                                                                class="material-symbols-outlined fs-3 text-neutral-400 ">
+                                                                remove
+                                                            </span>
+                                                        </div>
+                                                        <div
+                                                            class="w-50 px-3 fs-1 d-flex justify-content-center align-items-center">
+                                                            1</div>
+                                                        <div
+                                                            class="w-25 p-2 d-flex justify-content-center align-items-center border-start border-neutarl-400 bg-neutral-100">
+                                                            <span class="material-symbols-outlined fs-3">
+                                                                add
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="">
+                                <div class="py-4 border-bottom border-neutral-100">
+                                    <div class="d-flex justify-content-md-between">
+                                        <div class="table-img me-3 overflow-hidden">
+                                            <img class="object" src="../assets/images/checkout-1.png"
+                                                alt="尾巴與我 Tails&me 經典尼龍帶 基本款胸背帶 深紫灰紫(L)">
+                                        </div>
+                                        <div class="d-flex justify-content-between w-100">
+                                            <div class="d-flex w-100 flex-column">
+                                                <div class=" d-flex justify-content-between align-items-start">
+                                                    <div class="me-3 d-flex flex-column align-items-start">
+                                                        <h4 class="fs-2 mb-2">尾巴與我 Tails&me 經典尼龍帶 基本款胸背帶 深紫灰紫(L)</h4>
+                                                        <div
+                                                            class=" rounded-3 mb-2 text-center checkout-card-btn text-primary-300">
+                                                            <span class="fs-2 fw-medium">500 g</span>
+                                                        </div>
+                                                    </div>
+                                                    <span class="material-symbols-outlined p-4">
+                                                        delete
+                                                    </span>
+                                                </div>
+                                                <div class="d-flex align-items-center justify-content-between">
+                                                    <div class="d-flex flex-column">
+                                                        <span
+                                                            class="fs-2 text-neutral-500 text-decoration-line-through">$
+                                                            730</span>
+                                                        <span class="fw-medium fs-2">$ 672</span>
+                                                    </div>
+                                                    <div class=" border border-neutarl-400 d-flex rounded-1 overflow-hidden"
+                                                        style="min-width: 91px;">
+                                                        <div
+                                                            class="w-25 p-2 d-flex justify-content-center align-items-center border-end border-neutarl-400 bg-neutral-100">
+                                                            <span
+                                                                class="material-symbols-outlined fs-3 text-neutral-400 ">
+                                                                remove
+                                                            </span>
+                                                        </div>
+                                                        <div
+                                                            class="w-50 px-3 fs-1 d-flex justify-content-center align-items-center">
+                                                            1</div>
+                                                        <div
+                                                            class="w-25 p-2 d-flex justify-content-center align-items-center border-start border-neutarl-400 bg-neutral-100">
+                                                            <span class="material-symbols-outlined fs-3">
+                                                                add
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex flex-column justify-content-between align-items-end">
+
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="">
+                                <div class="py-4 border-bottom border-neutral-100">
+                                    <div class="d-flex justify-content-md-between">
+                                        <div class="table-img me-3 overflow-hidden">
+                                            <img class="object" src="../assets/images/checkout-2.png"
+                                                alt="KitCat 呼嚕嚕肉泥 15公克/4入 雞肉+纖維素(化毛配方) (貓零食)">
+                                        </div>
+                                        <div class="d-flex justify-content-between w-100">
+                                            <div class="d-flex w-100 flex-column">
+                                                <div class="me-3 d-flex flex-column align-items-start">
+                                                    <h4 class="fs-2 mb-2">KitCat 呼嚕嚕肉泥 15公克/4入 雞肉+纖維素(化毛配方) (貓零食)
+                                                    </h4>
+                                                    <div
+                                                        class="rounded-3 mb-2 text-center checkout-card-btn text-primary-300">
+                                                        <span class="fs-2 fw-medium">500 g</span>
+                                                    </div>
+                                                </div>
+                                                <div class="d-flex align-items-center justify-content-between">
+                                                    <div class="d-flex flex-column">
+                                                        <span
+                                                            class="fs-2 text-neutral-500 text-decoration-line-through">$
+                                                            85</span>
+                                                        <span class="fw-medium fs-2">$ 49</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex flex-column justify-content-between align-items-end">
+                                                <span class="material-symbols-outlined p-4">
+                                                    delete
+                                                </span>
+                                                <div class="w-100 border border-neutarl-400 d-flex rounded-1 overflow-hidden"
+                                                    style="min-width: 91px;">
+                                                    <div
+                                                        class="w-25 p-2 d-flex justify-content-center align-items-center border-end border-neutarl-400 bg-neutral-100">
+                                                        <span class="material-symbols-outlined fs-3 text-neutral-400 ">
+                                                            remove
+                                                        </span>
+                                                    </div>
+                                                    <div
+                                                        class="w-50 px-3 fs-1 d-flex justify-content-center align-items-center">
+                                                        1</div>
+                                                    <div
+                                                        class="w-25 p-2 d-flex justify-content-center align-items-center border-start border-neutarl-400 bg-neutral-100">
+                                                        <span class="material-symbols-outlined fs-3">
+                                                            add
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="">
+                                <div class="py-4 border-bottom border-neutral-100">
+                                    <div class="d-flex">
+                                        <div class="table-img me-3 overflow-hidden">
+                                            <img class="object" src="../assets/images/checkout-3.png"
+                                                alt="歐睿健 鮮雞幼貓 1.8公斤 (貓飼料)">
+                                        </div>
+                                        <div class="d-flex justify-content-between w-100">
+                                            <div class="d-flex w-100 flex-column d-flex flex-column align-items-start">
+                                                <div class="w-100 d-flex justify-content-between align-items-start">
+                                                    <div class="me-3 d-flex flex-column align-items-start">
+                                                        <h4 class="fs-2 mb-2">歐睿健 鮮雞幼貓 1.8公斤 (貓飼料)</h4>
+                                                        <div
+                                                            class="rounded-3 mb-2 text-center checkout-card-btn text-primary-300">
+                                                            <span class="fs-2 fw-medium">500 g</span>
+                                                        </div>
+                                                        <p class="fs-1 d-flex align-items-center text-danger-500">
+                                                            2包75折活動中</p>
+                                                    </div>
+                                                    <span class="material-symbols-outlined p-4">
+                                                        delete
+                                                    </span>
+                                                </div>
+                                                <div class="d-flex w-100 align-items-center justify-content-between">
+                                                    <div class="d-flex flex-column">
+                                                        <span
+                                                            class="fs-2 text-neutral-500 text-decoration-line-through">$
+                                                            2200</span>
+                                                        <span class="fw-medium fs-2">$ 1760</span>
+                                                    </div>
+                                                    <div class=" border border-neutarl-400 d-flex rounded-1 overflow-hidden"
+                                                        style="min-width: 91px;">
+                                                        <div
+                                                            class="w-25 p-2 d-flex justify-content-center align-items-center border-end border-neutarl-400 bg-neutral-100">
+                                                            <span
+                                                                class="material-symbols-outlined fs-3 text-neutral-400 ">
+                                                                remove
+                                                            </span>
+                                                        </div>
+                                                        <div
+                                                            class="w-50 px-3 fs-1 d-flex justify-content-center align-items-center">
+                                                            1</div>
+                                                        <div
+                                                            class="w-25 p-2 d-flex justify-content-center align-items-center border-start border-neutarl-400 bg-neutral-100">
+                                                            <span class="material-symbols-outlined fs-3">
+                                                                add
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="p-6 d-none d-md-block">
+                                <p class="fs-3 mb-0 d-flex align-items-center fw-normal"><span
+                                        class="material-symbols-outlined material-symbols-outlined-full fs-5 text-success-400 me-3">
+                                        check_circle
+                                    </span>全站滿 1,000 免運</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-12 mb-6 s-md-p">
+                        <div class="p-5 d-md-none bg-neutral-0 border-bottom border-neutarl-400">
+                            <p class="fs-3 mb-0 d-flex align-items-center fw-normal"><span
+                                    class="material-symbols-outlined material-symbols-outlined-full fs-5 text-success-400 me-3">
+                                    check_circle
+                                </span>全站滿 1,000 免運</p>
+                        </div>
+                        <div class="checkout-card bg-neutral-0 rounded-md-2">
+                            <p class="fw-medium">共 12 件商品</p>
+                            <div class="d-flex justify-content-between">
+                                <p class="fs-2 mb-0 fw-medium">商品小計</p>
+                                <span class=" fs-2 fw-medium">$6,254</span>
+                            </div>
+                            <hr class="border-neutarl-400">
+                            <div class="d-flex justify-content-between align-items-center mb-6">
+                                <p class="fs-2 mb-0">訂單總金額<br class="d-none  d-lg-block d-xxl-none">(不含運費)</p>
+                                <span class="fs-5 fw-medium text-primary-300">$6,254</span>
+                            </div>
+                            <div class="py-3 rounded-full bg-primary-300 text-center"><a
+                                    class="d-block fw-medium text-neutral-0" href="checkouting.html">結帳</a></div>
+                        </div>
+                    </div>
+                    <div class="col-md-9 col-12 s-md-p overflow-hidden">
+                        <div class="bg-neutral-0 p-5 p-md-6 rounded-md-2 rounded-0 ">
+                            <div class="d-flex">
+                                <h6 class="fs-4 fs-md-6" style="align-self: center">推薦加購區</h6>
+                                <div class="d-none d-md-flex position-static ms-auto">
+                                    <div class="swiper-button-prev-1 p-4 me-4">
+                                        <span class="material-symbols-outlined text-neutral-800">
+                                            chevron_left
+                                        </span>
+                                    </div>
+                                    <div class="swiper-button-next-1 p-4">
+                                        <span class="material-symbols-outlined text-neutral-800">
+                                            chevron_right
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="side-blur">
+                                <div class="swiper checkout-swiper-1 pt-4 ">
+                                    <div class="swiper-wrapper align-items-stretch">
+                                        <div class="swiper-slide">
+                                            <div class="m-card h-100 ">
+                                                <div
+                                                    class="position-relative border-1 border-bottom border-neutral-100">
+                                                    <img src="../assets/images/toy-6.png" alt="希爾思成貓健康配方">
+                                                    <span
+                                                        class="position-absolute card-badge-position py-1 py-md-2 px-md-3 px-2 text-neutral-0 fw-medium bg-primary-300 rounded-1 fs-1 fs-md-3">7.5折</span>
+                                                </div>
+                                                <div class="p-3 p-md-4">
+                                                    <div class="h-p1 mb-3 mb-md-5">
+                                                        <p class="fs-2  fs-md-4  text-neutral-800 mb-0">
+                                                            BITE ME 藏食玩具OH! 襪襪(7*13公分)(狗玩具)
+                                                        </p>
+                                                    </div>
+                                                    <div
+                                                        class="d-flex flex-column mb-3 mb-md-5 flex-md-row align-items-md-center">
+                                                        <span
+                                                            class="text-neutral-400 fs-1 text-decoration-line-through me-md-2">$630</span>
+                                                        <span class="text-primary-300 fw-medium ">$600</span>
+                                                    </div>
+                                                    <div
+                                                        class="border border-primary-300 rounded-full text-center py-2 py-md-3">
+                                                        <a href="#"
+                                                            class="d-block text-primary-300 fw-medium fs-2 fs-md-3">我要加購</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="m-card h-100 ">
+                                                <div
+                                                    class="position-relative border-1 border-bottom border-neutral-100">
+                                                    <img src="../assets/images/toy-8.png" alt="希爾思成貓健康配方">
+                                                    <span
+                                                        class="position-absolute card-badge-position py-1 py-md-2 px-md-3 px-2 text-neutral-0 fw-medium bg-primary-300 rounded-1 fs-1 fs-md-3">6.5折</span>
+                                                </div>
+                                                <div class="p-3 p-md-4">
+                                                    <div class="h-p1 mb-3 mb-md-5">
+                                                        <p class="fs-2  fs-md-4  text-neutral-800 mb-0">
+                                                            五角邊益智轉盤 粉色 (22.7公分)(貓狗玩具)
+                                                        </p>
+                                                    </div>
+                                                    <div
+                                                        class="d-flex flex-column mb-3 mb-md-5 flex-md-row align-items-md-center">
+                                                        <span
+                                                            class="text-neutral-400 fs-1 text-decoration-line-through me-md-2">$350</span>
+                                                        <span class="text-primary-300 fw-medium ">$299</span>
+                                                    </div>
+                                                    <div
+                                                        class="border border-primary-300 rounded-full text-center py-2 py-md-3">
+                                                        <a href="#"
+                                                            class="d-block text-primary-300 fw-medium fs-2 fs-md-3">我要加購</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="m-card h-100 ">
+                                                <div
+                                                    class="position-relative border-1 border-bottom border-neutral-100">
+                                                    <img src="../assets/images/toy-7.png" alt="希爾思成貓健康配方">
+                                                    <span
+                                                        class="position-absolute card-badge-position py-1 py-md-2 px-md-3 px-2 text-neutral-0 fw-medium bg-primary-300 rounded-1 fs-1 fs-md-3">8.5折</span>
+                                                </div>
+                                                <div class="p-3 p-md-4">
+                                                    <div class="h-p1 mb-3 mb-md-5">
+                                                        <p class="fs-2  fs-md-4  text-neutral-800 mb-0">
+                                                            拔蘿蔔嗅聞玩具(35x35公分)(貓狗玩具)
+                                                        </p>
+                                                    </div>
+                                                    <div
+                                                        class="d-flex flex-column mb-3 mb-md-5 flex-md-row align-items-md-center">
+                                                        <span
+                                                            class="text-neutral-400 fs-1 text-decoration-line-through me-md-2">$580</span>
+                                                        <span class="text-primary-300 fw-medium ">$499</span>
+                                                    </div>
+                                                    <div
+                                                        class="border border-primary-300 rounded-full text-center py-2 py-md-3">
+                                                        <a href="#"
+                                                            class="d-block text-primary-300 fw-medium fs-2 fs-md-3">我要加購</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="m-card h-100 ">
+                                                <div
+                                                    class="position-relative border-1 border-bottom border-neutral-100">
+                                                    <img src="../assets/images/Dog-10-1.png"
+                                                        alt="寶貝餌子 奶香軟骨串燒雞肉乾 7入(狗零食)">
+                                                    <span
+                                                        class="position-absolute card-badge-position py-1 py-md-2 px-md-3 px-2 text-neutral-0 fw-medium bg-primary-300 rounded-1 fs-1 fs-md-3">9.5折</span>
+                                                </div>
+                                                <div class="p-3 p-md-4">
+                                                    <div class="h-p1 mb-3 mb-md-5">
+                                                        <p class="fs-2  fs-md-4  text-neutral-800 mb-0">
+                                                            寶貝餌子 奶香軟骨串燒雞肉乾 7入(狗零食)
+                                                        </p>
+                                                    </div>
+                                                    <div
+                                                        class="d-flex flex-column mb-3 mb-md-5 flex-md-row align-items-md-center">
+                                                        <span
+                                                            class="text-neutral-400 fs-1 text-decoration-line-through me-md-2">$200</span>
+                                                        <span class="text-primary-300 fw-medium ">$179</span>
+                                                    </div>
+                                                    <div
+                                                        class="border border-primary-300 rounded-full text-center py-2 py-md-3">
+                                                        <a href="#"
+                                                            class="d-block text-primary-300 fw-medium fs-2 fs-md-3">我要加購</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="m-card h-100 ">
+                                                <div
+                                                    class="position-relative border-1 border-bottom border-neutral-100">
+                                                    <img src="../assets/images/Cat.png"
+                                                        alt="希爾思 幼貓 雞肉特調食譜 1.59公斤 (貓飼料)">
+                                                    <span
+                                                        class="position-absolute card-badge-position py-1 py-md-2 px-md-3 px-2 text-neutral-0 fw-medium bg-primary-300 rounded-1 fs-1 fs-md-3">8.8折</span>
+                                                </div>
+                                                <div class="p-3 p-md-4">
+                                                    <div class="h-p1 mb-3 mb-md-5">
+                                                        <p class="fs-2  fs-md-4  text-neutral-800 mb-0">
+                                                            希爾思 幼貓 雞肉特調食譜 1.59公斤 (貓飼料)
+                                                        </p>
+                                                    </div>
+                                                    <div
+                                                        class="d-flex flex-column mb-3 mb-md-5 flex-md-row align-items-md-center">
+                                                        <span
+                                                            class="text-neutral-400 fs-1 text-decoration-line-through me-md-2">$930</span>
+                                                        <span class="text-primary-300 fw-medium ">$791</span>
+                                                    </div>
+                                                    <div
+                                                        class="border border-primary-300 rounded-full text-center py-2 py-md-3">
+                                                        <a href="#"
+                                                            class="d-block text-primary-300 fw-medium fs-2 fs-md-3">我要加購</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="m-card h-100 ">
+                                                <div
+                                                    class="position-relative border-1 border-bottom border-neutral-100">
+                                                    <img src="../assets/images/Cat-30.png"
+                                                        alt="希爾思 幼貓 雞肉特調食譜 1.59公斤 (貓飼料)">
+                                                    <span
+                                                        class="position-absolute card-badge-position py-1 py-md-2 px-md-3 px-2 text-neutral-0 fw-medium bg-primary-300 rounded-1 fs-1 fs-md-3">7.7折</span>
+                                                </div>
+                                                <div class="p-3 p-md-4">
+                                                    <div class="h-p1 mb-3 mb-md-5">
+                                                        <p class="fs-2  fs-md-4  text-neutral-800 mb-0">
+                                                            希爾思 幼貓 雞肉特調食譜 1.59公斤 (貓飼料)
+                                                        </p>
+                                                    </div>
+                                                    <div
+                                                        class="d-flex flex-column mb-3 mb-md-5 flex-md-row align-items-md-center">
+                                                        <span
+                                                            class="text-neutral-400 fs-1 text-decoration-line-through me-md-2">$930</span>
+                                                        <span class="text-primary-300 fw-medium ">$791</span>
+                                                    </div>
+                                                    <div
+                                                        class="border border-primary-300 rounded-full text-center py-2 py-md-3">
+                                                        <a href="#"
+                                                            class="d-block text-primary-300 fw-medium fs-2 fs-md-3">我要加購</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="m-card h-100 ">
+                                                <div
+                                                    class="position-relative border-1 border-bottom border-neutral-100">
+                                                    <img src="../assets/images/Other-2.png"
+                                                        alt="希爾思 幼貓 雞肉特調食譜 1.59公斤 (貓飼料)">
+                                                    <span
+                                                        class="position-absolute card-badge-position py-1 py-md-2 px-md-3 px-2 text-neutral-0 fw-medium bg-primary-300 rounded-1 fs-1 fs-md-3">8.9折</span>
+                                                </div>
+                                                <div class="p-3 p-md-4">
+                                                    <div class="h-p1 mb-3 mb-md-5">
+                                                        <p class="fs-2  fs-md-4  text-neutral-800 mb-0">
+                                                            希爾思 幼貓 雞肉特調食譜 1.59公斤 (貓飼料)
+                                                        </p>
+                                                    </div>
+                                                    <div
+                                                        class="d-flex flex-column mb-3 mb-md-5 flex-md-row align-items-md-center">
+                                                        <span
+                                                            class="text-neutral-400 fs-1 text-decoration-line-through me-md-2">$220</span>
+                                                        <span class="text-primary-300 fw-medium ">$199</span>
+                                                    </div>
+                                                    <div
+                                                        class="border border-primary-300 rounded-full text-center py-2 py-md-3">
+                                                        <a href="#"
+                                                            class="d-block text-primary-300 fw-medium fs-2 fs-md-3">我要加購</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <%- include('./layout/footer'); -%>
+            <script type="module" src="../main.js"></script>
+            <!-- //swiper -->
+            <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+            <script>
+                var swiper = new Swiper(".checkout-swiper-1", {
+                    spaceBetween: 12,
+                    slidesPerView: '2.2',
+                    // slidesOffsetAfter: -900,
+                    navigation: {
+                        nextEl: '.swiper-button-next-1',
+                        prevEl: '.swiper-button-prev-1',
+                    },
+                    breakpoints: {
+
+                        768: {  //当屏幕宽度大于等于768 
+                            spaceBetween: 16,
+                            slidesPerView: '3.2',
+                        },
+                    },
+                    loop: true,
+                });
+            </script>
+</body>
+
+</html>

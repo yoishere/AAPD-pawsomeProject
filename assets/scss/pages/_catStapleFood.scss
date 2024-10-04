@@ -1,0 +1,107 @@
+.card-main-height {
+  height: 130px;
+  @include md {
+    height: 138px;
+  }
+}
+.catStapleFood-card {
+  box-shadow: 0 4.15px 4.15px -2.08px rgba(24, 39, 75, 0.08),
+    0 2.08px 3.11px -2.08px rgba(24, 39, 75, 0.12);
+  border: 1px solid #f0f0f0;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.catStapleFood-card-h3 {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  font-size: $b4-font-size; //fs-2
+  -webkit-line-clamp: 2; /* 限制顯示兩行 */
+  line-clamp: 2; /* 支援更多瀏覽器 */
+  @include md {
+    font-size: $b2-font-size; //fs-4
+  }
+}
+.catStapleFood-card-btn {
+  height: 44px;
+  width: 44px;
+  box-shadow: 0 0 1px 1px #bbbbbb;
+  border: 1.5px solid transparent;
+  background: white;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &:hover,
+  &:focus,
+  &:active,
+  &.active {
+    border: 1.5px solid #ec5501;
+    color: #ec5501;
+    font-weight: 500;
+    box-shadow: none;
+  }
+
+  @include md {
+    padding: 4px 12px 4px 12px;
+    height: 30px;
+    width: auto;
+    border: 2.5px solid transparent;
+    box-shadow: 0 0 1px 1px #bbbbbb;
+
+    &:hover,
+    &:focus,
+    &:active,
+    &.active {
+      border: 2.5px solid #ec5501;
+      color: #ec5501;
+      font-weight: 500;
+      box-shadow: none;
+    }
+  }
+}
+.catStapleFood-card-btn.active:hover {
+  border: 1.5px solid #ec5501;
+  color: #ec5501;
+  font-weight: 500;
+
+  @include md {
+    border: 2.5px solid #ec5501;
+  }
+}
+
+.catStapleFood-page-nav {
+  .nav-link {
+    width: 36px;
+    height: 38px;
+    border-radius: 4px;
+    color: $neutral-800;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* 水平置中 */
+    align-items: center; /* 垂直置中 */
+    font-size: $b4-font-size;
+    font-weight: $headings-font-weight;
+  }
+  .nav-link:hover,
+  .nav-link:focus {
+    color: $primary-300;
+    background-color: $primary-0;
+  }
+  .nav-link.active {
+    color: $primary-300;
+    background-color: $primary-0;
+  }
+}
+.most-btn {
+  color: #ec5501;
+  background-color: white;
+  border-color: #ec5501;
+}
+button.most-btn:checked,
+button.most-btn:hover,
+button.most-btn:focus {
+  color: white !important;
+  background-color: #ec5501;
+}

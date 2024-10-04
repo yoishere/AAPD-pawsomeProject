@@ -1,0 +1,1472 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>pairend</title>
+  <!-- google-icon-->
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+<body>
+  <%- include('./layout/header'); -%>
+    <div class="pair-start mx-auto container-fluid fixed-p ps-0 pe-0" style=" max-width: 1440px;">
+      <div id="buycar"
+        class=" bottom-0 bg-neutral-0 position-fixed w-100 d-flex justify-content-center py-4 px-6 d-md-none"
+        style="z-index: 100;">
+        <div class="py-3 d-flex me-6 bg-primary-300 w-100 rounded-full justify-content-center">
+          <a class="fw-medium fs-3 text-neutral-0" href="checkout.html"><span
+              class="align-bottom material-symbols-outlined me-2">
+              shopping_cart
+            </span>購物車(6)</a>
+        </div>
+        <div class="d-flex">
+          <a href="#">
+            <img class=" buy-car-shadow rounded-full" style="width: 44px; height: 44px; max-width: none;"
+              src="../assets/images/Illustration/Avatar.png" alt="貓頭">
+          </a>
+        </div>
+      </div>
+      <section class="banner py-md-7 section-container pb-6">
+        <div class="html-tag d-none d-md-block mb-md-7">
+          <a class="fs-3 text-neutral-500" href="index.html">首頁 /</a>
+          <a class="fs-3 text-neutral-700" href="pairend.html ">毛孩商品配對機</a>
+        </div>
+        <picture>
+          <source srcset="../assets/images/banner/Banner-5.png" media="(min-width:768px)">
+          <img class="w-100" src="../assets/images/banner/baner-6.png" alt="商品配對機">
+        </picture>
+      </section>
+      <section class="cat-menu section-container">
+        <div class="container px-md-0 px-5 pb-6 pb-md-7  border-bottom border-neutral-100">
+          <div class="d-flex align-items-center mb-5 justify-content-between">
+            <h2 class="fs-md-6 fs-5 fw-medium">貓貓的理想餐單出爐了！</h2>
+            <a href="pairstart.html" class="py-3 px-5 hover-pair rounded-full d-none d-md-block">重新配對</a>
+          </div>
+          <div class="row gx-5 gy-5 mb-5">
+            <div class="col-lg-3 col-md-6">
+              <div class="pair-infor text-center rounded-2">
+                <h3 class="text-primary-300 fs-11 mb-5">294<span class="fs-2 fw-normal">kcal</span></h3>
+                <p class="text-primary-300 fw-normal fs-3 mb-0">每日所需熱量</p>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <div class="pair-infor text-center rounded-2">
+                <h3 class="text-primary-300 fs-11 mb-5">259.8<span class="fs-2 fw-normal">ml</span></h3>
+                <p class="text-primary-300 fw-normal fs-3 mb-0">每日最低飲水量</p>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <div class="pair-infor text-center rounded-2">
+                <h3 class="text-primary-300 fs-11 mb-5">39.5<span class="fs-2 fw-normal">g</span></h3>
+                <p class="text-primary-300 fw-normal fs-3 mb-0">每日乾食餵食量</p>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <div class="pair-infor text-center rounded-2">
+                <h3 class="text-primary-300 fs-11 mb-5">175<span class="fs-2 fw-normal">g</span></h3>
+                <p class="text-primary-300 fw-normal fs-3 mb-0">每日濕食餵食量</p>
+              </div>
+            </div>
+          </div>
+          <div class="d-flex justify-content-center d-md-none">
+            <a href="pairstart.html" class="py-3 px-5 hover-pair rounded-full ">重新配對</a>
+          </div>
+        </div>
+      </section>
+      <section class="pair-container section-container">
+        <div class="container px-md-0 px-5 py-6 py-md-7  border-bottom border-neutral-100">
+          <div class="row">
+            <div class="col-3 d-none d-md-block rounded-2">
+              <div class="rounded-2 overflow-hidden px-5 pt-5" style="box-shadow:0px 3.11471px 6.22941px -3.11471px rgba(24, 39, 75, 0.12), 0px 4.15294px 12.4588px -2.07647px rgba(24, 39, 75, 0.08);height: auto; 
+            ">
+                <h2 class="fs-6 mb-5">配對內容</h2>
+                <div class="w-100">
+                  <div class="mb-5">
+                    <a class="fs-3 d-flex fw-medium" data-bs-toggle="collapse" href="#size" role="button"
+                      aria-expanded="false" aria-controls="size">
+                      體型<span class="material-symbols-outlined ms-auto">
+                        keyboard_arrow_up
+                      </span>
+                    </a>
+                    <div class="collapse show" id="size">
+                      <div class="d-flex text-nowrap flex-wrap gap-3">
+                        <input type="radio" class="btn-check" name="size" id="dog-size-1" autocomplete="off">
+                        <label class="input-btn " for="dog-size-1">小型</label>
+
+                        <input type="radio" class="btn-check" name="size" id="dog-size-2" autocomplete="off">
+                        <label class="input-btn " for="dog-size-2">中型</label>
+
+                        <input type="radio" class="btn-check" name="size" id="dog-size-3" autocomplete="off">
+                        <label class="input-btn " for="dog-size-3">大型</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="mb-5">
+                    <a class="fs-3 d-flex fw-medium" data-bs-toggle="collapse" href="#age" role="button"
+                      aria-expanded="false" aria-controls="age">
+                      年齡<span class="material-symbols-outlined ms-auto">
+                        keyboard_arrow_up
+                      </span>
+                    </a>
+                    <div class="collapse show" id="age">
+                      <div class="d-flex text-nowrap flex-wrap gap-3">
+                        <input type="radio" class="btn-check" name="age" id="age-1" autocomplete="off">
+                        <label class="input-btn " for="age-1">0~4 個月</label>
+
+                        <input type="radio" class="btn-check" name="age" id="age-2" autocomplete="off">
+                        <label class="input-btn " for="age-2">5~12 個月</label>
+
+                        <input type="radio" class="btn-check" name="age" id="age-3" autocomplete="off">
+                        <label class="input-btn " for="age-3">成年</label>
+
+                        <input type="radio" class="btn-check" name="age" id="age-4" autocomplete="off">
+                        <label class="input-btn " for="age-4">高齡</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="mb-5">
+                    <a class="fs-3 d-flex fw-medium" data-bs-toggle="collapse" href="#ligation" role="button"
+                      aria-expanded="false" aria-controls="ligation">
+                      結紮狀態<span class="material-symbols-outlined ms-auto">
+                        keyboard_arrow_up
+                      </span>
+                    </a>
+                    <div class="collapse show" id="ligation">
+                      <div class=" d-flex text-nowrap flex-wrap gap-3">
+                        <input type="radio" class="btn-check" name="ligation" id="ligation-1" autocomplete="off">
+                        <label class="input-btn " for="ligation-1">未結紮</label>
+
+                        <input type="radio" class="btn-check" name="ligation" id="ligation-2" autocomplete="off">
+                        <label class="input-btn " for="ligation-2">已結紮</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="mb-5">
+                    <a class="fs-3 d-flex fw-medium" data-bs-toggle="collapse" href="#posture" role="button"
+                      aria-expanded="false" aria-controls="posture">
+                      體態需求<span class="material-symbols-outlined ms-auto">
+                        keyboard_arrow_up
+                      </span>
+                    </a>
+                    <div class="collapse show" id="posture">
+                      <div class=" d-flex text-nowrap flex-wrap gap-3">
+                        <input type="radio" class="btn-check" name="posture" id="posture-1" autocomplete="off">
+                        <label class="input-btn " for="posture-1">需增食</label>
+
+                        <input type="radio" class="btn-check" name="posture" id="posture-2" autocomplete="off">
+                        <label class="input-btn " for="posture-2">需減重</label>
+
+                        <input type="radio" class="btn-check" name="posture" id="posture-3" autocomplete="off">
+                        <label class="input-btn " for="posture-3">無減/增需求</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="mb-5">
+                    <a class="fs-3 d-flex fw-medium" data-bs-toggle="collapse" href="#healthy" role="button"
+                      aria-expanded="false" aria-controls="healthy">
+                      已知健康問題<span class="material-symbols-outlined ms-auto">
+                        keyboard_arrow_up
+                      </span>
+                    </a>
+                    <div class="collapse show" id="healthy">
+                      <div class="d-flex text-nowrap flex-wrap gap-3">
+                        <input type="checkbox" class="btn-check" name="healthy" id="healthy-1" autocomplete="off">
+                        <label class="input-btn " for="healthy-1">消化器官</label>
+
+                        <input type="checkbox" class="btn-check" name="healthy" id="healthy-2" autocomplete="off">
+                        <label class="input-btn " for="healthy-2">下泌尿道</label>
+
+                        <input type="checkbox" class="btn-check" name="healthy" id="healthy-3" autocomplete="off">
+                        <label class="input-btn " for="healthy-3">腎臟</label>
+
+                        <input type="checkbox" class="btn-check" name="healthy" id="healthy-4" autocomplete="off">
+                        <label class="input-btn " for="healthy-4">體重</label>
+
+                        <input type="checkbox" class="btn-check" name="healthy" id="healthy-5" autocomplete="off">
+                        <label class="input-btn " for="healthy-5">皮膚</label>
+
+                        <input type="checkbox" class="btn-check" name="healthy" id="healthy-6" autocomplete="off">
+                        <label class="input-btn " for="healthy-6">肝</label>
+
+                        <input type="checkbox" class="btn-check" name="healthy" id="healthy-7" autocomplete="off">
+                        <label class="input-btn " for="healthy-7">糖尿病</label>
+
+                        <input type="checkbox" class="btn-check" name="healthy" id="healthy-8" autocomplete="off">
+                        <label class="input-btn " for="healthy-8">術後恢復</label>
+
+                        <input type="checkbox" class="btn-check" name="healthy" id="healthy-9" autocomplete="off">
+                        <label class="input-btn " for="healthy-9">心臟</label>
+
+                        <input type="checkbox" class="btn-check" name="healthy" id="healthy-10" autocomplete="off">
+                        <label class="input-btn " for="healthy-10">口腔</label>
+
+                        <input type="checkbox" class="btn-check" name="healthy" id="healthy-11" autocomplete="off">
+                        <label class="input-btn " for="healthy-11">皮膚</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="mb-5">
+                    <a class="fs-3 d-flex fw-medium" data-bs-toggle="collapse" href="#allergy" role="button"
+                      aria-expanded="false" aria-controls="allergy">
+                      過敏類型<span class="material-symbols-outlined ms-auto">
+                        keyboard_arrow_up
+                      </span>
+                    </a>
+                    <div class="collapse show" id="allergy">
+                      <div class="d-flex text-nowrap flex-wrap gap-3">
+                        <input type="checkbox" class="btn-check" name="allergy" id="allergy-1" autocomplete="off">
+                        <label class="input-btn " for="allergy-1">大豆過敏</label>
+
+                        <input type="checkbox" class="btn-check" name="allergy" id="allergy-2" autocomplete="off">
+                        <label class="input-btn " for="allergy-2">小麥過敏</label>
+
+                        <input type="checkbox" class="btn-check" name="allergy" id="allergy-3" autocomplete="off">
+                        <label class="input-btn " for="allergy-3">玉米過敏</label>
+
+                        <input type="checkbox" class="btn-check" name="allergy" id="allergy-4" autocomplete="off">
+                        <label class="input-btn " for="allergy-4">魚類過敏</label>
+
+                        <input type="checkbox" class="btn-check" name="allergy" id="allergy-5" autocomplete="off">
+                        <label class="input-btn " for="allergy-5">塵蟎過敏</label>
+
+                        <input type="checkbox" class="btn-check" name="allergy" id="allergy-6" autocomplete="off">
+                        <label class="input-btn " for="allergy-6">跳蚤過敏</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="mb-5">
+                    <a class="fs-3 d-flex fw-medium" data-bs-toggle="collapse" href="#like-food" role="button"
+                      aria-expanded="false" aria-controls="like-food">
+                      飲食偏好<span class="material-symbols-outlined ms-auto">
+                        keyboard_arrow_up
+                      </span>
+                    </a>
+                    <div class="collapse show" id="like-food">
+                      <div class="d-flex text-nowrap flex-wrap gap-3">
+                        <input type="checkbox" class="btn-check" name="like-food" id="like-food-1" autocomplete="off">
+                        <label class="input-btn " for="like-food-1">高蛋白</label>
+
+                        <input type="checkbox" class="btn-check" name="like-food" id="like-food-2" autocomplete="off">
+                        <label class="input-btn " for="like-food-2">乾食</label>
+
+                        <input type="checkbox" class="btn-check" name="like-food" id="like-food-3" autocomplete="off">
+                        <label class="input-btn " for="like-food-3">濕食</label>
+
+                        <input type="checkbox" class="btn-check" name="like-food" id="like-food-4" autocomplete="off">
+                        <label class="input-btn " for="like-food-4">天然食材</label>
+
+                        <input type="checkbox" class="btn-check" name="like-food" id="like-food-5" autocomplete="off">
+                        <label class="input-btn " for="like-food-5">蔬食</label>
+
+                        <input type="checkbox" class="btn-check" name="like-food" id="like-food-6" autocomplete="off">
+                        <label class="input-btn " for="like-food-6">高油脂</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="mb-5">
+                    <a class="fs-3 d-flex fw-medium" data-bs-toggle="collapse" href="#toy" role="button"
+                      aria-expanded="false" aria-controls="toy">
+                      玩具偏好<span class="material-symbols-outlined ms-auto">
+                        keyboard_arrow_up
+                      </span>
+                    </a>
+                    <div class="collapse show" id="toy">
+                      <div class="d-flex text-nowrap flex-wrap gap-3">
+                        <input type="checkbox" class="btn-check" name="toy" id="toy-1" autocomplete="off">
+                        <label class="input-btn " for="toy-1">耐咬玩具</label>
+
+                        <input type="checkbox" class="btn-check" name="toy" id="toy-2" autocomplete="off">
+                        <label class="input-btn " for="toy-2">牙齒清潔玩具</label>
+
+                        <input type="checkbox" class="btn-check" name="toy" id="toy-3" autocomplete="off">
+                        <label class="input-btn " for="toy-3">拔河玩具</label>
+
+                        <input type="checkbox" class="btn-check" name="toy" id="toy-4" autocomplete="off">
+                        <label class="input-btn " for="toy-4">球類</label>
+
+                        <input type="checkbox" class="btn-check" name="toy" id="toy-5" autocomplete="off">
+                        <label class="input-btn " for="toy-5">飛盤</label>
+
+                        <input type="checkbox" class="btn-check" name="toy" id="toy-6" autocomplete="off">
+                        <label class="input-btn " for="toy-6">絨毛玩具</label>
+
+                        <input type="checkbox" class="btn-check" name="toy" id="toy-7" autocomplete="off">
+                        <label class="input-btn " for="toy-7">智力玩具</label>
+
+                        <input type="checkbox" class="btn-check" name="toy" id="toy-8" autocomplete="off">
+                        <label class="input-btn " for="toy-8">發聲玩具</label>
+
+                        <input type="checkbox" class="btn-check" name="toy" id="toy-9" autocomplete="off">
+                        <label class="input-btn " for="toy-9">智能互動玩具</label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-9">
+              <h2 class="fs-5 d-md-none mb-3">為愛寵推薦的商品</h2>
+              <div class="d-flex mb-6 justify-content-between align-items-center">
+                <div class="position-relative me-3 me-md-0 input-w">
+                  <input type="search" class="form-control input-hover" placeholder="例：小型犬飼料">
+                  <span class="material-symbols-outlined position-absolute" style="top: 8px; right: 16px;">
+                    search
+                  </span>
+                </div>
+                <div class="py-3 px-5 border border-neutarl-500 rounded-full d-none d-md-block"><a
+                    class="fs-2 d-block text-neutral-500" href="#">排序方式<span
+                      class="material-symbols-outlined fs-5 ms-2 align-middle">
+                      filter_list
+                    </span></a></div>
+                <div class="d-md-none">
+                  <button class="border-0 bg-neutral-0" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom"><img
+                      src="../assets/images/icon/Filter.svg" alt="filter"></button>
+                  <div class="offcanvas offcanvas-bottom rounded-top-2" tabindex="-1" id="offcanvasBottom"
+                    aria-labelledby="offcanvasBottomLabel" style="height: 85vh;">
+                    <div class="offcanvas-header flex-column rounded-top-2 border border-bottom border-neutral-100">
+                      <button type="button" class="modal-btn-sm border-0 mb-2" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                      <h5 class="fs-5 fw-medium mb-2" id="offcanvasBottomLabel">配對內容</h5>
+                    </div>
+                    <div class="offcanvas-body small">
+                      <div class="mb-6">
+                        <h4 class="fs-3 mb-3">排序方式</h4>
+                        <select class="form-select fs-3 text-neutral-400" aria-label="Default select example">
+                          <option selected>請選擇</option>
+                          <option value="1">One</option>
+                          <option value="2">Two</option>
+                          <option value="3">Three</option>
+                        </select>
+                      </div>
+                      <form class="needs-validation" novalidate>
+                        <div class="mb-5">
+                          <label class="form-label fs-2 fs-md-3 fw-medium" for="dog-size-1-1">
+                            體型 </label>
+                          <div class="mb-2 d-flex text-nowrap flex-wrap gap-3">
+                            <input type="radio" class="btn-check" name="size-1" id="dog-size-1-1" autocomplete="off"
+                              checked>
+                            <label class="input-btn " for="dog-size-1-1">小型</label>
+
+                            <input type="radio" class="btn-check" name="size-1" id="dog-size-2-1" autocomplete="off">
+                            <label class="input-btn " for="dog-size-2-1">中型</label>
+
+                            <input type="radio" class="btn-check" name="size-1" id="dog-size-3-1" autocomplete="off">
+                            <label class="input-btn " for="dog-size-3-1">大型</label>
+                          </div>
+                        </div>
+                        <div class="mb-5">
+                          <label class="form-label fs-2 fs-md-3 fw-medium" for="age-1-1">
+                            年齡 </label>
+                          <div class="mb-2 d-flex text-nowrap flex-wrap gap-3">
+                            <input type="radio" class="btn-check" name="age-1" id="age-1-1" autocomplete="off" checked>
+                            <label class="input-btn " for="age-1-1">0~4 個月</label>
+
+                            <input type="radio" class="btn-check" name="age-1" id="age-1-2" autocomplete="off">
+                            <label class="input-btn " for="age-1-2">5~12 個月</label>
+
+                            <input type="radio" class="btn-check" name="age-1" id="age-1-3" autocomplete="off">
+                            <label class="input-btn " for="age-1-3">成年</label>
+
+                            <input type="radio" class="btn-check" name="age-1" id="age-1-4" autocomplete="off">
+                            <label class="input-btn " for="age-1-4">高齡</label>
+                          </div>
+                        </div>
+                        <div class="mb-5">
+                          <label class="form-label fs-2 fs-md-3 fw-medium" for="ligation-1-1">
+                            結紮狀態 </label>
+                          <div class=" d-flex text-nowrap flex-wrap gap-3">
+                            <input type="radio" class="btn-check" name="ligation-1" id="ligation-1-1" autocomplete="off"
+                              checked>
+                            <label class="input-btn " for="ligation-1-1">未結紮</label>
+
+                            <input type="radio" class="btn-check" name="ligation-1" id="ligation-1-2"
+                              autocomplete="off">
+                            <label class="input-btn " for="ligation-1-2">已結紮</label>
+                          </div>
+                        </div>
+                        <div class="mb-5">
+                          <label class="form-label fs-2 fs-md-3 fw-medium" for="posture-b-1">
+                            體態需求 </label>
+                          <div class=" d-flex text-nowrap flex-wrap gap-3">
+                            <input type="radio" class="btn-check" name="posture-b" id="posture-b-1" autocomplete="off"
+                              checked>
+                            <label class="input-btn " for="posture-b-1">需增食</label>
+
+                            <input type="radio" class="btn-check" name="posture-b" id="posture-b-2" autocomplete="off">
+                            <label class="input-btn " for="posture-b-2">需減重</label>
+
+                            <input type="radio" class="btn-check" name="posture-b" id="posture-b-3" autocomplete="off">
+                            <label class="input-btn " for="posture-b-3">無減/增需求</label>
+                          </div>
+
+                        </div>
+                        <div class="mb-5">
+                          <label class="form-label fs-2 fs-md-3 fw-medium" for="healthy-b-1">
+                            已知健康問題 </label>
+                          <div class="mb-2 d-flex text-nowrap flex-wrap gap-3">
+                            <input type="checkbox" class="btn-check" name="healthy-b" id="healthy-b-1"
+                              autocomplete="off" checked>
+                            <label class="input-btn " for="healthy-b-1">消化器官</label>
+
+                            <input type="checkbox" class="btn-check" name="healthy-b" id="healthy-b-2"
+                              autocomplete="off">
+                            <label class="input-btn " for="healthy-b-2">下泌尿道</label>
+
+                            <input type="checkbox" class="btn-check" name="healthy-b" id="healthy-b-3"
+                              autocomplete="off">
+                            <label class="input-btn " for="healthy-b-3">腎臟</label>
+
+                            <input type="checkbox" class="btn-check" name="healthy-b" id="healthy-b-4"
+                              autocomplete="off">
+                            <label class="input-btn " for="healthy-b-4">體重</label>
+
+                            <input type="checkbox" class="btn-check" name="healthy-b" id="healthy-b-5"
+                              autocomplete="off">
+                            <label class="input-btn " for="healthy-b-5">皮膚</label>
+
+                            <input type="checkbox" class="btn-check" name="healthy-b" id="healthy-b-6"
+                              autocomplete="off">
+                            <label class="input-btn " for="healthy-b-6">肝</label>
+
+                            <input type="checkbox" class="btn-check" name="healthy-b" id="healthy-b-7"
+                              autocomplete="off">
+                            <label class="input-btn " for="healthy-b-7">糖尿病</label>
+
+                            <input type="checkbox" class="btn-check" name="healthy-b" id="healthy-b-8"
+                              autocomplete="off">
+                            <label class="input-btn " for="healthy-b-8">術後恢復</label>
+
+                            <input type="checkbox" class="btn-check" name="healthy-b" id="healthy-b-9"
+                              autocomplete="off">
+                            <label class="input-btn " for="healthy-b-9">心臟</label>
+
+                            <input type="checkbox" class="btn-check" name="healthy-b" id="healthy-b-10"
+                              autocomplete="off">
+                            <label class="input-btn " for="healthy-b-10">口腔</label>
+
+                            <input type="checkbox" class="btn-check" name="healthy-b" id="healthy-b-11"
+                              autocomplete="off">
+                            <label class="input-btn " for="healthy-b-11">皮膚</label>
+                          </div>
+
+                        </div>
+                        <div class="mb-5 ">
+                          <label class="form-label fs-2 fs-md-3 fw-medium" for="allergy-b-1">
+                            過敏類型 </label>
+                          <div class="mb-2 d-flex text-nowrap flex-wrap gap-3">
+                            <input type="checkbox" class="btn-check" name="allergy-b" id="allergy-b-1"
+                              autocomplete="off" checked>
+                            <label class="input-btn " for="allergy-b-1">大豆過敏</label>
+
+                            <input type="checkbox" class="btn-check" name="allergy-b" id="allergy-b-2"
+                              autocomplete="off">
+                            <label class="input-btn " for="allergy-b-2">小麥過敏</label>
+
+                            <input type="checkbox" class="btn-check" name="allergy-b" id="allergy-b-3"
+                              autocomplete="off">
+                            <label class="input-btn " for="allergy-b-3">玉米過敏</label>
+
+                            <input type="checkbox" class="btn-check" name="allergy-b" id="allergy-b-4"
+                              autocomplete="off">
+                            <label class="input-btn " for="allergy-b-4">魚類過敏</label>
+
+                            <input type="checkbox" class="btn-check" name="allergy-b" id="allergy-b-5"
+                              autocomplete="off">
+                            <label class="input-btn " for="allergy-b-5">塵蟎過敏</label>
+
+                            <input type="checkbox" class="btn-check" name="allergy-b" id="allergy-b-6"
+                              autocomplete="off">
+                            <label class="input-btn " for="allergy-b-6">跳蚤過敏</label>
+                          </div>
+                        </div>
+                        <div class="mb-5 ">
+                          <label class="form-label fs-2 fs-md-3 fw-medium" for="like-food-b-1">
+                            飲食偏好 </label>
+                          <div class="mb-2 d-flex text-nowrap flex-wrap gap-3">
+                            <input type="checkbox" class="btn-check" name="like-food-b" id="like-food-b-1"
+                              autocomplete="off" checked>
+                            <label class="input-btn " for="like-food-b-1">高蛋白</label>
+
+                            <input type="checkbox" class="btn-check" name="like-food-b" id="like-food-b-2"
+                              autocomplete="off">
+                            <label class="input-btn " for="like-food-b-2">乾食</label>
+
+                            <input type="checkbox" class="btn-check" name="like-food-b" id="like-food-b-3"
+                              autocomplete="off">
+                            <label class="input-btn " for="like-food-b-3">濕食</label>
+
+                            <input type="checkbox" class="btn-check" name="like-food-b" id="like-food-b-4"
+                              autocomplete="off">
+                            <label class="input-btn " for="like-food-b-4">天然食材</label>
+
+                            <input type="checkbox" class="btn-check" name="like-food-b" id="like-food-b-5"
+                              autocomplete="off">
+                            <label class="input-btn " for="like-food-b-5">蔬食</label>
+
+                            <input type="checkbox" class="btn-check" name="like-food-b" id="like-food-b-6"
+                              autocomplete="off">
+                            <label class="input-btn " for="like-food-b-6">高油脂</label>
+                          </div>
+                        </div>
+                        <div class="mb-5">
+                          <label class="form-label fs-2 fs-md-3 fw-medium" for="toy-b-1">
+                            玩具偏好</label>
+                          <div class="mb-2 d-flex text-nowrap flex-wrap gap-3">
+                            <input type="checkbox" class="btn-check" name="toy-b" id="toy-b-1" autocomplete="off"
+                              checked>
+                            <label class="input-btn " for="toy-b-1">耐咬玩具</label>
+
+                            <input type="checkbox" class="btn-check" name="toy-b" id="toy-b-2" autocomplete="off">
+                            <label class="input-btn " for="toy-b-2">牙齒清潔玩具</label>
+
+                            <input type="checkbox" class="btn-check" name="toy-b" id="toy-b-3" autocomplete="off">
+                            <label class="input-btn " for="toy-b-3">拔河玩具</label>
+
+                            <input type="checkbox" class="btn-check" name="toy-b" id="toy-b-4" autocomplete="off">
+                            <label class="input-btn " for="toy-b-4">球類</label>
+
+                            <input type="checkbox" class="btn-check" name="toy-b" id="toy-b-5" autocomplete="off">
+                            <label class="input-btn " for="toy-b-5">飛盤</label>
+
+                            <input type="checkbox" class="btn-check" name="toy-b" id="toy-b-6" autocomplete="off">
+                            <label class="input-btn " for="toy-b-6">絨毛玩具</label>
+
+                            <input type="checkbox" class="btn-check" name="toy-b" id="toy-b-7" autocomplete="off">
+                            <label class="input-btn " for="toy-b-7">智力玩具</label>
+
+                            <input type="checkbox" class="btn-check" name="toy-b" id="toy-b-8" autocomplete="off">
+                            <label class="input-btn " for="toy-b-8">發聲玩具</label>
+
+                            <input type="checkbox" class="btn-check" name="toy-b" id="toy-b-9" autocomplete="off">
+                            <label class="input-btn " for="toy-b-9">智能互動玩具</label>
+                          </div>
+                        </div>
+                      </form>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row gx-5 gy-4 gy-md-5 mb-3 mb-md-5">
+                <!-- 沒折扣單價格 -->
+                <div class="col-6 col-lg-4">
+                  <div class="sm-card">
+                    <div class="position-relative border-1 border-bottom border-neutral-100">
+                      <a href="production.html">
+                        <img src="../assets/images/Cat-9.png" alt="皇家室內成貓飼料">
+                      </a>
+                    </div>
+                    <div class="p-3 p-md-4 pb-5">
+                      <a href="production.html">
+                        <h3 class="fs-2 fs-md-4  mb-2 mb-4">皇家室內成貓飼料</h3>
+                      </a>
+                      <span class="mb-3 mb-md-5 d-flex align-items-center text-neutral-600 fs-1 fs-md-2">4.8 <img
+                          class="ms-1 ms-md-2 me-md-2" style="width: 16px;height: 16px;"
+                          src="../assets/images/icon/colored/Filled_=Yes.png" alt="黃色星號"><span
+                          class="fs-1 d-none d-xxl-block text-neutral-600">(
+                          1000+
+                          則評價)</span><span class="px-2">‧</span> <span class="me-2 ">已售</span><span class="">3萬</span>
+                      </span>
+                      <div class="d-flex align-items-center text-nowrap">
+                        <form class=" needs-validation" novalidate>
+                          <div class="d-flex gap-2">
+                            <input type="radio" class="btn-check" name="cat-product-1" id="cat-product-1-1"
+                              autocomplete="off" checked>
+                            <label class="card-btn fs-1 fs-md-2" for="cat-product-1-1">牛肉</label>
+
+                            <input type="radio" class="btn-check" name="cat-product-1" id="cat-product-1-2"
+                              autocomplete="off">
+                            <label class="card-btn fs-1 fs-md-2" for="cat-product-1-2">雞肉</label>
+
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                    <div class="d-flex justify-content-between ps-3 align-items-center">
+                      <span class="text-primary-300 fw-medium ">$45</span>
+                      <button type="button" class="mt-1 p-4 border-0 bg-neutral-0" data-bs-toggle="modal"
+                        data-bs-target="#sm-shoop-Modal">
+                        <img src="../assets/images/icon/Outline  Fill/Filled _=No-1.svg" alt="">
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <!-- 有折扣雙價格 -->
+                <div class="col-6 col-lg-4">
+                  <div class="sm-card">
+                    <div class="position-relative border-1 border-bottom border-neutral-100">
+                      <a href="production.html">
+                        <img src="../assets/images/Cat-8.png" alt="希爾思成貓健康配方">
+                      </a>
+                      <span
+                        class="position-absolute card-badge-position py-1 py-md-2 px-md-3 px-2 text-neutral-0 fw-medium bg-primary-300 rounded-1 fs-1 fs-md-3">7.3折</span>
+                    </div>
+                    <div class="p-3 p-md-4 pb-5">
+                      <a href="production.html">
+                        <h3 class="fs-2 fs-md-4  mb-2 mb-4">希爾思成貓健康配方</h3>
+                      </a>
+                      <span class="mb-3 mb-md-5 d-flex align-items-center text-neutral-600 fs-1 fs-md-2">4.6 <img
+                          class="ms-1 ms-md-2 me-md-2" style="width: 16px;height: 16px;"
+                          src="../assets/images/icon/colored/Filled_=Yes.png" alt="黃色星號"><span
+                          class="fs-1 d-none d-xxl-block text-neutral-600">(
+                          950
+                          則評價)</span><span class="px-2">‧</span> <span class="me-2 ">已售</span><span class="">2萬</span>
+                      </span>
+                      <div class="d-flex align-items-center text-nowrap">
+                        <form class=" needs-validation" novalidate>
+                          <div class="d-flex gap-2">
+                            <input type="radio" class="btn-check" name="cat-product-2" id="cat-product-2-1"
+                              autocomplete="off" checked>
+                            <label class="card-btn fs-1 fs-md-2" for="cat-product-2-1">1.5 kg</label>
+
+                            <input type="radio" class="btn-check" name="cat-product-2" id="cat-product-2-2"
+                              autocomplete="off">
+                            <label class="card-btn fs-1 fs-md-2" for="cat-product-2-2">2 kg</label>
+
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                    <div class="d-flex justify-content-between ps-3">
+                      <div class="d-flex flex-column flex-md-row align-items-md-center">
+                        <span class="text-neutral-400 fs-1 text-decoration-line-through me-md-2">$55</span>
+                        <span class="text-primary-300 fw-medium ">$40</span>
+                      </div>
+                      <button type="button" class="mt-1 p-4 border-0 bg-neutral-0" data-bs-toggle="modal"
+                        data-bs-target="#sm-shoop-Modal">
+                        <img src="../assets/images/icon/Outline  Fill/Filled _=No-1.svg" alt="">
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <!-- 有折扣雙價格 -->
+                <div class="col-6 col-lg-4">
+                  <div class="sm-card">
+                    <div class="position-relative border-1 border-bottom border-neutral-100">
+                      <a href="production.html">
+                        <img src="../assets/images/Cat-7.png" alt="渴望成貓無穀飼料">
+                      </a>
+                      <span
+                        class="position-absolute card-badge-position py-1 py-md-2 px-md-3 px-2 text-neutral-0 fw-medium bg-primary-300 rounded-1 fs-1 fs-md-3">7.1折</span>
+                    </div>
+                    <div class="p-3 p-md-4 pb-5">
+                      <a href="production.html">
+                        <h3 class="fs-2 fs-md-4  mb-2 mb-4">渴望成貓無穀飼料</h3>
+                      </a>
+                      <span class="mb-3 mb-md-5 d-flex align-items-center text-neutral-600 fs-1 fs-md-2">4.9 <img
+                          class="ms-1 ms-md-2 me-md-2" style="width: 16px;height: 16px;"
+                          src="../assets/images/icon/colored/Filled_=Yes.png" alt="黃色星號"><span
+                          class="fs-1 d-none d-xxl-block text-neutral-600">(
+                          1000+
+                          則評價)</span><span class="px-2">‧</span> <span class="me-2 ">已售</span><span class="">5萬</span>
+                      </span>
+                      <div class="d-flex align-items-center text-nowrap">
+                        <form class=" needs-validation" novalidate>
+                          <div class="d-flex gap-2">
+                            <input type="radio" class="btn-check" name="cat-product-3" id="cat-product-3-1"
+                              autocomplete="off" checked>
+                            <label class="card-btn fs-1 fs-md-2" for="cat-product-3-1">牛肉</label>
+
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                    <div class="d-flex justify-content-between ps-3">
+                      <div class="d-flex flex-column flex-md-row align-items-md-center">
+                        <span class="text-neutral-400 fs-1 text-decoration-line-through me-md-2">$70</span>
+                        <span class="text-primary-300 fw-medium ">$50</span>
+                      </div>
+                      <button type="button" class="mt-1 p-4 border-0 bg-neutral-0" data-bs-toggle="modal"
+                        data-bs-target="#sm-shoop-Modal">
+                        <img src="../assets/images/icon/Outline  Fill/Filled _=No-1.svg" alt="">
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-6 col-lg-4">
+                  <div class="sm-card">
+                    <div class="position-relative border-1 border-bottom border-neutral-100">
+                      <a href="production.html">
+                        <img src="../assets/images/Cat-6.png" alt="法國伯納天純貓飼料">
+                      </a>
+                      <span
+                        class="position-absolute card-badge-position py-1 py-md-2 px-md-3 px-2 text-neutral-0 fw-medium bg-primary-300 rounded-1 fs-1 fs-md-3">7.4折</span>
+                    </div>
+                    <div class="p-3 p-md-4 pb-5">
+                      <a href="production.html">
+                        <h3 class="fs-2 fs-md-4  mb-2 mb-4">法國伯納天純貓飼料</h3>
+                      </a>
+                      <span class="mb-3 mb-md-5 d-flex align-items-center text-neutral-600 fs-1 fs-md-2">4.7 <img
+                          class="ms-1 ms-md-2 me-md-2" style="width: 16px;height: 16px;"
+                          src="../assets/images/icon/colored/Filled_=Yes.png" alt="黃色星號"><span
+                          class="fs-1 d-none d-xxl-block text-neutral-600">(
+                          875
+                          則評價)</span><span class="px-2">‧</span> <span class="me-2 ">已售</span><span class="">1.5萬</span>
+                      </span>
+                      <div class="d-flex align-items-center text-nowrap">
+                        <form class=" needs-validation" novalidate>
+                          <div class="d-flex gap-2">
+                            <input type="radio" class="btn-check" name="cat-product-4" id="cat-product-4-1"
+                              autocomplete="off" checked>
+                            <label class="card-btn fs-1 fs-md-2" for="cat-product-4-1">2 kg</label>
+
+                            <input type="radio" class="btn-check" name="cat-product-4" id="cat-product-4-2"
+                              autocomplete="off">
+                            <label class="card-btn fs-1 fs-md-2" for="cat-product-4-2">4 kg</label>
+
+                            <input type="radio" class="btn-check" name="cat-product-4" id="cat-product-4-3"
+                              autocomplete="off">
+                            <label class="card-btn fs-1 fs-md-2" for="cat-product-4-3">8 kg</label>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                    <div class="d-flex justify-content-between ps-3">
+                      <div class="d-flex flex-column flex-md-row align-items-md-center">
+                        <span class="text-neutral-400 fs-1 text-decoration-line-through me-md-2">$65</span>
+                        <span class="text-primary-300 fw-medium ">$48</span>
+                      </div>
+                      <button type="button" class="mt-1 p-4 border-0 bg-neutral-0" data-bs-toggle="modal"
+                        data-bs-target="#sm-shoop-Modal">
+                        <img src="../assets/images/icon/Outline  Fill/Filled _=No-1.svg" alt="">
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-6 col-lg-4">
+                  <div class="sm-card">
+                    <div class="position-relative border-1 border-bottom border-neutral-100">
+                      <a href="production.html">
+                        <img src="../assets/images/Cat-5.png" alt="凱優健康成貓飼料">
+                      </a>
+                    </div>
+                    <div class="p-3 p-md-4 pb-5">
+                      <a href="production.html">
+                        <h3 class="fs-2 fs-md-4  mb-2 mb-4">凱優健康成貓飼料</h3>
+                      </a>
+                      <span class="mb-3 mb-md-5 d-flex align-items-center text-neutral-600 fs-1 fs-md-2">4.5 <img
+                          class="ms-1 ms-md-2 me-md-2" style="width: 16px;height: 16px;"
+                          src="../assets/images/icon/colored/Filled_=Yes.png" alt="黃色星號"><span
+                          class="fs-1 d-none d-xxl-block text-neutral-600">(
+                          1000+
+                          則評價)</span><span class="px-2 px-xxl-0">‧</span> <span class="me-2 ">已售</span><span
+                          class="">2.5萬</span>
+                      </span>
+                      <div class="d-flex align-items-center text-nowrap">
+                        <form class=" needs-validation" novalidate>
+                          <div class="d-flex gap-2">
+                            <input type="radio" class="btn-check" name="cat-product-5" id="cat-product-5-1"
+                              autocomplete="off" checked>
+                            <label class="card-btn fs-1 fs-md-2" for="cat-product-5-1">牛肉</label>
+
+                            <input type="radio" class="btn-check" name="cat-product-5" id="cat-product-5-2"
+                              autocomplete="off">
+                            <label class="card-btn fs-1 fs-md-2" for="cat-product-5-2">雞肉</label>
+
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                    <div class="d-flex justify-content-between ps-3 align-items-center">
+                      <span class="text-primary-300 fw-medium ">$38</span>
+                      <button type="button" class="mt-1 p-4 border-0 bg-neutral-0" data-bs-toggle="modal"
+                        data-bs-target="#sm-shoop-Modal">
+                        <img src="../assets/images/icon/Outline  Fill/Filled _=No-1.svg" alt="">
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-6 col-lg-4">
+                  <div class="sm-card">
+                    <div class="position-relative border-1 border-bottom border-neutral-100">
+                      <a href="production.html">
+                        <img src="../assets/images/Dog-16.png" alt="海洋之星成貓配方">
+                      </a>
+                      <span
+                        class="position-absolute card-badge-position py-1 py-md-2 px-md-3 px-2 text-neutral-0 fw-medium bg-primary-300 rounded-1 fs-1 fs-md-3">7.4折</span>
+                    </div>
+                    <div class="p-3 p-md-4 pb-5">
+                      <a href="production.html">
+                        <h3 class="fs-2 fs-md-4  mb-2 mb-4">海洋之星成貓配方</h3>
+                      </a>
+                      <span class="mb-3 mb-md-5 d-flex align-items-center text-neutral-600 fs-1 fs-md-2">4.4 <img
+                          class="ms-1 ms-md-2 me-md-2" style="width: 16px;height: 16px;"
+                          src="../assets/images/icon/colored/Filled_=Yes.png" alt="黃色星號"><span
+                          class="fs-1 d-none d-xxl-block text-neutral-600">(
+                          800
+                          則評價)</span><span class="px-2">‧</span> <span class="me-2 ">已售</span><span class="">1.2萬</span>
+                      </span>
+                      <div class="d-flex align-items-center text-nowrap">
+                        <form class=" needs-validation" novalidate>
+                          <div class="d-flex gap-2">
+                            <input type="radio" class="btn-check" name="cat-product-6" id="cat-product-6-1"
+                              autocomplete="off" checked>
+                            <label class="card-btn fs-1 fs-md-2" for="cat-product-6-1">10 lb</label>
+
+                            <input type="radio" class="btn-check" name="cat-product-6" id="cat-product-6-2"
+                              autocomplete="off">
+                            <label class="card-btn fs-1 fs-md-2" for="cat-product-6-2">15 lb</label>
+
+                            <input type="radio" class="btn-check" name="cat-product-6" id="cat-product-6-3"
+                              autocomplete="off">
+                            <label class="card-btn fs-1 fs-md-2" for="cat-product-6-3">20 lb</label>
+
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                    <div class="d-flex justify-content-between ps-3">
+                      <div class="d-flex flex-column flex-md-row align-items-md-center">
+                        <span class="text-neutral-400 fs-1 text-decoration-line-through me-md-2">$58</span>
+                        <span class="text-primary-300 fw-medium ">$43</span>
+                      </div>
+                      <button type="button" class="mt-1 p-4 border-0 bg-neutral-0" data-bs-toggle="modal"
+                        data-bs-target="#sm-shoop-Modal">
+                        <img src="../assets/images/icon/Outline  Fill/Filled _=No-1.svg" alt="">
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-6 col-lg-4">
+                  <div class="sm-card">
+                    <div class="position-relative border-1 border-bottom border-neutral-100">
+                      <a href="production.html">
+                        <img src="../assets/images/cat-3.png" alt="鴻樂成貓營養飼料">
+                      </a>
+                    </div>
+                    <div class="p-3 p-md-4 pb-5">
+                      <a href="production.html">
+                        <h3 class="fs-2 fs-md-4  mb-2 mb-4">鴻樂成貓營養飼料</h3>
+                      </a>
+                      <span class="mb-3 mb-md-5 d-flex align-items-center text-neutral-600 fs-1 fs-md-2">4.8 <img
+                          class="ms-1 ms-md-2 me-md-2" style="width: 16px;height: 16px;"
+                          src="../assets/images/icon/colored/Filled_=Yes.png" alt="黃色星號"><span
+                          class="fs-1 d-none d-xxl-block text-neutral-600">(
+                          1000+
+                          則評價)</span><span class="px-2">‧</span> <span class="me-2 ">已售</span><span class="">3萬</span>
+                      </span>
+                      <div class="d-flex align-items-center text-nowrap">
+                        <form class=" needs-validation" novalidate>
+                          <div class="d-flex gap-2">
+                            <input type="radio" class="btn-check" name="cat-product-7" id="cat-product-7-1"
+                              autocomplete="off" checked>
+                            <label class="card-btn fs-1 fs-md-2" for="cat-product-7-1">牛肉</label>
+
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                    <div class="d-flex justify-content-between ps-3 align-items-center">
+                      <span class="text-primary-300 fw-medium ">$47</span>
+                      <button type="button" class="mt-1 p-4 border-0 bg-neutral-0" data-bs-toggle="modal"
+                        data-bs-target="#sm-shoop-Modal">
+                        <img src="../assets/images/icon/Outline  Fill/Filled _=No-1.svg" alt="">
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-6 col-lg-4">
+                  <div class="sm-card">
+                    <div class="position-relative border-1 border-bottom border-neutral-100">
+                      <a href="production.html">
+                        <img src="../assets/images/cat-2.png" alt="紐崔斯貓飼料原味配方">
+                      </a>
+                      <span
+                        class="position-absolute card-badge-position py-1 py-md-2 px-md-3 px-2 text-neutral-0 fw-medium bg-primary-300 rounded-1 fs-1 fs-md-3">7.7折</span>
+                    </div>
+                    <div class="p-3 p-md-4 pb-5">
+                      <a href="production.html">
+                        <h3 class="fs-2 fs-md-4  mb-2 mb-4 overflow-hidden text-nowrap">紐崔斯貓飼料原味配方</h3>
+                      </a>
+                      <span class="mb-3 mb-md-5 d-flex align-items-center text-neutral-600 fs-1 fs-md-2">4.6 <img
+                          class="ms-1 ms-md-2 me-md-2" style="width: 16px;height: 16px;"
+                          src="../assets/images/icon/colored/Filled_=Yes.png" alt="黃色星號"><span
+                          class="fs-1 d-none d-xxl-block text-neutral-600">(
+                          930
+                          則評價)</span><span class="px-2">‧</span> <span class="me-2 ">已售</span><span class="">2.2萬</span>
+                      </span>
+                      <div class="d-flex align-items-center text-nowrap">
+                        <form class=" needs-validation" novalidate>
+                          <div class="d-flex gap-2">
+                            <input type="radio" class="btn-check" name="cat-product-8" id="cat-product-8-1"
+                              autocomplete="off" checked>
+                            <label class="card-btn fs-1 fs-md-2" for="cat-product-8-1">7 lb</label>
+
+                            <input type="radio" class="btn-check" name="cat-product-8" id="cat-product-8-2"
+                              autocomplete="off">
+                            <label class="card-btn fs-1 fs-md-2" for="cat-product-8-2">10 lb</label>
+
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                    <div class="d-flex justify-content-between ps-3">
+                      <div class="d-flex flex-column flex-md-row align-items-md-center">
+                        <span class="text-neutral-400 fs-1 text-decoration-line-through me-md-2">$68</span>
+                        <span class="text-primary-300 fw-medium ">$52</span>
+                      </div>
+                      <button type="button" class="mt-1 p-4 border-0 bg-neutral-0" data-bs-toggle="modal"
+                        data-bs-target="#sm-shoop-Modal">
+                        <img src="../assets/images/icon/Outline  Fill/Filled _=No-1.svg" alt="">
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-6 col-lg-4 ">
+                  <div class="sm-card">
+                    <div class="position-relative border-1 border-bottom border-neutral-100">
+                      <a href="production.html">
+                        <img src="../assets/images/cat-1.png" alt="愛肯拿無穀成貓飼料">
+                      </a>
+                    </div>
+                    <div class="p-3 p-md-4 pb-5">
+                      <a href="production.html">
+                        <h3 class="fs-2 fs-md-4  mb-2 mb-4">愛肯拿無穀成貓飼料</h3>
+                      </a>
+                      <span class="mb-3 mb-md-5 d-flex align-items-center text-neutral-600 fs-1 fs-md-2">4.9 <img
+                          class="ms-1 ms-md-2 me-md-2" style="width: 16px;height: 16px;"
+                          src="../assets/images/icon/colored/Filled_=Yes.png" alt="黃色星號"><span
+                          class="fs-1 d-none d-xxl-block text-neutral-600">(
+                          1000+
+                          則評價)</span><span class="px-2">‧</span> <span class="me-2 ">已售</span><span class="">4萬</span>
+                      </span>
+                      <div class="d-flex align-items-center text-nowrap">
+                        <form class=" needs-validation" novalidate>
+                          <div class="d-flex gap-2">
+                            <input type="radio" class="btn-check" name="cat-product-9" id="cat-product-9-1"
+                              autocomplete="off" checked>
+                            <label class="card-btn fs-1 fs-md-2" for="cat-product-9-1">牛肉</label>
+
+                            <input type="radio" class="btn-check" name="cat-product-9" id="cat-product-9-2"
+                              autocomplete="off">
+                            <label class="card-btn fs-1 fs-md-2" for="cat-product-9-2">雞肉</label>
+
+                            <input type="radio" class="btn-check" name="cat-product-9" id="cat-product-9-3"
+                              autocomplete="off">
+                            <label class="card-btn fs-1 fs-md-2" for="cat-product-9-3">海鮮</label>
+
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                    <div class="d-flex justify-content-between ps-3 align-items-center">
+                      <span class="text-primary-300 fw-medium ">$55</span>
+                      <button type="button" class="mt-1 p-4 border-0 bg-neutral-0" data-bs-toggle="modal"
+                        data-bs-target="#sm-shoop-Modal">
+                        <img src="../assets/images/icon/Outline  Fill/Filled _=No-1.svg" alt="">
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-6 col-lg-4">
+                  <div class="sm-card">
+                    <div class="position-relative border-1 border-bottom border-neutral-100">
+                      <img src="../assets/images/Cat.png" alt="渴望貓糧全期配方">
+                      <span
+                        class="position-absolute card-badge-position py-1 py-md-2 px-md-3 px-2 text-neutral-0 fw-medium bg-primary-300 rounded-1 fs-1 fs-md-3">7.4折</span>
+                    </div>
+                    <div class="p-3 p-md-4 pb-5">
+                      <h3 class="fs-2 fs-md-4  mb-2 mb-4">渴望貓糧全期配方</h3>
+                      <span class="mb-3 mb-md-5 d-flex align-items-center text-neutral-600 fs-1 fs-md-2">4.8 <img
+                          class="ms-1 ms-md-2 me-md-2" style="width: 16px;height: 16px;"
+                          src="../assets/images/icon/colored/Filled_=Yes.png" alt="黃色星號"><span
+                          class="fs-1 d-none d-xxl-block text-neutral-600">(
+                          1000+
+                          則評價)</span><span class="px-2">‧</span> <span class="me-2 ">已售</span><span class="">3.7萬</span>
+                      </span>
+                      <div class="d-flex align-items-center text-nowrap">
+                        <form class=" needs-validation" novalidate>
+                          <div class="d-flex gap-2">
+                            <input type="radio" class="btn-check" name="cat-product-10" id="cat-product-10-1"
+                              autocomplete="off" checked>
+                            <label class="card-btn fs-1 fs-md-2" for="cat-product-10-1">牛肉</label>
+
+                            <input type="radio" class="btn-check" name="cat-product-10" id="cat-product-10-2"
+                              autocomplete="off">
+                            <label class="card-btn fs-1 fs-md-2" for="cat-product-10-2">雞肉</label>
+
+                            <input type="radio" class="btn-check" name="cat-product-10" id="cat-product-10-3"
+                              autocomplete="off">
+                            <label class="card-btn fs-1 fs-md-2" for="cat-product-10-3">海鮮</label>
+
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                    <div class="d-flex justify-content-between ps-3">
+                      <div class="d-flex flex-column flex-md-row align-items-md-center">
+                        <span class="text-neutral-400 fs-1 text-decoration-line-through me-md-2">$74</span>
+                        <span class="text-primary-300 fw-medium ">$55</span>
+                      </div>
+                      <button type="button" class="mt-1 p-4 border-0 bg-neutral-0" data-bs-toggle="modal"
+                        data-bs-target="#sm-shoop-Modal">
+                        <img src="../assets/images/icon/Outline  Fill/Filled _=No-1.svg" alt="">
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-6 col-lg-4">
+                  <div class="sm-card">
+                    <div class="position-relative border-1 border-bottom border-neutral-100">
+                      <img src="../assets/images/Cat-11.png" alt="渴望高蛋白成貓飼料">
+                      <span
+                        class="position-absolute card-badge-position py-1 py-md-2 px-md-3 px-2 text-neutral-0 fw-medium bg-primary-300 rounded-1 fs-1 fs-md-3">7.5折</span>
+                    </div>
+                    <div class="p-3 p-md-4 pb-5">
+                      <h3 class="fs-2 fs-md-4  mb-2 mb-4">渴望高蛋白成貓飼料</h3>
+                      <span class="mb-3 mb-md-5 d-flex align-items-center text-neutral-600 fs-1 fs-md-2">4.9 <img
+                          class="ms-1 ms-md-2 me-md-2" style="width: 16px;height: 16px;"
+                          src="../assets/images/icon/colored/Filled_=Yes.png" alt="黃色星號"><span
+                          class="fs-1 d-none d-xxl-block text-neutral-600">(
+                          1000+
+                          則評價)</span><span class="px-2">‧</span> <span class="me-2 ">已售</span><span class="">4.5萬</span>
+                      </span>
+                      <div class="d-flex align-items-center text-nowrap">
+                        <form class=" needs-validation" novalidate>
+                          <div class="d-flex gap-2">
+                            <input type="radio" class="btn-check" name="cat-product-11" id="cat-product-11-1"
+                              autocomplete="off" checked>
+                            <label class="card-btn fs-1 fs-md-2" for="cat-product-11-1">2 kg</label>
+
+                            <input type="radio" class="btn-check" name="cat-product-11" id="cat-product-11-2"
+                              autocomplete="off">
+                            <label class="card-btn fs-1 fs-md-2" for="cat-product-11-2">4 kg</label>
+
+                            <input type="radio" class="btn-check" name="cat-product-11" id="cat-product-11-3"
+                              autocomplete="off">
+                            <label class="card-btn fs-1 fs-md-2" for="cat-product-11-3">8 kg</label>
+
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                    <div class="d-flex justify-content-between ps-3">
+                      <div class="d-flex flex-column flex-md-row align-items-md-center">
+                        <span class="text-neutral-400 fs-1 text-decoration-line-through me-md-2">$80</span>
+                        <span class="text-primary-300 fw-medium ">$60</span>
+                      </div>
+                      <button type="button" class="mt-1 p-4 border-0 bg-neutral-0" data-bs-toggle="modal"
+                        data-bs-target="#sm-shoop-Modal">
+                        <img src="../assets/images/icon/Outline  Fill/Filled _=No-1.svg" alt="">
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-6 col-lg-4">
+                  <div class="sm-card">
+                    <div class="position-relative border-1 border-bottom border-neutral-100">
+                      <img src="../assets/images/Cat-10.png" alt="愛咪無穀成貓飼料">
+                      <span
+                        class="position-absolute card-badge-position py-1 py-md-2 px-md-3 px-2 text-neutral-0 fw-medium bg-primary-300 rounded-1 fs-1 fs-md-3">7.4折</span>
+                    </div>
+                    <div class="p-3 p-md-4 pb-5">
+                      <h3 class="fs-2 fs-md-4  mb-2 mb-4">愛咪無穀成貓飼料</h3>
+                      <span class="mb-3 mb-md-5 d-flex align-items-center text-neutral-600 fs-1 fs-md-2">4.8 <img
+                          class="ms-1 ms-md-2 me-md-2" style="width: 16px;height: 16px;"
+                          src="../assets/images/icon/colored/Filled_=Yes.png" alt="黃色星號"><span
+                          class="fs-1 d-none d-xxl-block text-neutral-600">(
+                          1000+
+                          則評價)</span><span class="px-2">‧</span> <span class="me-2 ">已售</span><span class="">3.2萬</span>
+                      </span>
+                      <div class="d-flex align-items-center text-nowrap">
+                        <form class=" needs-validation" novalidate>
+                          <div class="d-flex gap-2">
+                            <input type="radio" class="btn-check" name="cat-product-12" id="cat-product-12-1"
+                              autocomplete="off" checked>
+                            <label class="card-btn fs-1 fs-md-2" for="cat-product-12-1">5 kg</label>
+
+                            <input type="radio" class="btn-check" name="cat-product-12" id="cat-product-12-2"
+                              autocomplete="off">
+                            <label class="card-btn fs-1 fs-md-2" for="cat-product-12-2">10 kg</label>
+
+                            <input type="radio" class="btn-check" name="cat-product-12" id="cat-product-12-3"
+                              autocomplete="off">
+                            <label class="card-btn fs-1 fs-md-2" for="cat-product-12-3">15 kg</label>
+
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                    <div class="d-flex justify-content-between ps-3">
+                      <div class="d-flex flex-column flex-md-row align-items-md-center">
+                        <span class="text-neutral-400 fs-1 text-decoration-line-through me-md-2">$66</span>
+                        <span class="text-primary-300 fw-medium ">$49</span>
+                      </div>
+                      <button type="button" class="mt-1 p-4 border-0 bg-neutral-0" data-bs-toggle="modal"
+                        data-bs-target="#sm-shoop-Modal">
+                        <img src="../assets/images/icon/Outline  Fill/Filled _=No-1.svg" alt="">
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-6 col-lg-4">
+                  <div class="sm-card">
+                    <div class="position-relative border-1 border-bottom border-neutral-100">
+                      <img src="../assets/images/Cat-12.png" alt="海洋之星成貓配方">
+                      <span
+                        class="position-absolute card-badge-position py-1 py-md-2 px-md-3 px-2 text-neutral-0 fw-medium bg-primary-300 rounded-1 fs-1 fs-md-3">7.4折</span>
+                    </div>
+                    <div class="p-3 p-md-4 pb-5">
+                      <h3 class="fs-2 fs-md-4  mb-2 mb-4">海洋之星成貓配方</h3>
+                      <span class="mb-3 mb-md-5 d-flex align-items-center text-neutral-600 fs-1 fs-md-2">4.4<img
+                          class="ms-1 ms-md-2 me-md-2" style="width: 16px;height: 16px;"
+                          src="../assets/images/icon/colored/Filled_=Yes.png" alt="黃色星號"><span
+                          class="fs-1 d-none d-xxl-block text-neutral-600">(
+                          800
+                          則評價)</span><span class="px-2">‧</span> <span class="me-2 ">已售</span><span class="">1.2萬</span>
+                      </span>
+                      <div class="d-flex align-items-center text-nowrap">
+                        <form class=" needs-validation" novalidate>
+                          <div class="d-flex gap-2">
+                            <input type="radio" class="btn-check" name="cat-product-13" id="cat-product-13-1"
+                              autocomplete="off" checked>
+                            <label class="card-btn fs-1 fs-md-2" for="cat-product-13-1">5 kg</label>
+
+                            <input type="radio" class="btn-check" name="cat-product-13" id="cat-product-13-2"
+                              autocomplete="off">
+                            <label class="card-btn fs-1 fs-md-2" for="cat-product-13-2">10 kg</label>
+
+                            <input type="radio" class="btn-check" name="cat-product-13" id="cat-product-13-3"
+                              autocomplete="off">
+                            <label class="card-btn fs-1 fs-md-2" for="cat-product-13-3">15 kg</label>
+
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                    <div class="d-flex justify-content-between ps-3">
+                      <div class="d-flex flex-column flex-md-row align-items-md-center">
+                        <span class="text-neutral-400 fs-1 text-decoration-line-through me-md-2">$58</span>
+                        <span class="text-primary-300 fw-medium ">$43</span>
+                      </div>
+                      <button type="button" class="mt-1 p-4 border-0 bg-neutral-0" data-bs-toggle="modal"
+                        data-bs-target="#sm-shoop-Modal">
+                        <img src="../assets/images/icon/Outline  Fill/Filled _=No-1.svg" alt="">
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-6 col-lg-4">
+                  <div class="sm-card">
+                    <div class="position-relative border-1 border-bottom border-neutral-100">
+                      <img src="../assets/images/Cat-34.png" alt="海洋之星成貓配方">
+                      <span
+                        class="position-absolute card-badge-position py-1 py-md-2 px-md-3 px-2 text-neutral-0 fw-medium bg-primary-300 rounded-1 fs-1 fs-md-3">7.3折</span>
+                    </div>
+                    <div class="p-3 p-md-4 pb-5">
+                      <h3 class="fs-2 fs-md-4  mb-2 mb-4">海洋之星成貓配方</h3>
+                      <span class="mb-3 mb-md-5 d-flex align-items-center text-neutral-600 fs-1 fs-md-2">4.9<img
+                          class="ms-1 ms-md-2 me-md-2" style="width: 16px;height: 16px;"
+                          src="../assets/images/icon/colored/Filled_=Yes.png" alt="黃色星號"><span
+                          class="fs-1 d-none d-xxl-block text-neutral-600">(
+                          1000+
+                          則評價)</span><span class="px-2">‧</span> <span class="me-2 ">已售</span><span class="">4萬</span>
+                      </span>
+                      <form class=" needs-validation" novalidate>
+                        <div class="d-flex gap-2">
+                          <input type="radio" class="btn-check" name="cat-product-14" id="cat-product-14-1"
+                            autocomplete="off" checked>
+                          <label class="card-btn fs-1 fs-md-2" for="cat-product-14-1">7 lb</label>
+
+                          <input type="radio" class="btn-check" name="cat-product-14" id="cat-product-14-2"
+                            autocomplete="off">
+                          <label class="card-btn fs-1 fs-md-2" for="cat-product-14-2">10 lb</label>
+
+                        </div>
+                      </form>
+                    </div>
+                    <div class="d-flex justify-content-between ps-3">
+                      <div class="d-flex flex-column flex-md-row align-items-md-center">
+                        <span class="text-neutral-400 fs-1 text-decoration-line-through me-md-2">$58</span>
+                        <span class="text-primary-300 fw-medium ">$43</span>
+                      </div>
+                      <button type="button" class="mt-1 p-4 border-0 bg-neutral-0" data-bs-toggle="modal"
+                        data-bs-target="#sm-shoop-Modal">
+                        <img src="../assets/images/icon/Outline  Fill/Filled _=No-1.svg" alt="">
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-6 col-lg-4 d-none d-lg-block">
+                  <div class="sm-card">
+                    <div class="position-relative border-1 border-bottom border-neutral-100">
+                      <img src="../assets/images/Cat-15.png" alt="渴望成貓無穀飼料">
+                      <span
+                        class="position-absolute card-badge-position py-1 py-md-2 px-md-3 px-2 text-neutral-0 fw-medium bg-primary-300 rounded-1 fs-1 fs-md-3">7.1折</span>
+                    </div>
+                    <div class="p-3 p-md-4 pb-5">
+                      <h3 class="fs-2 fs-md-4  mb-2 mb-4">渴望成貓無穀飼料</h3>
+                      <span class="mb-3 mb-md-5 d-flex align-items-center text-neutral-600 fs-1 fs-md-2">4.9<img
+                          class="ms-1 ms-md-2 me-md-2" style="width: 16px;height: 16px;"
+                          src="../assets/images/icon/colored/Filled_=Yes.png" alt="黃色星號"><span
+                          class="fs-1 d-none d-xxl-block text-neutral-600">(
+                          1000+
+                          則評價)</span><span class="px-2">‧</span> <span class="me-2 ">已售</span><span class="">5萬</span>
+                      </span>
+                      <form class=" needs-validation" novalidate>
+                        <div class="d-flex gap-2">
+                          <input type="radio" class="btn-check" name="cat-product-15" id="cat-product-15-1"
+                            autocomplete="off" checked>
+                          <label class="card-btn fs-1 fs-md-2" for="cat-product-15-1">1 kg</label>
+
+                          <input type="radio" class="btn-check" name="cat-product-15" id="cat-product-15-2"
+                            autocomplete="off">
+                          <label class="card-btn fs-1 fs-md-2" for="cat-product-15-2">2 kg</label>
+
+                          <input type="radio" class="btn-check" name="cat-product-15" id="cat-product-15-3"
+                            autocomplete="off">
+                          <label class="card-btn fs-1 fs-md-2" for="cat-product-15-3">3kg</label>
+
+                          <input type="radio" class="btn-check" name="cat-product-15" id="cat-product-15-4"
+                            autocomplete="off">
+                          <label class="card-btn fs-1 fs-md-2" for="cat-product-15-4">4 kg</label>
+
+                        </div>
+                      </form>
+                    </div>
+                    <div class="d-flex justify-content-between ps-3">
+                      <div class="d-flex flex-column flex-md-row align-items-md-center">
+                        <span class="text-neutral-400 fs-1 text-decoration-line-through me-md-2">$58</span>
+                        <span class="text-primary-300 fw-medium ">$43</span>
+                      </div>
+                      <button type="button" class="mt-1 p-4 border-0 bg-neutral-0" data-bs-toggle="modal"
+                        data-bs-target="#sm-shoop-Modal">
+                        <img src="../assets/images/icon/Outline  Fill/Filled _=No-1.svg" alt="">
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--購物車 Modal start-->
+      <div class="modal fade " id="sm-shoop-Modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div
+          class="modal-dialog modal-mw-none vh-100 vw-100 m-0 tf-up d-flex flex-column-reverse modal-dialog-scrollable flex-md-row mx-auto">
+          <div class="modal-content vh-85 sm-modal-rounded my-md-auto">
+            <div class="modal-header modal-header-boder justify-content-center py-2 py-md-5">
+              <button type="button" class="modal-btn-sm border-0 d-md-none" data-bs-dismiss="modal"
+                aria-label="Close"></button>
+              <button type="button" class="btn-close border-0 d-none d-md-block ms-auto" data-bs-dismiss="modal"
+                aria-label="Close"></button>
+            </div>
+            <div class="modal-body pb-0 d-lg-flex p-lg-6 pb-lg-0">
+              <div class="w-lg-50 overflow-x-hidden scroll-hidden pe-lg-4">
+                <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff"
+                  class="Swiper thumbs-Swiper-3">
+                  <div class="swiper-wrapper ">
+                    <div class="swiper-slide ">
+                      <img src="../assets/images/modal-2.png" />
+                    </div>
+                    <div class="swiper-slide ">
+                      <img src="../assets/images/modal-3.png" />
+                    </div>
+                    <div class="swiper-slide ">
+                      <img src="../assets/images/modal-1.png" />
+                    </div>
+                    <div class="swiper-slide ">
+                      <img src="../assets/images/modal-4.png" />
+                    </div>
+                    <div class="swiper-slide ">
+                      <img src="../assets/images/modal-5.png" />
+                    </div>
+                  </div>
+                  <!-- <div class="swiper-button-next"></div>
+                      <div class="swiper-button-prev"></div> -->
+                </div>
+                <div class="d-flex justify-content-center position-relative">
+                  <div class="swiper-button-prev-2 d-none d-lg-block p-4  position-absolute"
+                    style="top: 20%; left: 0%;">
+                    <span class="material-symbols-outlined ">
+                      chevron_left
+                    </span>
+                  </div>
+                  <div class="swiper-button-next-2 d-none d-lg-block p-4 position-absolute"
+                    style="top: 20%; left: 90%;"><span class="material-symbols-outlined ">
+                      chevron_right
+                    </span></div>
+                  <div thumbsSlider="" class="thumbs-Swiper-4 Swiper mb-5">
+                    <div class="swiper-wrapper justify-content-center">
+                      <div class="swiper-slide overflow-hidden">
+                        <img src="../assets/images/modal-2.png" />
+                      </div>
+                      <div class="swiper-slide overflow-hidden">
+                        <img src="../assets/images/modal-3.png" />
+                      </div>
+                      <div class="swiper-slide overflow-hidden">
+                        <img src="../assets/images/modal-1.png" />
+                      </div>
+                      <div class="swiper-slide overflow-hidden">
+                        <img src="../assets/images/modal-4.png" />
+                      </div>
+                      <div class="swiper-slide overflow-hidden">
+                        <img src="../assets/images/modal-5.png" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="w-lg-50 ps-lg-4 d-flex flex-column">
+                <h3 class="fs-5 fs-md-6 fw-medium text-neutral-700 mb-5 mb-lg-6">歐睿健 六種鮮魚無穀配方85%優質肉含量 貓顆粒乾糧</h3>
+                <h4 class="fw-normal fs-3 mb-3">口味</h4>
+                <div class="d-flex mb-5 mb-lg-6">
+                  <input type="radio" class="btn-check" name="meat" id="option1" autocomplete="off" checked>
+                  <label class="modal-btn d-flex me-3 align-items-center justify-content-center"
+                    for="option1">牛肉</label>
+
+                  <input type="radio" class="btn-check" name="meat" id="option2" autocomplete="off">
+                  <label class="modal-btn d-flex me-3 align-items-center justify-content-center"
+                    for="option2">雞肉</label>
+
+                  <input type="radio" class="btn-check" name="meat" id="option3" autocomplete="off">
+                  <label class="modal-btn d-flex me-3 align-items-center justify-content-center"
+                    for="option3">海鮮</label>
+
+                  <input type="radio" class="btn-check" name="meat" id="option4" autocomplete="off">
+                  <label class="modal-btn d-flex align-items-center justify-content-center" for="option4">綜合</label>
+                </div>
+                <h4 class="fw-normal fs-3 mb-3">規格</h4>
+                <div class="d-flex mb-5 mb-lg-6 flex-wrap gap-3">
+                  <input type="radio" class="btn-check" name="size" id="size-1" autocomplete="off" checked>
+                  <label class="modal-btn d-flex flex-column align-items-center text-nowrap" for="size-1">4磅(袋)<span
+                      class="text-neutral-500 fs-1">$280/磅</span></label>
+                  <input type="radio" class="btn-check" name="size" id="size-2" autocomplete="off" disabled>
+                  <label class="modal-btn d-flex flex-column align-items-center text-nowrap" for="size-2">4磅x2(袋)<span
+                      class="text-neutral-500 fs-1">完售</span></label>
+                  <input type="radio" class="btn-check" name="size" id="size-3" autocomplete="off">
+                  <label class="modal-btn d-flex flex-column align-items-center text-nowrap" for="size-3">7磅(袋)<span
+                      class="text-neutral-500 fs-1">$244/磅</span></label>
+                  <input type="radio" class="btn-check" name="size" id="size-4" autocomplete="off">
+                  <label class="modal-btn d-flex flex-column align-items-center text-nowrap" for="size-4">12磅(袋)<span
+                      class="text-neutral-500 fs-1">$210/磅</span></label>
+                </div>
+                <h4 class="fw-normal fs-3 mb-3">方案</h4>
+                <div class="d-flex mb-5 mb-lg-6">
+                  <input type="radio" class="btn-check" name="plan" id="plan-1" autocomplete="off" checked>
+                  <label class="modal-btn d-flex me-3 flex-column align-items-center" for="plan-1">$ 598<span
+                      class="text-neutral-500 fs-1">非會員</span></label>
+                  <input type="radio" class="btn-check" name="plan" id="plan-2" autocomplete="off">
+                  <label class="modal-btn d-flex me-3 flex-column align-items-center" for="plan-2">$ 398<span
+                      class="text-neutral-500 fs-1">會員現折 200</span></label>
+                </div>
+                <div class="rounded-full text-center bg-primary-300 py-3 mt-auto d-none d-lg-block"
+                  style="width: 460px; bottom: 0px;right: 0px;">
+                  <a class="d-block fw-medium link-neutral-0" href="#">加入購物車</a>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer rounded-0 border-0 p-5 pt-6 d-lg-none">
+              <div class="w-100 rounded-full text-center bg-primary-300 py-3 ">
+                <a class="d-block fw-medium link-neutral-0" href="#">加入購物車</a>
+              </div>
+            </div>
+            <div class="modal-footer lg-modal-footer p-0 border-0 d-none d-lg-block">
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--購物車 Modal end -->
+      <%- include('./layout/footer'); -%>
+        <!-- //swiper -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <script type="module" src="../main.js"></script>
+        <!-- 縮略圖 -->
+        <script>
+          var swiper = new Swiper(".thumbs-Swiper-4", {
+            spaceBetween: 12,
+            slidesPerView: 5,
+            freeMode: true,
+            watchSlidesProgress: true,
+            breakpoints: {
+              992: {  //当屏幕宽度大于等于1280
+                spaceBetween: 12,
+                slidesPerView: 3.5,
+                slidesOffsetBefore: 100,
+                navigation: {
+                  nextEl: '.swiper-button-next-2',
+                  prevEl: '.swiper-button-prev-2',
+                },
+              },
+            },
+          });
+          var swiper2 = new Swiper(".thumbs-Swiper-3", {
+            spaceBetween: 16,
+            // navigation: {
+            //   nextEl: ".swiper-button-next",
+            //   prevEl: ".swiper-button-prev",
+            // },
+            breakpoints: {
+              992: {  //当屏幕宽度大于等于1280
+                spaceBetween: 24,
+              },
+            },
+            thumbs: {
+              swiper: swiper,
+            },
+          });
+        </script>
+
+
+
+        <script>
+          var swiper = new Swiper(".thumbs-Swiper", {
+            spaceBetween: 12,
+            slidesPerView: 5,
+            freeMode: true,
+            watchSlidesProgress: true,
+            breakpoints: {
+              992: {  //当屏幕宽度大于等于1280
+                spaceBetween: 12,
+                slidesPerView: 3.5,
+                slidesOffsetBefore: 100,
+                navigation: {
+                  nextEl: '.swiper-button-next-2',
+                  prevEl: '.swiper-button-prev-2',
+                },
+              },
+            },
+          });
+          var swiper2 = new Swiper(".thumbs-Swiper-2", {
+            spaceBetween: 16,
+            // navigation: {
+            //   nextEl: ".swiper-button-next",
+            //   prevEl: ".swiper-button-prev",
+            // },
+            breakpoints: {
+              992: {  //当屏幕宽度大于等于1280
+                spaceBetween: 24,
+              },
+            },
+            thumbs: {
+              swiper: swiper,
+            },
+          });
+        </script>
+        <!-- 滾動特效 -->
+        <script>
+          window.addEventListener('scroll', function () {
+            var scrollPosition = window.scrollY;  // 當前滾動位置
+            var viewportHeight = window.innerHeight;  // 當前視窗的高度
+            var documentHeight = document.documentElement.scrollHeight;  // 文件總高度
+            var distanceFromBottom = documentHeight - (scrollPosition + viewportHeight);  // 計算滾動到頁面底部的距離
+            var button = document.getElementById('buycar');
+
+            if (distanceFromBottom < 772) {  // 假設滾動到離底部300px時隱藏按鈕
+              button.classList.add('hidden');
+            } else {
+              button.classList.remove('hidden');
+            }
+          });
+        </script>
+</body>
+
+</html>

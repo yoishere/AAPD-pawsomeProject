@@ -1,0 +1,1776 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>production</title>
+  <!-- google-icon-->
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <!-- Link progress's CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+  <%- include('./layout/header'); -%> <%- include('./layout/shoppingCart'); -%>
+      <main style="padding-top: 74px">
+        <section class="container mx-auto" style="max-width: 1128px;">
+          <!--購物車 Modal start-->
+        <div
+        class="modal fade"
+        id="sm-shoop-Modal"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div
+          class="modal-dialog modal-mw-none vh-100 vw-100 m-0 tf-up d-flex flex-column-reverse modal-dialog-scrollable flex-md-row mx-auto"
+        >
+          <div class="modal-content vh-85 sm-modal-rounded my-md-auto">
+            <div
+              class="modal-header modal-header-boder justify-content-center py-2 py-md-5"
+            >
+              <button
+                type="button"
+                class="modal-btn-sm border-0 d-md-none"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+              <button
+                type="button"
+                class="btn-close border-0 d-none d-md-block ms-auto"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body pb-0 d-lg-flex p-lg-6 pb-lg-0">
+              <div class="w-lg-50 overflow-x-hidden scroll-hidden pe-lg-4">
+                <div
+                  style="
+                    --swiper-navigation-color: #fff;
+                    --swiper-pagination-color: #fff;
+                  "
+                  class="Swiper thumbs-Swiper-2"
+                >
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <img src="../assets/images/modal-2.png" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="../assets/images/modal-3.png" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="../assets/images/modal-1.png" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="../assets/images/modal-4.png" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="../assets/images/modal-5.png" />
+                    </div>
+                  </div>
+                  <!-- <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div> -->
+                </div>
+                <div class="d-flex justify-content-center position-relative">
+                  <div
+                    class="swiper-button-prev-2 d-none d-lg-block p-4 position-absolute"
+                    style="top: 20%; left: 0%"
+                  >
+                    <span class="material-symbols-outlined">
+                      chevron_left
+                    </span>
+                  </div>
+                  <div
+                    class="swiper-button-next-2 d-none d-lg-block p-4 position-absolute"
+                    style="top: 20%; left: 90%"
+                  >
+                    <span class="material-symbols-outlined">
+                      chevron_right
+                    </span>
+                  </div>
+                  <div thumbsSlider="" class="thumbs-Swiper Swiper mb-5">
+                    <div class="swiper-wrapper justify-content-center">
+                      <div class="swiper-slide">
+                        <img src="../assets/images/modal-2.png" />
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="../assets/images/modal-3.png" />
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="../assets/images/modal-1.png" />
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="../assets/images/modal-4.png" />
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="../assets/images/modal-5.png" />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="w-lg-50 ps-lg-4 d-flex flex-column">
+                <h3
+                  class="fs-5 fs-md-6 fw-medium text-neutral-700 mb-5 mb-lg-6"
+                >
+                  歐睿健 六種鮮魚無穀配方85%優質肉含量 貓顆粒乾糧
+                </h3>
+                <h4 class="fw-normal fs-3 mb-3">口味</h4>
+                <div class="d-flex mb-5 mb-lg-6">
+                  <input
+                    type="radio"
+                    class="btn-check"
+                    name="meat"
+                    id="option1"
+                    autocomplete="off"
+                    checked
+                  />
+                  <label
+                    class="modal-btn d-flex me-3 align-items-center justify-content-center"
+                    for="option1"
+                    >牛肉</label
+                  >
+
+                  <input
+                    type="radio"
+                    class="btn-check"
+                    name="meat"
+                    id="option2"
+                    autocomplete="off"
+                  />
+                  <label
+                    class="modal-btn d-flex me-3 align-items-center justify-content-center"
+                    for="option2"
+                    >雞肉</label
+                  >
+
+                  <input
+                    type="radio"
+                    class="btn-check"
+                    name="meat"
+                    id="option3"
+                    autocomplete="off"
+                  />
+                  <label
+                    class="modal-btn d-flex me-3 align-items-center justify-content-center"
+                    for="option3"
+                    >海鮮</label
+                  >
+
+                  <input
+                    type="radio"
+                    class="btn-check"
+                    name="meat"
+                    id="option4"
+                    autocomplete="off"
+                  />
+                  <label
+                    class="modal-btn d-flex align-items-center justify-content-center"
+                    for="option4"
+                    >綜合</label
+                  >
+                </div>
+                <h4 class="fw-normal fs-3 mb-3">規格</h4>
+                <div class="d-flex mb-5 mb-lg-6 flex-wrap gap-3">
+                  <input
+                    type="radio"
+                    class="btn-check"
+                    name="size"
+                    id="size-1"
+                    autocomplete="off"
+                    checked
+                  />
+                  <label
+                    class="modal-btn d-flex flex-column align-items-center text-nowrap"
+                    for="size-1"
+                    >4磅(袋)<span class="text-neutral-500 fs-1"
+                      >$280/磅</span
+                    ></label
+                  >
+                  <input
+                    type="radio"
+                    class="btn-check"
+                    name="size"
+                    id="size-2"
+                    autocomplete="off"
+                    disabled
+                  />
+                  <label
+                    class="modal-btn d-flex flex-column align-items-center text-nowrap"
+                    for="size-2"
+                    >4磅x2(袋)<span class="text-neutral-500 fs-1"
+                      >完售</span
+                    ></label
+                  >
+                  <input
+                    type="radio"
+                    class="btn-check"
+                    name="size"
+                    id="size-3"
+                    autocomplete="off"
+                  />
+                  <label
+                    class="modal-btn d-flex flex-column align-items-center text-nowrap"
+                    for="size-3"
+                    >7磅(袋)<span class="text-neutral-500 fs-1"
+                      >$244/磅</span
+                    ></label
+                  >
+                  <input
+                    type="radio"
+                    class="btn-check"
+                    name="size"
+                    id="size-4"
+                    autocomplete="off"
+                  />
+                  <label
+                    class="modal-btn d-flex flex-column align-items-center text-nowrap"
+                    for="size-4"
+                    >12磅(袋)<span class="text-neutral-500 fs-1"
+                      >$210/磅</span
+                    ></label
+                  >
+                </div>
+                <h4 class="fw-normal fs-3 mb-3">方案</h4>
+                <div class="d-flex mb-5 mb-lg-6">
+                  <input
+                    type="radio"
+                    class="btn-check"
+                    name="plan"
+                    id="plan-1"
+                    autocomplete="off"
+                    checked
+                  />
+                  <label
+                    class="modal-btn d-flex me-3 flex-column align-items-center"
+                    for="plan-1"
+                    >$ 598<span class="text-neutral-500 fs-1"
+                      >非會員</span
+                    ></label
+                  >
+                  <input
+                    type="radio"
+                    class="btn-check"
+                    name="plan"
+                    id="plan-2"
+                    autocomplete="off"
+                  />
+                  <label
+                    class="modal-btn d-flex me-3 flex-column align-items-center"
+                    for="plan-2"
+                    >$ 398<span class="text-neutral-500 fs-1"
+                      >會員現折 200</span
+                    ></label
+                  >
+                </div>
+                <div
+                  class="rounded-full text-center bg-primary-300 py-3 mt-auto d-none d-lg-block"
+                  style="width: 460px; bottom: 0px; right: 0px"
+                >
+                  <a class="d-block fw-medium link-neutral-0" href="#"
+                    >加入購物車</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer rounded-0 border-0 p-5 pt-6 d-lg-none">
+              <div class="w-100 rounded-full text-center bg-primary-300 py-3">
+                <a class="d-block fw-medium link-neutral-0" href="#"
+                  >加入購物車</a
+                >
+              </div>
+            </div>
+            <div
+              class="modal-footer lg-modal-footer p-0 border-0 d-none d-lg-block"
+            ></div>
+          </div>
+        </div>
+      </div>
+      <!--購物車 Modal end -->
+          <!-- 麵包屑 -->
+          <section class="pt-5 pb-5">
+            <nav aria-label="breadcrumb pb-5">
+              <ol class="breadcrumb root-text py-2">
+                <li class="breadcrumb-item">
+                  <a href="index.html" class="text-neutral-500 text-decoration-none">首頁</a>
+                </li>
+                <li class="breadcrumb-item">
+                  <a href="productionList.html" class="text-neutral-500 text-decoration-none">貓咪專區</a>
+                </li>
+                <li class="breadcrumb-item">
+                  <a href="catStapleFood.html" class="text-neutral-500 text-decoration-none">貓咪主食</a>
+                </li>
+                <li class="breadcrumb-item active text-neutral-800" aria-current="page">
+                  幼貓飼料
+                </li>
+              </ol>
+            </nav>
+          </section>
+          <!-- 商品介紹 -->
+          <section>
+            <div class="modal-body row">
+              <div class="col-md-5">
+                <div class="overflow-x-hidden scroll-hidden">
+                  <div class="Swiper thumbs-Swiper-2">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide swiper-slide-active">
+                        <img src="../assets/images/modal-2.png" />
+                      </div>
+                      <div class="swiper-slide ">
+                        <img src="../assets/images/modal-3.png" />
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="../assets/images/modal-1.png" />
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="../assets/images/modal-4.png" />
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="../assets/images/modal-5.png" />
+                      </div>
+                    </div>
+
+                  </div>
+                  <div class="d-flex justify-content-center position-relative">
+                    <div class="swiper-button-prev-2 py-4 ps-8 position-absolute" style="top: 20%; left: 0%">
+                      <span class="material-symbols-outlined">
+                        chevron_left
+                      </span>
+                    </div>
+                    <div class="swiper-button-next-2 p-4 position-absolute" style="top: 20%; left: 90%">
+                      <span class="material-symbols-outlined">
+                        chevron_right
+                      </span>
+                    </div>
+                    <div thumbsSlider="" class="thumbs-Swiper Swiper mb-5">
+                      <div class="swiper-wrapper justify-content-center">
+                        <div class="swiper-slide">
+                          <img src="../assets/images/modal-2.png" />
+                        </div>
+                        <div class="swiper-slide">
+                          <img src="../assets/images/modal-3.png" />
+                        </div>
+                        <div class="swiper-slide">
+                          <img src="../assets/images/modal-1.png" />
+                        </div>
+                        <div class="swiper-slide">
+                          <img src="../assets/images/modal-4.png" />
+                        </div>
+                        <div class="swiper-slide">
+                          <img src="../assets/images/modal-5.png" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="d-flex flex-column">
+                  <h6 class="fw-medium mb-3">
+                    歐睿健 六種鮮魚無穀配方85%優質肉含量 貓顆粒乾糧
+                    </h3>
+                    <p class="fs-3 mb-3 d-md-none"><u>歐瑞健</u></p>
+                    <p class="fs-3 mb-3 d-none d-md-block"><u>Orijen 歐瑞健</u></p>
+                    <div class="mb-3 d-flex">
+                      <p class="fs-3 fw-medium">4.0</p>
+                      <img class="ms-2" style="width: 24px;height: 24px;"
+                        src="../assets/images/icon/colored/Filled_=Yes.png" alt="黃色星號">
+                      <img class="ms-2" style="width: 24px;height: 24px;"
+                        src="../assets/images/icon/colored/Filled_=Yes.png" alt="黃色星號">
+                      <img class="ms-2" style="width: 24px;height: 24px;"
+                        src="../assets/images/icon/colored/Filled_=Yes.png" alt="黃色星號">
+                      <img class="ms-2" style="width: 24px;height: 24px;"
+                        src="../assets/images/icon/colored/Filled_=Yes.png" alt="黃色星號">
+                      <img class="ms-2" style="width: 24px;height: 24px;"
+                        src="../assets/images/icon/colored/Filled_=No.png" alt="黃色空星">
+                    </div>
+                    <div class="p-4 border-bottom border-neutral-200 mb-5">
+                      <a class="fs-3 d-flex fw-medium text-neutral-600" href="#">
+                        運送與付款說明<span class="material-symbols-outlined ms-auto">
+                          keyboard_arrow_down
+                        </span>
+                      </a>
+                    </div>
+                    <h4 class="fw-medium fs-3 mb-3">選擇口味</h4>
+                    <div class="d-flex mb-5">
+                      <input type="radio" class="btn-check" name="meat" id="option1" autocomplete="off" />
+                      <label class="production-modal-taste-btn d-flex me-3 align-items-center justify-content-center"
+                        for="option1">牛肉</label>
+
+                      <input type="radio" class="btn-check" name="meat" id="option2" autocomplete="off" />
+                      <label class="production-modal-taste-btn d-flex me-3 align-items-center justify-content-center"
+                        for="option2">雞肉</label><input type="radio" class="btn-check" name="meat" id="option3"
+                        autocomplete="off" checked />
+                      <label class="production-modal-taste-btn d-flex me-3 align-items-center justify-content-center"
+                        for="option3">六種魚</label>
+
+                      <input type="radio" class="btn-check" name="meat" id="option4" autocomplete="off" />
+                      <label class="production-modal-taste-btn d-flex align-items-center justify-content-center"
+                        for="option4">綜合</label>
+                    </div>
+                    <h4 class="fw-medium fs-3 mb-3">選擇規格</h4>
+                    <div class="d-flex flex-wrap">
+                      <input type="radio" class="btn-check" name="size" id="size-1" autocomplete="off" checked />
+                      <label class="production-modal-speci-btn d-flex me-3 flex-column align-items-center"
+                        for="size-1">4磅(袋)<span class="text-neutral-500 fs-1  fw-normal">$280/磅</span></label>
+                      <input type="radio" class="btn-check" name="size" id="size-2" autocomplete="off" disabled />
+                      <label
+                        class="production-modal-speci-btn d-flex me-3 flex-column align-items-center bg-neutral-100 text-neutral-400"
+                        for="size-2">4磅x2(袋)<span class="fs-1 fw-normal">完售</span></label>
+                      <input type="radio" class="btn-check" name="size" id="size-3" autocomplete="off" />
+                      <label class="production-modal-speci-btn d-flex me-3 flex-column align-items-center"
+                        for="size-3">7磅(袋)<span class="text-neutral-500 fs-1  fw-normal">$244/磅</span></label>
+                      <input type="radio" class="btn-check" name="size" id="size-4" autocomplete="off" />
+                      <label class="production-modal-speci-btn d-flex mt-3 flex-column align-items-center"
+                        for="size-4">12磅(袋)<span class="text-neutral-500 fs-1  fw-normal">$210/磅</span></label>
+                    </div>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="production-card">
+                  <!-- 非會員價 -->
+                  <div class="card  p-4 vipChose-btn  mb-3" id="non-member-card">
+                    <div class="d-flex pt-2 ps-2">
+                      <input type="radio" class="form-check-input" name="price" id="non-member" autocomplete="off" style="height:24px; width:24px">
+                      <label class="ms-3 form-check-label" for="non-member">
+                        <div class="d-flex align-items-start mt-2">
+                          <span class="form-check-label fs-3">非會員價</span>
+                        </div>
+                        <h6 class="fw-medium mt-2">$1,120</h6>
+                      </label>
+                    </div>
+                  </div>
+                  <!-- 會員特惠價 -->
+                  <div class="card  p-4 vipChose-btn active" id="member-card" >
+                    <div class="d-flex pt-2 ps-2 border-bottom border-neutral-400" style="border:1px;">
+                      <input type="radio" class="form-check-input" name="price" id="member" autocomplete="off" checked style="height:24px; width:24px">
+                      <label class="ms-3 form-check-label" for="member">
+                        <div class="d-flex mt-2">
+                          <span class="form-check-label fs-3 fw-medium">會員特惠價</span>
+                        </div>
+                        <h6 class="fw-medium mt-2 text-primary-300" style="line-height: 33.6px;">$952</h6>
+                        <p class="fs-2 text-primary-300 mb-3">現省 $168</p>
+                      </label>
+                    </div>
+                    <ul class="mt-3 fs-2 mb-0">
+                      <li>為您節省每筆訂單</li>
+                      <li>按照您訂購日程配送</li>
+                      <li>隨時調整訂購單</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="production-card">
+                  <div class="d-flex mb-6 align-items-center">
+                    <div class="border border-neutarl-400 d-flex overflow-hidden me-6 rounded-1 count-size w-100">
+                      <div
+                        class="w-25 p-2 d-flex justify-content-center align-items-center border-end border-neutarl-400 bg-neutral-100">
+                        <span class="material-symbols-outlined fs-3 text-neutral-400 ">
+                          remove
+                        </span>
+                      </div>
+                      <div class="w-50 px-3 fs-1 d-flex justify-content-center align-items-center">
+                        1</div>
+                      <div
+                        class="w-25 p-2 d-flex justify-content-center align-items-center border-start border-neutarl-400 bg-neutral-100">
+                        <span class="material-symbols-outlined fs-3">
+                          add
+                        </span>
+                      </div>
+                    </div>
+                    <div class="">
+                      <h6 class="fs-3 fw-medium text-success-400 mb-2">有庫存</h6>
+                      <h6 class="fs-3 text-neutral-600 fw-normal">預計1~3天出貨</h6>
+                    </div>
+                  </div>
+                  <div class="rounded-full text-center bg-primary-300 py-3 mt-auto w-100">
+                    <a class="d-block fw-medium link-neutral-0" href="#">前往配送方案</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- 商品描述nav -->
+          <section class="pt-7 pb-8">
+            <ul class="production-nav nav nav-underline ms-3 flex-nowrap overflow-x-scroll scroll-hidden p-0"
+              style="gap: 0; white-space: nowrap;">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#" onclick="this.blur(); return false; ">商品描述</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" onclick="this.blur(); return false;">毛孩評價</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" onclick="this.blur(); return false;">常見問題</a>
+              </li>
+            </ul>
+          </section>
+          <!-- banner -->
+          <section class="mb-5">
+            <picture>
+              <source media="(min-width: 992px)" srcset="../assets/images/banner/production-lg.png" alt="production-lg"
+                class="" />
+              <img src="../assets/images/banner/production-sm.png" alt="production-sm" class="w-100" />
+            </picture>
+          </section>
+          <!--文章內容 -->
+          <section class="mb-7">
+            <div class="row mb-5 ">
+              <div class="col-md-6 mb-6 mb-md-0">
+                <picture>
+                  <source media="(min-width: 992px)" srcset="../assets/images/ORIJEN-lg.png" alt="ORIJEN-lg" class="" />
+                  <img src="../assets/images/ORIJEN-sm.png" alt="ORIJEN-sm" class="w-100" />
+                </picture>
+              </div>
+              <div class="col-md-6 d-flex flex-column justify-content-center">
+                <h5 class="fs-4 mb-3">ORIJEN 貓糧</h5>
+                <h6 class="fs-3 text-neutral-600 fw-normal ">ORIJEN 貓糧含有高達 90%
+                  的動物成分，富含您貓咪需要茁壯成長的動物蛋白。這些營養豐富的新鮮或生動物成分，如家禽和魚類，提供了您的肉食性貓咪保持最佳狀態所需的生物適宜營養。</h6>
+              </div>
+            </div>
+            <div class="row mb-5">
+              <div class="col-md-6 order-md-2 mb-6 mb-md-0">
+                <picture>
+                  <source media="(min-width: 992px)" srcset="../assets/images/very-lg.png" alt="very-lg" class="" />
+                  <img src="../assets/images/very-sm.png" alt="very-sm" class="w-100" />
+                </picture>
+              </div>
+              <div class="col-md-6 order-md-1 d-flex flex-column justify-content-center">
+                <h5 class="fs-4 mb-3">非常的營養</h5>
+                <h6 class="fs-3 text-neutral-600 fw-normal ">確保用最好的食材來滋養自己的身體，因為你愛你的寵物，你也希望為你信賴的夥伴提供同樣的照顧。ORIJEN
+                  貓糧使用最新鮮的食材製成，並富含動物蛋白質，這是你的貓咪天生需要的食物。這種生物適宜的營養幫助你的寵物達到最大潛能，享受更多美好時光和多年健康的陪伴。</h6>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6 mb-6 mb-md-0">
+                <picture>
+                  <source media="(min-width: 992px)" srcset="../assets/images/absorb-lg.png" alt="absorb-lg" class="" />
+                  <img src="../assets/images/absorb-sm.png" alt="absorb-sm" class="w-100" />
+                </picture>
+              </div>
+              <div class="col-md-6 d-flex flex-column justify-content-center">
+                <h5 class="fs-4 mb-3">攝取完整的營養</h5>
+                <h6 class="fs-3 text-neutral-600 fw-normal ">在野外，你的寵物祖先會食用獵物的每一部分來獲取最大程度的營養。這就是為什麼每款 ORIJEN
+                  配方都包含完整獵物成分，如富含蛋白質的肉類、家禽或魚類，以及多汁且富含營養的內臟。這些營養豐富的成分模仿了你寵物的祖先飲食，提供了解鎖它真正潛力所需的營養。</h6>
+              </div>
+            </div>
+          </section>
+          <!--動物成分 -->
+          <section class="mb-6 mb-md-8">
+            <div class="container">
+              <div class="row production-custom-gap">
+                <div class="col-6 col-md-3 mb-4 mb-md-0">
+                  <picture>
+                    <source media="(min-width: 992px)" srcset="../assets/images/upto90-lg.png" alt="upto90-lg"
+                      class="mb-5" />
+                    <img src="../assets/images/upto90-sm.png" alt="upto90-sm" class="w-100" />
+                  </picture>
+                  <h5 class="fs-5 mt-5 mb-3 text-center">動物成分</h5>
+                  <h6 class="fs-3 text-neutral-600 fw-normal text-center">ORIJEN 乾貓糧含有高達 90% 的動物成分，提供高水平的營養蛋白質。</h6>
+                </div>
+                <div class="col-6 col-md-3 mb-4 mb-md-0">
+                  <picture>
+                    <source media="(min-width: 992px)" srcset="../assets/images/5-lg.png" alt="5-lg" class="mb-5" />
+                    <img src="../assets/images/5-sm.png" alt="5-sm" class="w-100" />
+                  </picture>
+                  <h5 class="fs-5 mt-5 mb-3 text-center">五種新鮮生食材</h5>
+                  <h6 class="fs-3 text-neutral-600 fw-normal text-center">這些 ORIJEN 配方中的五種成分始終是新鮮或生的動物成分。</h6>
+                </div>
+                <div class="col-6 col-md-3">
+                  <picture>
+                    <source media="(min-width: 992px)" srcset="../assets/images/diet-lg.png" alt="diet-lg"
+                      class="mb-5" />
+                    <img src="../assets/images/diet-sm.png" alt="diet-sm" class="w-100" />
+                  </picture>
+                  <h5 class="fs-5 mt-5 mb-3 text-center">飲食攝取</h5>
+                  <h6 class="fs-3 text-neutral-600 fw-normal text-center">使用富含營養的完整獵物成分製成，如肉類、家禽或魚類，
+                    以及富含營養的內臟。</h6>
+                </div>
+                <div class="col-6 col-md-3">
+                  <picture>
+                    <source media="(min-width: 992px)" srcset="../assets/images/cereal-lg.png" alt="cereal-lg"
+                      class="mb-5" />
+                    <img src="../assets/images/cereal-sm.png" alt="cereal-sm" class="w-100" />
+                  </picture>
+                  <h5 class="fs-5 mt-5 mb-3 text-center">無穀物成分</h5>
+                  <h6 class="fs-3 text-neutral-600 fw-normal text-center">ORIJEN 乾貓糧不含任何添加
+                    的穀物成分。</h6>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!--毛孩評價 -->
+          <section class="d-flex justify-content-between align-items-center">
+            <h6 class="">毛孩評價</h6>
+            <button class="btn border-primary-400 text-primary-300 d-lg-flex d-none">
+              最相關<span class="ps-2 material-symbols-outlined fs-5 align-middle">
+                filter_list
+              </span>
+            </button>
+          </section>
+          <!--毛孩評價 -->
+          <section class="py-5 mb-8">
+            <div class="row mb-4">
+              <div class="col-md-4">
+                <div class="d-flex">
+                  <div class="" style="width: 96px; ">
+                    <h3 class="mb-4 text-center">4.2</h3>
+                    <div class="mb-4 d-flex justify-content-center">
+                      <img class="" style="width: 15px;height: 16px;"
+                        src="../assets/images/icon/colored/Filled_=Yes.png" alt="黃色星號">
+                      <img class="ms-1" style="width: 15px;height: 16px;"
+                        src="../assets/images/icon/colored/Filled_=Yes.png" alt="黃色星號">
+                      <img class="ms-1" style="width: 15px;height: 16px;"
+                        src="../assets/images/icon/colored/Filled_=Yes.png" alt="黃色星號">
+                      <img class="ms-1" style="width: 15px;height: 16px;"
+                        src="../assets/images/icon/colored/Filled_=Yes.png" alt="黃色星號">
+                      <img class="ms-1" style="width: 15px;height: 16px;"
+                        src="../assets/images/icon/colored/Filled_=No.png" alt="黃色空星">
+                    </div>
+                    <h4 class="fs-2 fw-normal text-primary-300 text-decoration-underline text-center">300則評論
+                    </h4>
+                  </div>
+                  <!--進度條 -->
+                  <div class="w-100 ps-6" style="height:146px; width: 364px;">
+                    <!-- 進度條 1 -->
+                    <div class="d-flex align-items-center w-100 mb-2 ">
+                      <h4 class="fs-3 me-2 text-neutral-600 lh-base">5</h4>
+                      <div class="progress w-100 ">
+                        <div class="progress-bar" role="progressbar" style="width: 87.38%" aria-valuenow="87.38"
+                          aria-valuemin="0" aria-valuemax="100"></div>
+                      </div>
+                    </div>
+
+                    <!-- 進度條 2 -->
+                    <div class="d-flex align-items-center w-100 mb-2 ">
+                      <h4 class="fs-3 me-2 text-neutral-600 lh-base">4</h4>
+                      <div class="progress w-100 ">
+                        <div class="progress-bar" role="progressbar" style="width: 8.25%" aria-valuenow="8.25"
+                          aria-valuemin="0" aria-valuemax="100"></div>
+                      </div>
+                    </div>
+
+                    <!-- 進度條 3-->
+                    <div class="d-flex align-items-center w-100 mb-2 ">
+                      <h4 class="fs-3 me-2 text-neutral-600 lh-base">3</h4>
+                      <div class="progress w-100 ">
+                        <div class="progress-bar" role="progressbar" style="width: 5.83%" aria-valuenow="5.83"
+                          aria-valuemin="0" aria-valuemax="100"></div>
+                      </div>
+                    </div>
+
+                    <!-- 進度條4-->
+                    <div class="d-flex align-items-center w-100 mb-2 ">
+                      <h4 class="fs-3 me-2 text-neutral-600 lh-base">2</h4>
+                      <div class="progress w-100 ">
+                        <div class="progress-bar" role="progressbar" style="width: 0%" aria-valuenow="0"
+                          aria-valuemin="0" aria-valuemax="100"></div>
+                      </div>
+                    </div>
+
+                    <!-- 進度條5-->
+                    <div class="d-flex align-items-center w-100 mb-2 ">
+                      <h4 class="fs-3 me-2 text-neutral-600 lh-base">1</h4>
+                      <div class="progress w-100 ">
+                        <div class="progress-bar" role="progressbar" style="width: 0%" aria-valuenow="0"
+                          aria-valuemin="0" aria-valuemax="100"></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!--下面button -->
+                <div>
+                  <div class="mb-5 ">
+                    <label class="form-label fs-2 fs-md-3 fw-medium" for="evaluation-1">
+                    </label>
+                    <div class="mb-2 d-flex text-nowrap flex-wrap gap-2">
+                      <input type="checkbox" class="btn-check" name="evaluation" id="evaluation-1" autocomplete="off">
+                      <label class="input-btn btn btn-outline-primary" for="evaluation-1">狗狗</label>
+
+                      <input type="checkbox" class="btn-check" name="evaluation" id="evaluation-2" autocomplete="off"
+                        checked>
+                      <label class="input-btn btn btn-outline-primary" for="evaluation-2">貓咪</label>
+
+                      <input type="checkbox" class="btn-check" name="evaluation" id="evaluation-3" autocomplete="off">
+                      <label class="input-btn btn btn-outline-primary" for="evaluation-3">魚</label>
+
+                      <input type="checkbox" class="btn-check" name="evaluation" id="evaluation-4" autocomplete="off">
+                      <label class="input-btn btn btn-outline-primary" for="evaluation-4">倉鼠</label>
+
+                      <input type="checkbox" class="btn-check" name="evaluation" id="evaluation-5" autocomplete="off">
+                      <label class="input-btn btn btn-outline-primary" for="evaluation-5">兔子</label>
+
+                      <input type="checkbox" class="btn-check" name="evaluation" id="evaluation-6" autocomplete="off">
+                      <label class="input-btn btn btn-outline-primary" for="evaluation-6">鳥</label>
+
+                      <input type="checkbox" class="btn-check" name="evaluation" id="evaluation-7" autocomplete="off">
+                      <label class="input-btn btn btn-outline-primary" for="evaluation-7">過敏</label>
+
+                      <input type="checkbox" class="btn-check" name="evaluation" id="evaluation-8" autocomplete="off">
+                      <label class="input-btn btn btn-outline-primary" for="evaluation-8">乾食</label>
+
+                      <input type="checkbox" class="btn-check" name="evaluation" id="evaluation-9" autocomplete="off">
+                      <label class="input-btn btn btn-outline-primary" for="evaluation-9">濕食</label>
+
+                      <input type="checkbox" class="btn-check" name="evaluation" id="evaluation-10" autocomplete="off">
+                      <label class="input-btn btn btn-outline-primary" for="evaluation-10">天然</label>
+
+                      <input type="checkbox" class="btn-check" name="evaluation" id="evaluation-11" autocomplete="off">
+                      <label class="input-btn btn btn-outline-primary" for="evaluation-11">蔬食</label>
+
+                      <input type="checkbox" class="btn-check" name="evaluation" id="evaluation-12" autocomplete="off">
+                      <label class="input-btn btn btn-outline-special" for="evaluation-12">高油脂</label>
+
+                      <input type="checkbox" class="btn-check" name="evaluation" id="evaluation-13" autocomplete="off">
+                      <label class="input-btn btn btn-outline-special" for="evaluation-13">高蛋白</label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-8" style="overflow: hidden;">
+                <div class="swiper comment-swiper">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <img src="../assets/images/comment-1.png" alt="comment-1">
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="../assets/images/comment-2.png" alt="comment-2">
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="../assets/images/comment-3.png" alt="comment-3">
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="../assets/images/comment-4.png" alt="comment-4">
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="../assets/images/comment-5.png" alt="comment-5">
+                    </div>
+                  </div>
+                </div>
+                <div class="mb-4 p-5 border-bottom border-neutral-400">
+                  <div class="d-flex justify-content-between">
+                    <div class="d-flex mb-3">
+                      <img src="../assets/images/Illustration/Avatar.png" style="height: 40px;width: 40px;" alt="貓頭">
+                      <div class="ms-5 d-flex flex-column justify-content-center">
+                        <h4 class="fs-3 fw-normal">陳怡君</h4>
+                        <div class="d-flex">
+                          <img class="ms-2" style="width: 16px;height: 16px;"
+                            src="../assets/images/icon/colored/Filled_=Yes.png" alt="黃色星號">
+                          <img class="ms-2" style="width: 16px;height: 16px;"
+                            src="../assets/images/icon/colored/Filled_=Yes.png" alt="黃色星號">
+                          <img class="ms-2" style="width: 16px;height: 16px;"
+                            src="../assets/images/icon/colored/Filled_=Yes.png" alt="黃色星號">
+                          <img class="ms-2" style="width: 16px;height: 16px;"
+                            src="../assets/images/icon/colored/Filled_=Yes.png" alt="黃色星號">
+                          <img class="ms-2" style="width: 16px;height: 16px;"
+                            src="../assets/images/icon/colored/Filled_=No.png" alt="黃色空星">
+                        </div>
+                      </div>
+                    </div>
+                    <h4 class="fs-2 fw-normal" style="padding-top: 20px;">23-10-10</h4>
+                  </div>
+                  <div class="d-flex mb-3">
+                    <button type="button" class="hashtag-badge fs-2 text-primary-300 fw-medium">
+                      #歐睿建
+                    </button>
+                    <button type="button" class="hashtag-badge fs-2 text-primary-300 fw-medium ms-3">
+                      #貓咪
+                    </button>
+                  </div>
+                  <h4 class="mb-3 fs-2 fw-normal" style="line-height: 22.4px;">
+                    我在這裡找到了一些很特別的寵物用品，像是自然成分的狗狗洗髮精和天然香氛驅蚊噴霧，這些東西在其他地方很少見。網站操作簡單，商品描述也很詳細，讓我在購物時感到非常放心。我還收到了一個小禮物，是一個可愛的狗狗玩具，讓我和我的狗狗都感到很開心!
+                  </h4>
+                  <span class="fw-medium"><a class="fs-2" href="#">更多內容
+                      <span class="material-symbols-outlined fs-3 ms-2 align-middle">keyboard_arrow_down</span></a>
+                  </span>
+                </div>
+                <div class="mb-4 p-5 border-bottom border-neutral-400">
+                  <div class="d-flex justify-content-between">
+                    <div class="d-flex mb-3">
+                      <img src="../assets/images/Illustration/Avatar.png" style="height: 40px;width: 40px;" alt="貓頭">
+                      <div class="ms-5 d-flex flex-column justify-content-center">
+                        <h4 class="fs-3 fw-normal">王曉美</h4>
+                        <div class="d-flex">
+                          <img class="ms-2" style="width: 16px;height: 16px;"
+                            src="../assets/images/icon/colored/Filled_=Yes.png" alt="黃色星號">
+                          <img class="ms-2" style="width: 16px;height: 16px;"
+                            src="../assets/images/icon/colored/Filled_=Yes.png" alt="黃色星號">
+                          <img class="ms-2" style="width: 16px;height: 16px;"
+                            src="../assets/images/icon/colored/Filled_=Yes.png" alt="黃色星號">
+                          <img class="ms-2" style="width: 16px;height: 16px;"
+                            src="../assets/images/icon/colored/Filled_=Yes.png" alt="黃色星號">
+                          <img class="ms-2" style="width: 16px;height: 16px;"
+                            src="../assets/images/icon/colored/Filled_=No.png" alt="黃色空星">
+                        </div>
+                      </div>
+                    </div>
+                    <h4 class="fs-2 fw-normal" style="padding-top: 20px;">23-10-10</h4>
+                  </div>
+                  <div class="d-flex mb-3">
+                    <button type="button" class="hashtag-badge fs-2 text-primary-300 fw-medium">
+                      #歐睿建
+                    </button>
+                    <button type="button" class="hashtag-badge fs-2 text-primary-300 fw-medium ms-3">
+                      #貓咪
+                    </button>
+                  </div>
+                  <h4 class="mb-3 fs-2 fw-normal" style="line-height: 22.4px;">
+                    這裡的貓爬架真的是物超所值！結構穩固，設計也很有趣。我家有三隻貓咪，牠們對這個新玩具都很感興趣，特別是最高的那層，牠們經常搶著躺在那裡。包裝內附的安裝說明也非常清晰，組裝起來毫不費力。客服的回應很快，解答了我關於產品材質的疑問，讓我感覺非常放心。
+                  </h4>
+                  <span class="fw-medium"><a class="fs-2" href="#">更多內容
+                      <span class="material-symbols-outlined fs-3 ms-2 align-middle">keyboard_arrow_down</span></a>
+                  </span>
+                </div>
+                <span class="py-3 px-5 fw-medium text-primary-300 d-flex justify-content-end"><a class="fs-3 "
+                    href="#">更多評論<span class="material-symbols-outlined fs-3 ms-2 align-middle">
+                      chevron_right
+                    </span></a></span>
+              </div>
+            </div>
+
+          </section>
+          <!--常見問題 -->
+          <section class="mb-8">
+            <h6 class="mb-6">常見問題</h6>
+            <div class="mb-5 w-100 bg-neutral-100" style="border-radius: 8px;">
+              <a class="fs-3 d-flex FAQ" href="#">
+                請問幼貓可以吃嗎？<span class="material-symbols-outlined ms-auto">
+                  keyboard_arrow_down
+                </span>
+              </a>
+            </div>
+            <div class="mb-5 w-100 bg-neutral-100 " style="border-radius: 8px;">
+              <a class="fs-3 d-flex FAQ" href="#">
+                請問有腎病的貓咪可以吃嗎？<span class="material-symbols-outlined ms-auto">
+                  keyboard_arrow_down
+                </span>
+              </a>
+            </div>
+            <div class="mb-5 w-100 bg-neutral-100" style="border-radius: 8px;">
+              <a class="fs-3 d-flex FAQ" href="#">
+                可以搭配罐罐一起吃嗎？<span class="material-symbols-outlined ms-auto">
+                  keyboard_arrow_down
+                </span>
+              </a>
+            </div>
+            <div class="mb-5 w-100 bg-primary-0 " style="border-radius: 8px;">
+              <a class="fs-3 d-flex FAQ-special text-primary-300" href="#">
+                開封後怎麼保存？<span class="material-symbols-outlined ms-auto">
+                  keyboard_arrow_up
+                </span>
+              </a>
+              <div class="px-4">
+                <h4 class="fs-3" style="line-height: 25.6px;">
+                  要保持貓咪袋裝飼料的新鮮與營養，請遵循以下存放方法：
+                </h4>
+                <ol class="fw-medium fs-3 mb-0" style="line-height: 25.6px;">
+                  <li>密封保存：每次使用後，確保將飼料袋密封，可以使用夾子或密封袋。 </li>
+                  <li>儲存在乾燥、陰涼處：避免陽光直射和潮濕，以防飼料變質。</li>
+                  <li>避免高溫環境：高溫會加速飼料的氧化，降低其營養價值。</li>
+                  <li>保持原包裝：原包裝具有防潮和防氧化功能，盡量保持飼料在原包裝內。</li>
+                  <li>定期檢查：注意檢查飼料的保質期和狀態，確保餵食新鮮的飼料。</li>
+                </ol>
+                <h4 class="fs-3 pb-4" style="line-height: 25.6px;">
+                  遵循這些方法，能有效延長飼料的保鮮期，保持其營養價值。
+                </h4>
+              </div>
+            </div>
+
+          </section>
+          <!--推薦商品 -->
+          <section class="mb-6">
+            <div class="d-flex mb-lg-6 mb-5">
+              <h6 class="d-flex align-items-center">推薦商品</h6>
+              <div class="d-none d-lg-flex position-static ms-auto">
+                <div class="swiper-button-prev-bottom p-4 me-4">
+                  <span class="material-symbols-outlined text-neutral-800">
+                    chevron_left
+                  </span>
+                </div>
+                <div class="swiper-button-next-bottom p-4">
+                  <span class="material-symbols-outlined text-neutral-800">
+                    chevron_right
+                  </span>
+                </div>
+              </div>
+            </div>
+            <!-- 推薦商品swiper -->
+            <div class="swiper production-swiper-bottom">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="m-card">
+                    <div class="position-relative border-1 border-bottom border-neutral-100">
+                      <img src="../assets/images/Cat-8.png" alt="歐睿健 8無穀配方 高達90%優質肉含量 貓顆粒乾糧" />
+                    </div>
+                    <div class="py-4 ps-3 pe-2" style="height: 166px;">
+                      <h3 class="fs-2 fs-md-4 mb-4">歐睿健 8無穀配方 高達90%優質肉含量 貓顆粒乾糧</h3>
+                      <span class="mb-3 d-flex align-items-center text-neutral-600 fs-1 fs-md-2">4.0
+                        <img class="ms-1 ms-md-2 me-md-2" style="width: 16px; height: 16px"
+                          src="../assets/images/icon/colored/Filled_=Yes.png" alt="黃色星號" /><span
+                          class="fs-1 d-none d-md-block text-neutral-600">( 12則評價)</span><span class="px-2">‧</span>
+                        <span class="me-2">已售</span><span class="">541</span>
+                      </span>
+                      <div class="btn-group d-flex align-items-center">
+                        <button type="button" class="me-2 production-bottom-btn fs-1 fs-md-2 active">
+                          牛肉
+                        </button>
+                        <button type="button" class="production-bottom-btn fs-1 fs-md-2 me-2">
+                          雞肉
+                        </button>
+                        <button type="button" class="production-bottom-btn fs-1 fs-md-2 me-2">
+                          海鮮
+                        </button>
+                        <button type="button" class="production-bottom-btn fs-1 fs-md-2 me-2">
+                          綜合
+                        </button>
+                        <span class="fs-1 fw-medium text-neutral-500 ms-2 d-none d-xxl-block ">+3</span>
+                      </div>
+                    </div>
+                    <div class="d-flex justify-content-between ps-3">
+                      <div class="d-flex flex-column flex-md-row align-items-md-center">
+                        <span class="text-neutral-400 fs-1 text-decoration-line-through me-md-2">$450</span>
+                        <span class="text-primary-300 fw-medium">$380</span>
+                      </div>
+                      <button type="button" class="mt-1 p-4 border-0 bg-neutral-0" data-bs-toggle="modal"
+                        data-bs-target="#sm-shoop-Modal">
+                        <img src="../assets/images/icon/Outline  Fill/Filled _=No-1.svg" alt="" />
+                      </button>
+
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="m-card">
+                    <div class="position-relative border-1 border-bottom border-neutral-100">
+                      <img src="../assets/images/Cat-10.png" alt="歐睿健 鮮雞幼貓 1.8公斤 (貓飼料)" />
+                    </div>
+                    <div class="py-4 ps-3 pe-2" style="height: 166px;">
+                      <h3 class="fs-2 fs-md-4 mb-4">歐睿健 鮮雞幼貓 1.8公斤 (貓飼料)</h3>
+                      <span class="mb-3 d-flex align-items-center text-neutral-600 fs-1 fs-md-2">4.7
+                        <img class="ms-1 ms-md-2 me-md-2" style="width: 16px; height: 16px"
+                          src="../assets/images/icon/colored/Filled_=Yes.png" alt="黃色星號" /><span
+                          class="fs-1 d-none d-md-block text-neutral-600">( 24則評價)</span><span class="px-2">‧</span>
+                        <span class="me-2">已售</span><span class="">872</span>
+                      </span>
+                      <div class="btn-group d-flex align-items-center">
+                        <button type="button" class="me-2 production-bottom-btn fs-1 fs-md-2 active">
+                          牛肉
+                        </button>
+                        <button type="button" class="production-bottom-btn fs-1 fs-md-2 me-2">
+                          雞肉
+                        </button>
+                        <button type="button" class="production-bottom-btn fs-1 fs-md-2 me-2">
+                          海鮮
+                        </button>
+                        <button type="button" class="production-bottom-btn fs-1 fs-md-2 me-2">
+                          綜合
+                        </button>
+                        <span class="fs-1 fw-medium text-neutral-500 ms-2 d-none d-xxl-block ">+3</span>
+                      </div>
+                    </div>
+                    <div class="d-flex justify-content-between ps-3">
+                      <div class="d-flex flex-column flex-md-row align-items-md-center">
+                        <span class="text-neutral-400 fs-1 text-decoration-line-through me-md-2">$1,899</span>
+                        <span class="text-primary-300 fw-medium">$1,500</span>
+                      </div>
+                      <button type="button" class="mt-1 p-4 border-0 bg-neutral-0" data-bs-toggle="modal"
+                        data-bs-target="#sm-shoop-Modal">
+                        <img src="../assets/images/icon/Outline  Fill/Filled _=No-1.svg" alt="" />
+                      </button>
+
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="m-card">
+                    <div class="position-relative border-1 border-bottom border-neutral-100">
+                      <img src="../assets/images/Cat-34.png" alt="歐睿健 鮮雞無穀配方 85%優質肉含量 貓顆粒乾糧" />
+                    </div>
+                    <div class="py-4 ps-3 pe-2" style="height: 166px;">
+                      <h3 class="fs-2 fs-md-4 mb-4">歐睿健 鮮雞無穀配方 85%優質肉含量 貓顆粒乾糧</h3>
+                      <span class="mb-3 d-flex align-items-center text-neutral-600 fs-1 fs-md-2">4.1
+                        <img class="ms-1 ms-md-2 me-md-2" style="width: 16px; height: 16px"
+                          src="../assets/images/icon/colored/Filled_=Yes.png" alt="黃色星號" /><span
+                          class="fs-1 d-none d-md-block text-neutral-600">( 5則評價)</span><span class="px-2">‧</span>
+                        <span class="me-2">已售</span><span class="">24</span>
+                      </span>
+                      <div class="btn-group d-flex align-items-center">
+                        <button type="button" class="me-2 production-bottom-btn fs-1 fs-md-2 active">
+                          牛肉
+                        </button>
+                        <button type="button" class="production-bottom-btn fs-1 fs-md-2 me-2">
+                          雞肉
+                        </button>
+                        <button type="button" class="production-bottom-btn fs-1 fs-md-2 me-2">
+                          海鮮
+                        </button>
+                        <button type="button" class="production-bottom-btn fs-1 fs-md-2 me-2">
+                          綜合
+                        </button>
+                        <span class="fs-1 fw-medium text-neutral-500 ms-2 d-none d-xxl-block ">+3</span>
+                      </div>
+                    </div>
+                    <div class="d-flex justify-content-between ps-3">
+                      <div class="d-flex flex-column flex-md-row align-items-md-center">
+                        <span class="text-neutral-400 fs-1 text-decoration-line-through me-md-2">$1,250</span>
+                        <span class="text-primary-300 fw-medium">$1,000</span>
+                      </div>
+                      <button type="button" class="mt-1 p-4 border-0 bg-neutral-0" data-bs-toggle="modal"
+                        data-bs-target="#sm-shoop-Modal">
+                        <img src="../assets/images/icon/Outline  Fill/Filled _=No-1.svg" alt="" />
+                      </button>
+
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="m-card">
+                    <div class="position-relative border-1 border-bottom border-neutral-100">
+                      <img src="../assets/images/Cat-20.png" alt="歐睿健 鮮雞室內貓無穀配方 85%優質肉含量 貓顆粒乾糧" />
+                    </div>
+                    <div class="py-4 ps-3 pe-2" style="height: 166px;">
+                      <h3 class="fs-2 fs-md-4 mb-4">歐睿健 鮮雞室內貓無穀配方 85%優質肉含量 貓顆粒乾糧</h3>
+                      <span class="mb-3 d-flex align-items-center text-neutral-600 fs-1 fs-md-2">3.7
+                        <img class="ms-1 ms-md-2 me-md-2" style="width: 16px; height: 16px"
+                          src="../assets/images/icon/colored/Filled_=Yes.png" alt="黃色星號" /><span
+                          class="fs-1 d-none d-md-block text-neutral-600">( 4則評價)</span><span class="px-2">‧</span>
+                        <span class="me-2">已售</span><span class="">204</span>
+                      </span>
+                      <div class="btn-group d-flex align-items-center">
+                        <button type="button" class="me-2 production-bottom-btn fs-1 fs-md-2 active">
+                          牛肉
+                        </button>
+                        <button type="button" class="production-bottom-btn fs-1 fs-md-2 me-2">
+                          雞肉
+                        </button>
+                        <button type="button" class="production-bottom-btn fs-1 fs-md-2 me-2">
+                          海鮮
+                        </button>
+                        <button type="button" class="production-bottom-btn fs-1 fs-md-2 me-2">
+                          綜合
+                        </button>
+                        <span class="fs-1 fw-medium text-neutral-500 ms-2 d-none d-xxl-block ">+3</span>
+                      </div>
+                    </div>
+                    <div class="d-flex justify-content-between ps-3">
+                      <div class="d-flex flex-column flex-md-row align-items-md-center">
+                        <span class="text-neutral-400 fs-1 text-decoration-line-through me-md-2">$370</span>
+                        <span class="text-primary-300 fw-medium">$250</span>
+                      </div>
+                      <button type="button" class="mt-1 p-4 border-0 bg-neutral-0" data-bs-toggle="modal"
+                        data-bs-target="#sm-shoop-Modal">
+                        <img src="../assets/images/icon/Outline  Fill/Filled _=No-1.svg" alt="" />
+                      </button>
+
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="m-card">
+                    <div class="position-relative border-1 border-bottom border-neutral-100">
+                      <img src="../assets/images/Cat-11.png" alt="希爾思處方食品 貓用 c/d 全效+體重管理" />
+                    </div>
+                    <div class="py-4 ps-3 pe-2" style="height: 166px;">
+                      <h3 class="fs-2 fs-md-4 mb-4">希爾思處方食品 貓用 c/d 全效+體重管理</h3>
+                      <span class="mb-3 d-flex align-items-center text-neutral-600 fs-1 fs-md-2">4.7
+                        <img class="ms-1 ms-md-2 me-md-2" style="width: 16px; height: 16px"
+                          src="../assets/images/icon/colored/Filled_=Yes.png" alt="黃色星號" /><span
+                          class="fs-1 d-none d-md-block text-neutral-600">( 875則評價)</span><span class="px-2">‧</span>
+                        <span class="me-2">已售</span><span class="">1.5萬</span>
+                      </span>
+                      <div class="btn-group d-flex align-items-center">
+                        <button type="button" class="me-2 production-bottom-btn fs-1 fs-md-2 active">
+                          10lb
+                        </button>
+                        <button type="button" class="production-bottom-btn fs-1 fs-md-2 me-2">
+                          15lb
+                        </button>
+                        <button type="button" class="production-bottom-btn fs-1 fs-md-2 me-2">
+                          20lb
+                        </button>
+                      </div>
+                    </div>
+                    <div class="d-flex justify-content-between ps-3">
+                      <div class="d-flex flex-column flex-md-row align-items-md-center">
+                        <span class="text-neutral-400 fs-1 text-decoration-line-through me-md-2">$899</span>
+                        <span class="text-primary-300 fw-medium">$668</span>
+                      </div>
+                      <button type="button" class="mt-1 p-4 border-0 bg-neutral-0" data-bs-toggle="modal"
+                        data-bs-target="#sm-shoop-Modal">
+                        <img src="../assets/images/icon/Outline  Fill/Filled _=No-1.svg" alt="" />
+                      </button>
+
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="m-card">
+                    <div class="position-relative border-1 border-bottom border-neutral-100">
+                      <img src="../assets/images/Cat-16.png" alt="希爾思 幼貓 雞肉特調食譜 新手體驗包 1磅" />
+                    </div>
+                    <div class="py-4 ps-3 pe-2" style="height: 166px;">
+                      <h3 class="fs-2 fs-md-4 mb-4">希爾思 幼貓 雞肉特調食譜 新手體驗包 1磅</h3>
+                      <span class="mb-3 d-flex align-items-center text-neutral-600 fs-1 fs-md-2">4.6
+                        <img class="ms-1 ms-md-2 me-md-2" style="width: 16px; height: 16px"
+                          src="../assets/images/icon/colored/Filled_=Yes.png" alt="黃色星號" /><span
+                          class="fs-1 d-none d-md-block text-neutral-600">( 920則評價)</span><span class="px-2">‧</span>
+                        <span class="me-2">已售</span><span class="">2.1萬</span>
+                      </span>
+                      <div class="d-flex align-items-center">
+                        <button type="button" class="me-2 production-bottom-btn fs-1 fs-md-2 active">
+                          1lb
+                        </button>
+
+                      </div>
+                    </div>
+                    <div class="d-flex justify-content-between ps-3">
+                      <div class="d-flex flex-column flex-md-row align-items-md-center">
+                        <span class="text-neutral-400 fs-1 text-decoration-line-through me-md-2">$60</span>
+                        <span class="text-primary-300 fw-medium">$35</span>
+                      </div>
+                      <button type="button" class="mt-1 p-4 border-0 bg-neutral-0" data-bs-toggle="modal"
+                        data-bs-target="#sm-shoop-Modal">
+                        <img src="../assets/images/icon/Outline  Fill/Filled _=No-1.svg" alt="" />
+                      </button>
+
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="m-card">
+                    <div class="position-relative border-1 border-bottom border-neutral-100">
+                      <img src="../assets/images/Cat-21.png" alt="超越巔峰 貓主食罐80g(鮪) 經典野生鮪魚" />
+                    </div>
+                    <div class="py-4 ps-3 pe-2" style="height: 166px;">
+                      <h3 class="fs-2 fs-md-4 mb-4">超越巔峰 貓主食罐80g(鮪) 經典野生鮪魚</h3>
+                      <span class="mb-3 d-flex align-items-center text-neutral-600 fs-1 fs-md-2">4.6
+                        <img class="ms-1 ms-md-2 me-md-2" style="width: 16px; height: 16px"
+                          src="../assets/images/icon/colored/Filled_=Yes.png" alt="黃色星號" /><span
+                          class="fs-1 d-none d-md-block text-neutral-600">( 910則評價)</span><span class="px-2">‧</span>
+                        <span class="me-2">已售</span><span class="">2萬</span>
+                      </span>
+                    </div>
+                    <div class="d-flex justify-content-between ps-3">
+                      <div class="d-flex flex-column flex-md-row align-items-md-center">
+                        <span class="text-neutral-400 fs-1 text-decoration-line-through me-md-2">$60</span>
+                        <span class="text-primary-300 fw-medium">$35</span>
+                      </div>
+                      <button type="button" class="mt-1 p-4 border-0 bg-neutral-0" data-bs-toggle="modal"
+                        data-bs-target="#sm-shoop-Modal">
+                        <img src="../assets/images/icon/Outline  Fill/Filled _=No-1.svg" alt="" />
+                      </button>
+
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="m-card">
+                    <div class="position-relative border-1 border-bottom border-neutral-100">
+                      <img src="../assets/images/Cat-31.png" alt="希爾思 成貓 香煎鮪魚燴胡蘿蔔 健康美饌 主食罐" />
+                    </div>
+                    <div class="py-4 ps-3 pe-2" style="height: 166px;">
+                      <h3 class="fs-2 fs-md-4 mb-4">希爾思 成貓 香煎鮪魚燴胡蘿蔔 健康美饌 主食罐</h3>
+                      <span class="mb-3 d-flex align-items-center text-neutral-600 fs-1 fs-md-2">4.6
+                        <img class="ms-1 ms-md-2 me-md-2" style="width: 16px; height: 16px"
+                          src="../assets/images/icon/colored/Filled_=Yes.png" alt="黃色星號" /><span
+                          class="fs-1 d-none d-md-block text-neutral-600">( 940則評價)</span><span class="px-2">‧</span>
+                        <span class="me-2">已售</span><span class="">2.4萬</span>
+                      </span>
+                    </div>
+                    <div class="d-flex justify-content-between ps-3">
+                      <div class="d-flex flex-column flex-md-row align-items-md-center">
+                        <span class="text-neutral-400 fs-1 text-decoration-line-through me-md-2">$68</span>
+                        <span class="text-primary-300 fw-medium">$55</span>
+                      </div>
+                      <button type="button" class="mt-1 p-4 border-0 bg-neutral-0" data-bs-toggle="modal"
+                        data-bs-target="#sm-shoop-Modal">
+                        <img src="../assets/images/icon/Outline  Fill/Filled _=No-1.svg" alt="" />
+                      </button>
+
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="m-card">
+                    <div class="position-relative border-1 border-bottom border-neutral-100">
+                      <img src="../assets/images/Cat-13.png" alt="希爾思 成貓 雞肉特調食譜" />
+                    </div>
+                    <div class="py-4 ps-3 pe-2" style="height: 166px;">
+                      <h3 class="fs-2 fs-md-4 mb-4">希爾思 成貓 雞肉特調食譜</h3>
+                      <span class="mb-3 d-flex align-items-center text-neutral-600 fs-1 fs-md-2">4.5
+                        <img class="ms-1 ms-md-2 me-md-2" style="width: 16px; height: 16px"
+                          src="../assets/images/icon/colored/Filled_=Yes.png" alt="黃色星號" /><span
+                          class="fs-1 d-none d-md-block text-neutral-600">( 1000+則評價)</span><span class="px-2">‧</span>
+                        <span class="me-2">已售</span><span class="">2.5萬</span>
+                      </span>
+                      <div class="btn-group d-flex align-items-center">
+                        <button type="button" class="me-2 production-bottom-btn fs-1 fs-md-2 active">
+                          15kg
+                        </button>
+                        <button type="button" class="production-bottom-btn fs-1 fs-md-2 me-2">
+                          20kg
+                        </button>
+                        <button type="button" class="production-bottom-btn fs-1 fs-md-2 me-2">
+                          30kg
+                        </button>
+                        <span class="fs-1 fw-medium text-neutral-500 ms-2 d-none d-xxl-block ">+3</span>
+                      </div>
+                    </div>
+                    <div class="d-flex justify-content-between ps-3">
+                      <div class="d-flex flex-column flex-md-row align-items-md-center">
+                        <span class="text-neutral-400 fs-1 text-decoration-line-through me-md-2">$3,280</span>
+                        <span class="text-primary-300 fw-medium">$2,600</span>
+                      </div>
+                      <button type="button" class="mt-1 p-4 border-0 bg-neutral-0" data-bs-toggle="modal"
+                        data-bs-target="#sm-shoop-Modal">
+                        <img src="../assets/images/icon/Outline  Fill/Filled _=No-1.svg" alt="" />
+                      </button>
+
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="m-card">
+                    <div class="position-relative border-1 border-bottom border-neutral-100">
+                      <img src="../assets/images/Cat-20.png" alt="超越巔峰 貓主食罐80g(鮪魚子) 野生鮪魚佐魚子醬" />
+                    </div>
+                    <div class="py-4 ps-3 pe-2" style="height: 166px;">
+                      <h3 class="fs-2 fs-md-4 mb-4">超越巔峰 貓主食罐80g(鮪魚子) 野生鮪魚佐魚子醬</h3>
+                      <span class="mb-3 d-flex align-items-center text-neutral-600 fs-1 fs-md-2">4.5
+                        <img class="ms-1 ms-md-2 me-md-2" style="width: 16px; height: 16px"
+                          src="../assets/images/icon/colored/Filled_=Yes.png" alt="黃色星號" /><span
+                          class="fs-1 d-none d-md-block text-neutral-600">( 1000+則評價)</span><span class="px-2">‧</span>
+                        <span class="me-2">已售</span><span class="">3萬</span>
+                      </span>
+                    </div>
+                    <div class="d-flex justify-content-between ps-3">
+                      <div class="d-flex flex-column flex-md-row align-items-md-center">
+                        <span class="text-neutral-400 fs-1 text-decoration-line-through me-md-2">$60</span>
+                        <span class="text-primary-300 fw-medium">$35</span>
+                      </div>
+                      <button type="button" class="mt-1 p-4 border-0 bg-neutral-0" data-bs-toggle="modal"
+                        data-bs-target="#sm-shoop-Modal">
+                        <img src="../assets/images/icon/Outline  Fill/Filled _=No-1.svg" alt="" />
+                      </button>
+
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="m-card">
+                    <div class="position-relative border-1 border-bottom border-neutral-100">
+                      <img src="../assets/images/Cat-18.png" alt="超越巔峰 貓主食罐80g(鮪鵪鶉) 野生鮪魚佐鵪鶉蛋" />
+                    </div>
+                    <div class="py-4 ps-3 pe-2" style="height: 166px;">
+                      <h3 class="fs-2 fs-md-4 mb-4">超越巔峰 貓主食罐80g(鮪鵪鶉) 野生鮪魚佐鵪鶉蛋</h3>
+                      <span class="mb-3 d-flex align-items-center text-neutral-600 fs-1 fs-md-2">4.8
+                        <img class="ms-1 ms-md-2 me-md-2" style="width: 16px; height: 16px"
+                          src="../assets/images/icon/colored/Filled_=Yes.png" alt="黃色星號" /><span
+                          class="fs-1 d-none d-md-block text-neutral-600">( 1000+則評價)</span><span class="px-2">‧</span>
+                        <span class="me-2">已售</span><span class="">3.7萬</span>
+                      </span>
+                    </div>
+                    <div class="d-flex justify-content-between ps-3">
+                      <div class="d-flex flex-column flex-md-row align-items-md-center">
+                        <span class="text-neutral-400 fs-1 text-decoration-line-through me-md-2">$60</span>
+                        <span class="text-primary-300 fw-medium">$35</span>
+                      </div>
+                      <button type="button" class="mt-1 p-4 border-0 bg-neutral-0" data-bs-toggle="modal"
+                        data-bs-target="#sm-shoop-Modal">
+                        <img src="../assets/images/icon/Outline  Fill/Filled _=No-1.svg" alt="" />
+                      </button>
+
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="m-card">
+                    <div class="position-relative border-1 border-bottom border-neutral-100">
+                      <img src="../assets/images/Cat-23.png" alt="希爾思 處方食品 貓用z/d" />
+                    </div>
+                    <div class="py-4 ps-3 pe-2" style="height: 166px;">
+                      <h3 class="fs-2 fs-md-4 mb-4">希爾思 成貓完美體重 香烤雞肉佐時蔬主食罐</h3>
+                      <span class="mb-3 d-flex align-items-center text-neutral-600 fs-1 fs-md-2">4.7
+                        <img class="ms-1 ms-md-2 me-md-2" style="width: 16px; height: 16px"
+                          src="../assets/images/icon/colored/Filled_=Yes.png" alt="黃色星號" /><span
+                          class="fs-1 d-none d-md-block text-neutral-600">( 980則評價)</span><span class="px-2">‧</span>
+                        <span class="me-2">已售</span><span class="">2.9萬</span>
+                      </span>
+                    </div>
+                    <div class="d-flex justify-content-between ps-3">
+                      <div class="d-flex flex-column flex-md-row align-items-md-center">
+                        <span class="text-neutral-400 fs-1 text-decoration-line-through me-md-2">$68</span>
+                        <span class="text-primary-300 fw-medium">$55</span>
+                      </div>
+                      <button type="button" class="mt-1 p-4 border-0 bg-neutral-0" data-bs-toggle="modal"
+                        data-bs-target="#sm-shoop-Modal">
+                        <img src="../assets/images/icon/Outline  Fill/Filled _=No-1.svg" alt="" />
+                      </button>
+
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="m-card">
+                    <div class="position-relative border-1 border-bottom border-neutral-100">
+                      <img src="../assets/images/Cat-34.png" alt="希爾思 處方食品 貓用z/d" />
+                    </div>
+                    <div class="py-4 ps-3 pe-2" style="height: 166px;">
+                      <h3 class="fs-2 fs-md-4 mb-4">希爾思 處方食品 貓用z/d</h3>
+                      <span class="mb-3 d-flex align-items-center text-neutral-600 fs-1 fs-md-2">4.6
+                        <img class="ms-1 ms-md-2 me-md-2" style="width: 16px; height: 16px"
+                          src="../assets/images/icon/colored/Filled_=Yes.png" alt="黃色星號" /><span
+                          class="fs-1 d-none d-md-block text-neutral-600">( 950則評價)</span><span class="px-2">‧</span>
+                        <span class="me-2">已售</span><span class="">2萬</span>
+                      </span>
+                      <div class="btn-group d-flex align-items-center">
+                        <button type="button" class="me-2 production-bottom-btn fs-1 fs-md-2 active">
+                          2kg
+                        </button>
+                        <button type="button" class="production-bottom-btn fs-1 fs-md-2 me-2">
+                          8kg
+                        </button>
+                        <button type="button" class="production-bottom-btn fs-1 fs-md-2 me-2">
+                          12kg
+                        </button>
+                      </div>
+                    </div>
+                    <div class="d-flex justify-content-between ps-3">
+                      <div class="d-flex flex-column flex-md-row align-items-md-center">
+                        <span class="text-neutral-400 fs-1 text-decoration-line-through me-md-2">$899</span>
+                        <span class="text-primary-300 fw-medium">$798</span>
+                      </div>
+                      <button type="button" class="mt-1 p-4 border-0 bg-neutral-0" data-bs-toggle="modal"
+                        data-bs-target="#sm-shoop-Modal">
+                        <img src="../assets/images/icon/Outline  Fill/Filled _=No-1.svg" alt="" />
+                      </button>
+
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="m-card">
+                    <div class="position-relative border-1 border-bottom border-neutral-100">
+                      <img src="../assets/images/Cat-14.png" alt="希爾思 成貓 完美消化 鮭魚、糙米及全燕麥特調食譜" />
+                    </div>
+                    <div class="py-4 ps-3 pe-2" style="height: 166px;">
+                      <h3 class="fs-2 fs-md-4 mb-4">希爾思 成貓 完美消化 鮭魚、糙米及全燕麥特調食譜</h3>
+                      <span class="mb-3 d-flex align-items-center text-neutral-600 fs-1 fs-md-2">4.4
+                        <img class="ms-1 ms-md-2 me-md-2" style="width: 16px; height: 16px"
+                          src="../assets/images/icon/colored/Filled_=Yes.png" alt="黃色星號" /><span
+                          class="fs-1 d-none d-md-block text-neutral-600">( 800則評價)</span><span class="px-2">‧</span>
+                        <span class="me-2">已售</span><span class="">1.2萬</span>
+                      </span>
+                      <div class="d-flex align-items-center">
+                        <button type="button" class="me-2 production-bottom-btn fs-1 fs-md-2 active">
+                          20kg
+                        </button>
+                      </div>
+                    </div>
+                    <div class="d-flex justify-content-between ps-3">
+                      <div class="d-flex flex-column flex-md-row align-items-md-center">
+                        <span class="text-neutral-400 fs-1 text-decoration-line-through me-md-2">$899</span>
+                        <span class="text-primary-300 fw-medium">$798</span>
+                      </div>
+                      <button type="button" class="mt-1 p-4 border-0 bg-neutral-0" data-bs-toggle="modal"
+                        data-bs-target="#sm-shoop-Modal">
+                        <img src="../assets/images/icon/Outline  Fill/Filled _=No-1.svg" alt="" />
+                      </button>
+
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="m-card">
+                    <div class="position-relative border-1 border-bottom border-neutral-100">
+                      <img src="../assets/images/Cat-17.png" alt="超越巔峰 貓主食罐80g(鮪鮭) 野生鮪魚佐國王鮭" />
+                    </div>
+                    <div class="py-4 ps-3 pe-2" style="height: 166px;">
+                      <h3 class="fs-2 fs-md-4 mb-4">超越巔峰 貓主食罐80g(鮪鮭) 野生鮪魚佐國王鮭</h3>
+                      <span class="mb-3 d-flex align-items-center text-neutral-600 fs-1 fs-md-2">4.9
+                        <img class="ms-1 ms-md-2 me-md-2" style="width: 16px; height: 16px"
+                          src="../assets/images/icon/colored/Filled_=Yes.png" alt="黃色星號" /><span
+                          class="fs-1 d-none d-md-block text-neutral-600">( 1000+則評價)</span><span class="px-2">‧</span>
+                        <span class="me-2">已售</span><span class="">4.5萬</span>
+                      </span>
+                    </div>
+                    <div class="d-flex justify-content-between ps-3">
+                      <div class="d-flex flex-column flex-md-row align-items-md-center">
+                        <span class="text-neutral-400 fs-1 text-decoration-line-through me-md-2">$60</span>
+                        <span class="text-primary-300 fw-medium">$35</span>
+                      </div>
+                      <button type="button" class="mt-1 p-4 border-0 bg-neutral-0" data-bs-toggle="modal"
+                        data-bs-target="#sm-shoop-Modal">
+                        <img src="../assets/images/icon/Outline  Fill/Filled _=No-1.svg" alt="" />
+                      </button>
+
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="m-card">
+                    <div class="position-relative border-1 border-bottom border-neutral-100">
+                      <img src="../assets/images/Cat-33.png" alt="超越巔峰 貓主食罐80g(鮪龍蝦) 野生鮪魚佐龍蝦" />
+                    </div>
+                    <div class="py-4 ps-3 pe-2" style="height: 166px;">
+                      <h3 class="fs-2 fs-md-4 mb-4">超越巔峰 貓主食罐80g(鮪龍蝦) 野生鮪魚佐龍蝦</h3>
+                      <span class="mb-3 d-flex align-items-center text-neutral-600 fs-1 fs-md-2">4.7
+                        <img class="ms-1 ms-md-2 me-md-2" style="width: 16px; height: 16px"
+                          src="../assets/images/icon/colored/Filled_=Yes.png" alt="黃色星號" /><span
+                          class="fs-1 d-none d-md-block text-neutral-600">( 860則評價)</span><span class="px-2">‧</span>
+                        <span class="me-2">已售</span><span class="">1.6萬</span>
+                      </span>
+                    </div>
+                    <div class="d-flex justify-content-between ps-3">
+                      <div class="d-flex flex-column flex-md-row align-items-md-center">
+                        <span class="text-neutral-400 fs-1 text-decoration-line-through me-md-2">$60</span>
+                        <span class="text-primary-300 fw-medium">$35</span>
+                      </div>
+                      <button type="button" class="mt-1 p-4 border-0 bg-neutral-0" data-bs-toggle="modal"
+                        data-bs-target="#sm-shoop-Modal">
+                        <img src="../assets/images/icon/Outline  Fill/Filled _=No-1.svg" alt="" />
+                      </button>
+
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="m-card">
+                    <div class="position-relative border-1 border-bottom border-neutral-100">
+                      <img src="../assets/images/Cat-19.png" alt="超越巔峰 貓主食罐80g(鮪貝) 野生鮪魚佐貝類" />
+                    </div>
+                    <div class="py-4 ps-3 pe-2" style="height: 166px;">
+                      <h3 class="fs-2 fs-md-4 mb-4">超越巔峰 貓主食罐80g(鮪貝) 野生鮪魚佐貝類</h3>
+                      <span class="mb-3 d-flex align-items-center text-neutral-600 fs-1 fs-md-2">4.8
+                        <img class="ms-1 ms-md-2 me-md-2" style="width: 16px; height: 16px"
+                          src="../assets/images/icon/colored/Filled_=Yes.png" alt="黃色星號" /><span
+                          class="fs-1 d-none d-md-block text-neutral-600">( 860則評價)</span><span class="px-2">‧</span>
+                        <span class="me-2">已售</span><span class="">3.3萬</span>
+                      </span>
+                    </div>
+                    <div class="d-flex justify-content-between ps-3">
+                      <div class="d-flex flex-column flex-md-row align-items-md-center">
+                        <span class="text-neutral-400 fs-1 text-decoration-line-through me-md-2">$60</span>
+                        <span class="text-primary-300 fw-medium">$35</span>
+                      </div>
+                      <button type="button" class="mt-1 p-4 border-0 bg-neutral-0" data-bs-toggle="modal"
+                        data-bs-target="#sm-shoop-Modal">
+                        <img src="../assets/images/icon/Outline  Fill/Filled _=No-1.svg" alt="" />
+                      </button>
+
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="m-card">
+                    <div class="position-relative border-1 border-bottom border-neutral-100">
+                      <img src="../assets/images/Cat-12.png" alt="希爾思 成貓 毛球控制 低卡 雞肉特調食譜" />
+                    </div>
+                    <div class="py-4 ps-3 pe-2" style="height: 166px;">
+                      <h3 class="fs-2 fs-md-4 mb-4">希爾思 成貓 毛球控制 低卡 雞肉特調食譜</h3>
+                      <span class="mb-3 d-flex align-items-center text-neutral-600 fs-1 fs-md-2">4.9
+                        <img class="ms-1 ms-md-2 me-md-2" style="width: 16px; height: 16px"
+                          src="../assets/images/icon/colored/Filled_=Yes.png" alt="黃色星號" /><span
+                          class="fs-1 d-none d-md-block text-neutral-600">( 1000+則評價)</span><span class="px-2">‧</span>
+                        <span class="me-2">已售</span><span class="">5萬</span>
+                      </span>
+                      <div class="d-flex align-items-center">
+                        <button type="button" class="me-2 production-bottom-btn fs-1 fs-md-2 active">
+                          7kg
+                        </button>
+                      </div>
+                    </div>
+                    <div class="d-flex justify-content-between ps-3">
+                      <div class="d-flex flex-column flex-md-row align-items-md-center">
+                        <span class="text-neutral-400 fs-1 text-decoration-line-through me-md-2">$999</span>
+                        <span class="text-primary-300 fw-medium">$698</span>
+                      </div>
+                      <button type="button" class="mt-1 p-4 border-0 bg-neutral-0" data-bs-toggle="modal"
+                        data-bs-target="#sm-shoop-Modal">
+                        <img src="../assets/images/icon/Outline  Fill/Filled _=No-1.svg" alt="" />
+                      </button>
+
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="m-card">
+                    <div class="position-relative border-1 border-bottom border-neutral-100">
+                      <img src="../assets/images/Cat-15.png" alt="希爾思 成貓7歲以上 完美消化 雞肉、大麥及全燕麥特調食譜" />
+                    </div>
+                    <div class="py-4 ps-3 pe-2" style="height: 166px;">
+                      <h3 class="fs-2 fs-md-4 mb-4">希爾思 成貓7歲以上 完美消化 雞肉、大麥及全燕麥特調食譜</h3>
+                      <span class="mb-3 d-flex align-items-center text-neutral-600 fs-1 fs-md-2">4.8
+                        <img class="ms-1 ms-md-2 me-md-2" style="width: 16px; height: 16px"
+                          src="../assets/images/icon/colored/Filled_=Yes.png" alt="黃色星號" /><span
+                          class="fs-1 d-none d-md-block text-neutral-600">( 1000+則評價)</span><span class="px-2">‧</span>
+                        <span class="me-2">已售</span><span class="">3萬</span>
+                      </span>
+                      <div class="d-flex align-items-center">
+                        <button type="button" class="me-2 production-bottom-btn fs-1 fs-md-2 active">
+                          7kg
+                        </button>
+                      </div>
+                    </div>
+                    <div class="d-flex justify-content-between ps-3">
+                      <div class="d-flex flex-column flex-md-row align-items-md-center">
+                        <span class="text-neutral-400 fs-1 text-decoration-line-through me-md-2">$2,200</span>
+                        <span class="text-primary-300 fw-medium">$1,899</span>
+                      </div>
+                      <button type="button" class="mt-1 p-4 border-0 bg-neutral-0" data-bs-toggle="modal"
+                        data-bs-target="#sm-shoop-Modal">
+                        <img src="../assets/images/icon/Outline  Fill/Filled _=No-1.svg" alt="" />
+                      </button>
+
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="m-card">
+                    <div class="position-relative border-1 border-bottom border-neutral-100">
+                      <img src="../assets/images/Cat-22.png" alt="希爾思 成貓 香烤雞肉燴米飯罐頭" />
+                    </div>
+                    <div class="py-4 ps-3 pe-2" style="height: 166px;">
+                      <h3 class="fs-2 fs-md-4 mb-4">希爾思 成貓 香烤雞肉燴米飯罐頭</h3>
+                      <span class="mb-3 d-flex align-items-center text-neutral-600 fs-1 fs-md-2">4.5
+                        <img class="ms-1 ms-md-2 me-md-2" style="width: 16px; height: 16px"
+                          src="../assets/images/icon/colored/Filled_=Yes.png" alt="黃色星號" /><span
+                          class="fs-1 d-none d-md-block text-neutral-600">( 1000+則評價)</span><span class="px-2">‧</span>
+                        <span class="me-2">已售</span><span class="">2.3萬</span>
+                      </span>
+                    </div>
+                    <div class="d-flex justify-content-between ps-3">
+                      <div class="d-flex flex-column flex-md-row align-items-md-center">
+                        <span class="text-neutral-400 fs-1 text-decoration-line-through me-md-2">$68</span>
+                        <span class="text-primary-300 fw-medium">$55</span>
+                      </div>
+                      <button type="button" class="mt-1 p-4 border-0 bg-neutral-0" data-bs-toggle="modal"
+                        data-bs-target="#sm-shoop-Modal">
+                        <img src="../assets/images/icon/Outline  Fill/Filled _=No-1.svg" alt="" />
+                      </button>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </section>
+      </main>
+
+      <%- include('./layout/footer'); -%>
+        <script type="module" src="../main.js"></script>
+        <!-- //swiper -->
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+        <!-- Initialize Swiper -->
+        <!-- 縮略圖 -->
+      <script>
+        var swiper = new Swiper(".thumbs-Swiper", {
+          spaceBetween: 12,
+          slidesPerView: 5,
+          freeMode: true,
+          watchSlidesProgress: true,
+          breakpoints: {
+            992: {
+              //当屏幕宽度大于等于1280
+              spaceBetween: 12,
+              slidesPerView: 3.5,
+              slidesOffsetBefore: 100,
+              navigation: {
+                nextEl: ".swiper-button-next-2",
+                prevEl: ".swiper-button-prev-2",
+              },
+            },
+          },
+        });
+        var swiper2 = new Swiper(".thumbs-Swiper-2", {
+          spaceBetween: 16,
+          // navigation: {
+          //   nextEl: ".swiper-button-next",
+          //   prevEl: ".swiper-button-prev",
+          // },
+          breakpoints: {
+            992: {
+              //当屏幕宽度大于等于1280
+              spaceBetween: 24,
+            },
+          },
+          thumbs: {
+            swiper: swiper,
+          },
+        });
+        
+        </script>
+
+        <!-- 評論旁邊-swiper的script -->
+      <script>
+          var swiper4 = new Swiper(".comment-swiper", {
+            spaceBetween: 8,
+            slidesPerView: '2.05',
+            // navigation: {
+            //   nextEl: ".swiper-button-next",
+            //   prevEl: ".swiper-button-prev",
+            // },
+            breakpoints: {
+              768: {
+                //当屏幕宽度大于等于1280
+                slidesPerView: '4.1',
+              },
+            },
+            
+          });          
+      </script>  
+        <!-- bottom-swiper的script -->
+      <script>
+        var swiper3 = new Swiper(".production-swiper-bottom", {
+          spaceBetween: 24,
+          slidesPerView: '1.1',
+          // slidesOffsetAfter: -900,
+          navigation: {
+            nextEl: '.swiper-button-next-bottom',
+            prevEl: '.swiper-button-prev-bottom',
+          },
+          breakpoints: {
+
+            925: {  //当屏幕宽度大于等于768 
+              slidesPerView: '4',
+            },
+            770: {  //当屏幕宽度大于等于768 
+              slidesPerView: '3.5',
+            },
+            650: {  //当屏幕宽度大于等于768 
+              slidesPerView: '3',
+            },
+          },
+          loop: false,
+        });
+      </script>
+        <!-- btn的script -->
+         <script>
+          // 獲取所有按鈕組
+          const btnGroups = document.querySelectorAll('.btn-group');
+      
+          // 遍歷每組按鈕
+          btnGroups.forEach((group) => {
+            // 獲取每組內的所有按鈕
+            const buttons = group.querySelectorAll('.production-bottom-btn');
+      
+            // 遍歷每個按鈕，為其添加點擊事件
+            buttons.forEach((button) => {
+              button.addEventListener('click', function() {
+                // 先移除該組內所有按鈕的 active 類
+                buttons.forEach(btn => btn.classList.remove('active'));
+                // 為當前被點擊的按鈕添加 active 類
+                this.classList.add('active');
+              });
+            });
+          });
+        </script>
+        <!-- nav-link的script -->
+        <script>
+          // 獲取所有的 nav-link
+          const navLinks = document.querySelectorAll('.nav-link');
+          
+          // 遍歷所有的 nav-link，為每個添加點擊事件
+          navLinks.forEach(link => {
+            link.addEventListener('click', function(event) {
+              event.preventDefault(); // 防止鏈接的默認跳轉行為
+              // 移除所有 nav-link 的 active 類
+              navLinks.forEach(l => l.classList.remove('active'));
+              // 為當前被點擊的元素添加 active 類
+              this.classList.add('active');
+            });
+          });
+        </script>
+        <!-- 滑到底部隱藏buycar -->
+    <script>
+      window.addEventListener("scroll", function () {
+        var scrollPosition = window.scrollY; // 當前滾動位置
+        var viewportHeight = window.innerHeight; // 當前視窗的高度
+        var documentHeight = document.documentElement.scrollHeight; // 文件總高度
+        var distanceFromBottom =
+          documentHeight - (scrollPosition + viewportHeight); // 計算滾動到頁面底部的距離
+        var button = document.getElementById("buycar");
+
+        if (distanceFromBottom < 772) {
+          // 假設滾動到離底部300px時隱藏按鈕
+          button.classList.add("hidden");
+        } else {
+          button.classList.remove("hidden");
+        }
+      });
+    </script>
+    <!-- modal的swiper -->
+        <script>
+          var swiper = new Swiper(".thumbs-Swiper", {
+            spaceBetween: 12,
+            slidesPerView: 5,
+            freeMode: true,
+            watchSlidesProgress: true,
+            breakpoints: {
+              992: {  //当屏幕宽度大于等于1280
+                spaceBetween: 12,
+                slidesPerView: 3.5,
+                slidesOffsetBefore: 100,
+                navigation: {
+                  nextEl: '.swiper-button-next-2',
+                  prevEl: '.swiper-button-prev-2',
+                },
+              },
+            },
+          });
+          var swiper2 = new Swiper(".thumbs-Swiper-2", {
+            spaceBetween: 16,
+            // navigation: {
+            //   nextEl: ".swiper-button-next",
+            //   prevEl: ".swiper-button-prev",
+            // },
+            breakpoints: {
+              992: {  //当屏幕宽度大于等于1280
+                spaceBetween: 24,
+              },
+            },
+            thumbs: {
+              swiper: swiper,
+            },
+          });
+        </script>
+        <script>
+          // 獲取元素
+              const nonMemberRadio = document.getElementById('non-member');
+              const memberRadio = document.getElementById('member');
+              const nonMemberCard = document.getElementById('non-member-card');
+              const memberCard = document.getElementById('member-card');
+
+              // 監聽非會員價的選擇
+              nonMemberRadio.addEventListener('change', function() {
+                if (this.checked) {
+                  nonMemberCard.classList.add('active'); // 非會員卡片變為active
+                  memberCard.classList.remove('active'); // 會員卡片去除active
+                }
+              });
+
+              // 監聽會員特惠價的選擇
+              memberRadio.addEventListener('change', function() {
+                if (this.checked) {
+                  memberCard.classList.add('active'); // 會員卡片變為active
+                  nonMemberCard.classList.remove('active'); // 非會員卡片去除active
+                }
+              });
+
+              // 預設選擇的狀態
+              window.onload = function() {
+                if (memberRadio.checked) {
+                  memberCard.classList.add('active');
+                  nonMemberCard.classList.remove('active');
+                }
+              }
+        </script>
+</body>
+
+</html>

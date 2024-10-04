@@ -1,0 +1,44 @@
+// font-roboto
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+// font-nosans-tc
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap');
+
+img{
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+.rounded-full{
+    border-radius: 1000px;
+}
+h1, .h1{
+    font-size: 16px;
+}
+
+.section-container{
+    margin-left: auto;
+    margin-right: auto;
+    @include md{
+        max-width: 720px;
+    }
+    @include lg{
+        max-width: 960px;
+    }
+    @include xxl{
+        max-width: 1128px;
+    }
+}
+.input-hover:hover{
+    border: 2px solid #CC4900 ; 
+}
+.input-w{
+    width: 100%;
+    @include md{
+        width: 40%;
+    }
+}

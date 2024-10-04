@@ -1,0 +1,6 @@
+.w-footer-logo{
+  max-width: 195px;
+  @include md{
+    max-width: 165px;
+  }
+}

@@ -1,0 +1,15 @@
+.form{
+    &:hover{
+        border: 2px solid #CC4900;
+    }
+    &:focus{border: 2px solid #EC5501;}
+    &:active{
+        border: 2px solid #EC5501;
+    }
+}
+.was-validated .form-control:invalid{
+    border:2px solid #DD3D23 
+}
+.was-validated .form-select:invalid:not([multiple]):not([size]){
+    border:2px solid #DD3D23
+}

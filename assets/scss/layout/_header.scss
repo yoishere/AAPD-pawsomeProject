@@ -1,0 +1,35 @@
+.navbar-icon-style {
+  padding: 12px;
+  color: #111111;
+  font-size: 24px;
+  @include lg {
+    padding: 8px;
+    font-size: 20px;
+  }
+}
+
+.placeholder-color::placeholder {
+  color: $neutral-400; /* 自訂顏色 */
+  opacity: 1; /* 保持不透明度 */
+  font-size: 16px;
+}
+.navbar-input-height {
+  height: 42px;
+}
+// .line-height-50 {
+//   line-height: 50px;
+// }
+.header-shadow {
+  box-shadow: 0 2.08px 2.08px -1.04px rgba(24, 39, 75, 0.08),
+    0 1.04px 2.08px -1.04px rgba(24, 39, 75, 0.12);
+}
+
+form input.form-control:hover {
+  border: 2px solid #cc4900 !important;
+}
+
+form input.form-control:focus {
+  box-shadow: none;
+  border: 2px solid #cc4900; /* 與 hover 一致的邊框樣式 */
+  outline: none;
+}

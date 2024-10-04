@@ -1,0 +1,278 @@
+.catStapleFood-page-nav {
+  .nav-link {
+    width: 36px;
+    height: 38px;
+    border-radius: 4px;
+    color: $neutral-800;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* 水平置中 */
+    align-items: center; /* 垂直置中 */
+    font-size: $b4-font-size;
+    font-weight: $headings-font-weight;
+  }
+  .nav-link:hover {
+    background-color: $primary-0;
+    border: none;
+  }
+}
+
+.production-modal-taste-btn {
+  padding: 15px 12px 15px 12px;
+  min-height: 56px;
+  border: 2.5px solid transparent;
+  box-shadow: 0 0 1px 1px #bbbbbb;
+  font-weight: 500;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+.production-modal-speci-btn {
+  min-height: 56px;
+  min-width: 95px;
+  padding: 5.5px 0;
+  border: 2.5px solid transparent;
+  box-shadow: 0 0 1px 1px #bbbbbb;
+  font-weight: 500;
+  font-size: 16px;
+  border-radius: 12px;
+  cursor: pointer;
+}
+.btn-check:checked + .production-modal-speci-btn,
+.btn-check:checked + .production-modal-taste-btn,
+:not(.btn-check) + .production-modal-speci-btn:active,
+:not(.btn-check) + .production-modal-taste-btn:active,
+.production-modal-speci-btn:first-child:active,
+.production-modal-taste-btn:first-child:active,
+.production-modal-speci-btn.active,
+.production-modal-taste-btn.active,
+.production-modal-speci-btn.show,
+.production-modal-taste-btn.show {
+  // border: 2.5px solid #ec5501;
+  color: #ec5501;
+  background-color: #fff;
+  box-shadow: 0 0 1px 2.5px #ec5501;
+}
+
+.production-modal-speci-btn:hover,
+.production-modal-taste-btn:hover {
+  // border: 1px solid #ec5501;
+  color: #ec5501;
+  background: #fff2eb;
+  box-shadow: 0 0 1px 1px #ec5501;
+}
+
+/* 確保 active 和 checked 狀態不被 hover 覆蓋 */
+.btn-check:checked + .production-modal-speci-btn:hover,
+.btn-check:checked + .production-modal-taste-btn:hover,
+:not(.btn-check) + .production-modal-speci-btn:active:hover,
+:not(.btn-check) + .production-modal-taste-btn:active:hover,
+.production-modal-speci-btn:first-child:active:hover,
+.production-modal-taste-btn:first-child:active:hover,
+.production-modal-speci-btn.active:hover,
+.production-modal-taste-btn.active:hover,
+.production-modal-speci-btn.show:hover,
+.production-modal-taste-btn.show:hover {
+  border: 2.5px solid #ec5501;
+  color: #ec5501;
+  background-color: #fff2eb;
+  box-shadow: none;
+}
+.production-card {
+  box-shadow: 0 4.15px 12.46px -2.08px rgba(24, 39, 75, 0.08),
+    0 3.11px 6.23px -3.11px rgba(24, 39, 75, 0.12);
+  border-radius: 12px;
+  padding: 24px 16px;
+}
+.production-nav {
+  width: 100%;
+  .nav-item {
+    flex: 1;
+    text-align: center;
+  }
+  .nav-link {
+    padding: 12px 0;
+    color: $neutral-800;
+  }
+  .nav-link:hover {
+    // color: #111111;
+    background: #f0f0f0;
+    border: none;
+  }
+  .nav-link:active {
+    color: #ec5501;
+    font-weight: $font-weight-medium;
+  }
+  @include md {
+    padding: 12px 156px;
+  }
+}
+
+@media (min-width: 768px) {
+  .production-custom-gap {
+    margin-left: -32px;
+    margin-right: -32px;
+  }
+  .production-custom-gap > [class*="col-"] {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+}
+.progress {
+  background-color: $primary-0;
+  border-radius: 10px;
+  height: 8px;
+}
+
+.progress-bar {
+  background-color: $primary-200;
+  border-radius: 10px;
+}
+
+.btn-outline-primary,
+.btn-outline-special {
+  color: #212121;
+  border-color: #bbbbbb;
+  border-width: 1px;
+  border-radius: 1000px;
+  height: 40px;
+}
+
+/* 各自的寬度 */
+.btn-outline-primary {
+  width: 80px;
+}
+
+.btn-outline-special {
+  width: 96px;
+}
+
+/* 狀態樣式合併 */
+.btn.btn-outline-primary:hover,
+.btn.btn-outline-special:hover {
+  color: #000000;
+  border-color: #ec5501;
+}
+
+.btn.btn-outline-primary:active,
+.btn.btn-outline-primary:checked,
+.btn.btn-outline-special:active,
+.btn.btn-outline-special:checked {
+  background-color: #fff2eb;
+  color: #ec5501;
+  border-color: #ec5501;
+}
+
+.btn-check:checked + .btn,
+:not(.btn-check) + .btn:active,
+.btn:first-child:active,
+.btn.active,
+.btn.show,
+.btn.hover {
+  background-color: #fff2eb;
+  color: #ec5501;
+  border-color: #ec5501;
+}
+.comment-swiper {
+  .swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    max-width: 160px;
+  }
+
+  .swiper-slide img {
+    display: block;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+.hashtag-badge {
+  border: 0;
+  background-color: white;
+}
+
+.FAQ {
+  padding: 17px 12px;
+}
+.FAQ-special {
+  padding: 17px 12px 13px 12px;
+}
+.production-swiper-bottom {
+  .swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    max-width: 240px;
+    background: #fff;
+    border-radius: 12px;
+    @include md {
+      max-width: 264px;
+    }
+  }
+  .swiper-slide img {
+    display: block;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+.swiper-slide .swiper-slide-active {
+  opacity: 1;
+  border: 1px solid #ec5501;
+}
+.production-bottom-btn {
+  padding: 4px 12px;
+  outline: 1px solid #bbbbbb;
+  border: none;
+  background: #ffffff;
+  border-radius: 8px;
+}
+
+.production-bottom-btn:hover {
+  outline: 1px solid #ec5501;
+  background: #fff2eb;
+  color: #ec5501;
+}
+// .production-bottom-btn:focus {
+//   outline: 1px solid #ec5501;
+//   background: #ffff;
+//   box-shadow: 0 0px 0px 2px #ffe0cc;
+//   color: #ec5501;
+// }
+.production-bottom-btn:active,
+.production-bottom-btn:focus {
+  outline: 2px solid #ec5501 !important;
+  box-shadow: none !important;
+  background: #ffff;
+  color: #ec5501;
+}
+
+// .production-bottom-btn:active:focus {
+//   box-shadow: none !important; /* 即使 focus 也不顯示 shadow */
+// }
+
+.production-bottom-btn.active {
+  outline: 2px solid #ec5501 !important;
+  box-shadow: none !important;
+  background: #ffff;
+  color: #ec5501;
+}
+.count-size {
+  max-width: 116px;
+  height: 32px;
+  @include md {
+    max-width: 91px;
+    height: 24px;
+  }
+}
+.vipChose-btn {
+  outline: 1px solid #bbbbbb;
+  cursor: pointer;
+}
+.vipChose-btn.active {
+  outline: 2px solid #ec5501;
+}

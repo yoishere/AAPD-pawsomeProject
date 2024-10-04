@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>index</title>
+    <!-- google-icon-->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+
+<body style="background: #F0F0F0;">
+    <%- include('./layout/header'); -%>
+        <div class="checkout-ing mx-auto container-fluid fixed-p" style=" max-width: 1440px;">
+            <header class="my-6 my-md-7">
+                <div class="container px-md-0 px-5">
+                    <div class="d-flex justify-content-md-center justify-content-between align-items-center">
+                        <div class="me-md-8 mb-2 mb-md-0 d-flex flex-column flex-md-row align-items-center">
+                            <div
+                                class="checkout-number bg-primary-300 me-3 d-flex align-items-center justify-content-center">
+                                <span class="material-symbols-outlined fs-5">
+                                    check
+                                </span>
+                            </div>
+                            <span class="fs-2 fw-medium fs-md-3 text-nowrap">查看購物車</span>
+                        </div>
+                        <span class="material-symbols-outlined me-md-8">
+                            chevron_right
+                        </span>
+                        <div class="me-md-8 mb-2 mb-md-0 d-flex flex-column flex-md-row align-items-center">
+                            <div
+                                class="checkout-number bg-neutral-800 me-md-3 d-flex align-items-center justify-content-center">
+                                <span>2</span>
+                            </div>
+                            <span class="fs-2 fw-medium fs-md-3  text-nowrap">訂單確認</span>
+                        </div>
+                        <span class="material-symbols-outlined me-md-8">
+                            chevron_right
+                        </span>
+                        <div class="me-md-8 mb-2 mb-md-0 d-flex flex-column flex-md-row align-items-center">
+                            <div
+                                class="checkout-number bg-neutral-400 me-md-3 d-flex align-items-center justify-content-center">
+                                <span>3</span>
+                            </div>
+                            <span class="fs-2 fw-medium fs-md-3 text-neutral-400 text-nowrap">訂單結算</span>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <div class="container p-5 p-md-6 mb-6 bg-neutral-0 rounded-2" style="box-shadow: 0px 4.15px 12.46px -2.08px #18274B14;
+            box-shadow: 0px 3.11px 6.23px -3.11px #18274B1F;
+            ">
+                <h2 class="fs-4 fs-md-5 mb-5 mb-md-6">選擇運送區域</h2>
+                <form class="needs-validation" novalidate>
+                    <div class=" d-flex">
+                        <div class="form-check me-6">
+                            <input class="form-check-input" type="radio" name="aria" id="aria1" checked>
+                            <label class="form-check-label" for="aria1">
+                                台灣本島
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="aria" id="aria2">
+                            <label class="form-check-label" for="aria2">
+                                台灣離島 (運費 $500)
+                            </label>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="container p-5 p-md-6 mb-6 bg-neutral-0 rounded-2" style="box-shadow: 0px 4.15px 12.46px -2.08px #18274B14;
+            box-shadow: 0px 3.11px 6.23px -3.11px #18274B1F;
+            ">
+                <h2 class="fs-4 fs-md-5 mb-5 mb-md-6">選擇運送方式</h2>
+                <div class="d-flex flex-column rounded-2 border mb-5 mb-md-6">
+                    <div class="py-3 py-md-4 px-4 px-md-6 d-flex align-items-center border-bottom border-neutral-200">
+                        <img class="me-5" src="../assets/images/icon/Family-mart.png" alt="全家">
+                        <h3 class="text-neutral-700 fs-4">全家</h3>
+                    </div>
+                    <div class="py-3 py-md-5 px-4 px-md-6 d-flex justify-content-between">
+                        <div class="form-check me-6">
+                            <input class="form-check-input" type="radio" name="shop" id="shop1" checked>
+                            <label class="form-check-label" for="shop1">
+                                全家取貨
+                            </label>
+                            <p class="fs-2 fw-medium text-neutral-500">(未滿 $1,000 運費 $65)</p>
+                        </div>
+                        <span class="text-danger-600 fw-medium">$65</span>
+                    </div>
+                    <div class="py-3 px-5 rounded-full ms-auto me-6 mb-5 store-btn active">
+                        <a class="d-block" href="#">新增取貨門市</a>
+                    </div>
+                </div>
+                <div class="d-flex flex-column rounded-2 border mb-5 mb-md-6">
+                    <div class="py-3 py-md-4 px-4 px-md-6 d-flex align-items-center border-bottom border-neutral-200">
+                        <img class="me-5" src="../assets/images/icon/7-eleven.png" alt="全家">
+                        <h3 class="text-neutral-700 fs-4">7-11</h3>
+                    </div>
+                    <div class="py-3 py-md-5 px-4 px-md-6 d-flex justify-content-between">
+                        <div class="form-check me-6">
+                            <input class="form-check-input" type="radio" name="shop" id="shop2">
+                            <label class="form-check-label" for="shop2">
+                                7-ELEVEN取貨
+                            </label>
+                            <p class="fs-2 fw-medium text-neutral-500">(未滿 $1,000 運費 $65)</p>
+                        </div>
+                        <span class="text-danger-600 fw-medium">$65</span>
+                    </div>
+                    <div class="py-3 px-5 rounded-full ms-auto me-6 mb-5 store-btn">
+                        <a class="d-block" href="#">新增取貨門市</a>
+                    </div>
+                </div>
+                <div class="d-flex flex-column rounded-2 border ">
+                    <div class="py-3 py-md-4 px-4 px-md-6 d-flex align-items-center border-bottom border-neutral-200">
+                        <img class="me-5" src="../assets/images/icon/Outline  Fill/Filled _=No-18.svg" alt="全家">
+                        <h3 class="text-neutral-700 fs-4">宅配</h3>
+                    </div>
+                    <div class="py-3 py-md-5 px-4 px-md-6 d-flex justify-content-between">
+                        <div class="form-check me-6">
+                            <input class="form-check-input" type="radio" name="shop" id="shop3">
+                            <label class="form-check-label" for="shop3">
+                                宅配
+                            </label>
+                            <p class="fs-2 fw-medium text-neutral-500">(未滿 $1,000 運費 $65)</p>
+                        </div>
+                        <span class="text-danger-600 fw-medium">$65</span>
+                    </div>
+                    <div class="py-3 px-5 rounded-full ms-auto me-6 mb-5 store-btn">
+                        <a class="d-block" href="#">新增地址</a>
+                    </div>
+                </div>
+            </div>
+            <div class="container p-5 p-md-6 mb-6 bg-neutral-0 rounded-2" style="box-shadow: 0px 4.15px 12.46px -2.08px #18274B14;
+            box-shadow: 0px 3.11px 6.23px -3.11px #18274B1F;
+            ">
+                <h2 class="fs-4 fs-md-5 mb-5 mb-md-6">選擇付款方式</h2>
+                <form class="needs-validation" novalidate>
+                    <div class=" d-flex">
+                        <div class="form-check me-6">
+                            <input class="form-check-input" type="radio" name="pay" id="pay1" checked>
+                            <label class="form-check-label" for="pay1">
+                                信用卡線上刷卡
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="pay" id="pay2">
+                            <label class="form-check-label" for="pay2">
+                                貨到付款
+                            </label>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="container p-5 p-md-6 mb-6 bg-neutral-0 rounded-2" style="box-shadow: 0px 4.15px 12.46px -2.08px #18274B14;
+            box-shadow: 0px 3.11px 6.23px -3.11px #18274B1F;
+            ">
+                <div class="d-flex justify-content-between mb-5 mb-md-6">
+                    <h2 class="fs-4 fs-md-5 ">訂購人資訊</h2>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="vip-infor">
+                        <label class="form-check-label" for="vip-infor">
+                            與我的會員資訊相同
+                        </label>
+                    </div>
+                </div>
+                <form class="needs-validation" novalidate>
+                    <div class="mb-5">
+                        <label for="name" class="form-label fw-medium"> <span
+                                class="text-primary-300 fs-1 fw-medium">*</span> 收件人姓名</label>
+                        <input type="text" class="form-control" id="name" placeholder="請輸入真實姓名"
+                            style="max-width: 360px;">
+                    </div>
+                    <div class="mb-5">
+                        <label for="phonenumber" class="form-label fw-medium">手機號碼</label>
+                        <div class="d-flex flex-column flex-md-row ">
+                            <select class="form-select me-md-3 mb-3 mb-md-0 aria-phone"
+                                aria-label="Default select aria-phone">
+                                <option value="1">+886</option>
+                                <option value="2">+81</option>
+                                <option value="3">+852</option>
+                            </select>
+                            <input type="number" class="form-control" style="max-width: 343px;" id="phonenumber"
+                                placeholder="請輸入手機號碼">
+                        </div>
+                    </div>
+                    <div class="">
+                        <label for="E-mail" class="form-label fw-medium"> <span
+                                class="text-primary-300 fs-1 fw-medium">*</span> E-mail</label>
+                        <input type="email" class="form-control" id="E-mail" placeholder="聯絡E-mail"
+                            style="max-width: 360px;">
+                    </div>
+                </form>
+            </div>
+            <div class="container p-5 p-md-6 mb-6 bg-neutral-0 rounded-2" style="box-shadow: 0px 4.15px 12.46px -2.08px #18274B14;
+            box-shadow: 0px 3.11px 6.23px -3.11px #18274B1F;
+            ">
+                <div class="d-flex justify-content-between mb-5 mb-md-6">
+                    <h2 class="fs-4 fs-md-5 ">發票資料</h2>
+                </div>
+                <form class="needs-validation" novalidate>
+                    <div class="mb-5">
+                        <label for="bill" class="form-label fw-medium">發票類型</label>
+                        <div class="d-flex flex-column flex-md-row ">
+                            <select id="bill" class="form-select me-md-3 mb-3 mb-md-0" aria-label="Default select bill"
+                                style="max-width: 360px;">
+                                <option value="1">+電子發票(手機載具)</option>
+                                <option value="2">普通發票</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="mb-5 mb-md-6">
+                        <label for="Vehicle barcode" class="form-label fw-medium"> <span
+                                class="text-primary-300 fs-1 fw-medium">*</span> 手機載具條碼</label>
+                        <input type="text" class="form-control" id="Vehicle barcode" placeholder="請輸入手機載具條碼"
+                            style="max-width: 360px;">
+                    </div>
+                    <p class="fs-2 text-neutral-600 mb-0">核准文號：財北國稅營業字號第1000002660號<br>※依統一發票使用辦法規定：發票一經開立不得任意更改或改開發票。
+                    </p>
+                </form>
+            </div>
+            <div class="container p-5 p-md-6 bg-neutral-0 rounded-2" style="box-shadow: 0px 4.15px 12.46px -2.08px #18274B14;
+            box-shadow: 0px 3.11px 6.23px -3.11px #18274B1F;
+            ">
+                <form class="needs-validation" novalidate>
+                    <div class=" d-flex flex-column">
+                        <div class="form-check me-6 mb-0 p-0 d-flex align-items-center">
+                            <input class="form-check-input me-3 ms-0 mt-0" style="float: none;" type="radio"
+                                name="Agree" id="Agree">
+                            <label class="form-check-label" for="Agree">
+                                我同意接受 <span class="text-decoration-underline">服務條款</span>和 <span
+                                    class="text-decoration-underline">隱私政策</span>。
+                            </label>
+                        </div>
+                        <p class="text-neutral-600 fs-2 mb-0">※下單前請再次確認您的購買明細及配送資訊，訂單成立後無法異動訂單內容</p>
+                    </div>
+                </form>
+            </div>
+            <hr class=" my-6 my-md-4">
+            <div class="container p-5 p-md-6 mb-9 mb-md-7 bg-neutral-0 rounded-2" style="box-shadow: 0px 4.15px 12.46px -2.08px #18274B14;
+            box-shadow: 0px 3.11px 6.23px -3.11px #18274B1F;
+            ">
+                <div class="d-flex flex-column flex-md-row justify-content-md-between">
+                    <div class="w-md-50 w-100 h-100 mb-5 mb-md-0">
+                        <img src="../assets/images/Illustration/pawsome 插畫-32 2.png" alt="pawsome 插畫">
+                    </div>
+                    <div class="d-flex flex-column w-md-50 w-100">
+                        <p class="fw-medium fs-5 ms-auto">共 12 件商品</p>
+                        <div class="d-flex justify-content-between">
+                            <p class="fw-medium fs-4 ">商品總金額</p>
+                            <span>$6,254</span>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <p class="fw-medium fs-4 mb-0">運費</p>
+                            <span>$0</span>
+                        </div>
+                        <hr>
+                        <div class="d-flex justify-content-between">
+                            <p class="fw-medium fs-5 mb-0">應付金額</p>
+                            <span>$6,254</span>
+                        </div>
+                        <hr>
+                        <div class="d-flex justify-content-between align-items-center mb-6 mb-md-7">
+                            <p class="fw-medium fs-5 mb-0">付款方式</p>
+                            <span class="text-neutral-500 text-end">信用卡一次付清<br class="d-md-none"> NT$6,254</span>
+                        </div>
+                        <div class="d-flex ">
+                            <div class="py-3 me-3 checkouting-btn w-50 rounded-full text-center"><a
+                                    class="fw-medium d-block" href="checkout.html">回購物車</a>
+                            </div>
+                            <div class="py-3 ms-3 checkouting-btn w-50 rounded-full text-center pair-btn"><a
+                                    class="fw-medium d-block" href="checkoutend.html">送出訂單</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <%- include('./layout/footer'); -%>
+            <script type="module" src="../main.js"></script>
+            <!-- //swiper -->
+            <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+            <script>
+                var swiper = new Swiper(".checkout-swiper-1", {
+                    spaceBetween: 12,
+                    slidesPerView: '2.2',
+                    // slidesOffsetAfter: -900,
+                    navigation: {
+                        nextEl: '.swiper-button-next-1',
+                        prevEl: '.swiper-button-prev-1',
+                    },
+                    breakpoints: {
+
+                        768: {  //当屏幕宽度大于等于768 
+                            spaceBetween: 16,
+                            slidesPerView: '3.2',
+                        },
+                    },
+                    loop: true,
+                });
+            </script>
+</body>
+
+</html>

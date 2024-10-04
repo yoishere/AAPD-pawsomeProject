@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>pair</title>
+  <!-- google-icon-->
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+
+<body>
+  <%- include('./layout/header'); -%>
+    <div class="pair-start mx-auto container-fluid fixed-p ps-0 pe-0" style="max-width: 1440px;">
+      <a href="#">
+        <img class="position-fixed d-none d-xxl-inline border border-1 rounded-full border-primary-500"
+          style="right: 32px; bottom: 32px;" src="../assets/images/Illustration/Avatar.png" alt="貓頭">
+      </a>
+      <section class="banner py-md-7">
+        <div class="html-tag d-none d-md-block mb-md-7">
+          <a class="fs-3 text-neutral-500" href="index.html">首頁 /</a>
+          <a class="fs-3 text-neutral-700" href="pairstart.html">毛孩商品配對機</a>
+        </div>
+        <picture>
+          <source srcset="../assets/images/banner/Banner-5.png" media="(min-width:768px)">
+          <img class="w-100" src="../assets/images/banner/baner-6.png" alt="商品配對機">
+        </picture>
+      </section>
+      <section class="check-type">
+        <div class="container px-md-0 px-5 py-6 pt-md-7 pb-md-8">
+          <div class="d-flex align-items-center mb-5">
+            <img class="me-2 d-md-none" src="../assets/images/icon/Outline  Fill/fish-outline.svg" alt="魚符號">
+            <img class="me-3 d-none d-md-block" src="../assets/images/icon/Outline  Fill/dog-outline.svg" alt="骨頭符號">
+            <h2 class="fs-md-6 fs-4 text-primary-300 fw-medium">第一步：<span
+                class="text-neutral-800 ms-2 ms-md-3 fs-3 fs-md-6">選擇毛孩種類</span></h2>
+          </div>
+          <input type="radio" class="btn-check" name="type" id="type-dog" autocomplete="off" checked>
+          <label class="head me-5 text-center" for="type-dog">
+            <div class="head-dog rounded-circle">
+            </div>
+            <span class="fs-2 fs-md-3 fw-medium mt-3">狗狗</span>
+          </label>
+          <input type="radio" class="btn-check" name="type" id="type-cat" autocomplete="off">
+          <label class="head me-5 text-center" for="type-cat">
+            <div class="head-cat rounded-circle">
+            </div>
+            <span class="fs-2 fs-md-3 fw-medium mt-3">貓咪</span>
+          </label>
+          <input type="radio" class="btn-check" name="type" id="type-fish" autocomplete="off">
+          <label class="head me-5 text-center" for="type-fish">
+            <div class="head-fish rounded-circle">
+            </div>
+            <span class="fs-2 fs-md-3 fw-medium mt-3">魚</span>
+          </label>
+          <input type="radio" class="btn-check" name="type" id="type-mouse" autocomplete="off">
+          <label class="head me-5 text-center" for="type-mouse">
+            <div class="head-mouse rounded-circle">
+            </div>
+            <span class="fs-2 fs-md-3 fw-medium mt-3">倉鼠</span>
+          </label>
+          <input type="radio" class="btn-check" name="type" id="type-rabbit" autocomplete="off">
+          <label class="head me-5 text-center" for="type-rabbit">
+            <div class="head-rabbit rounded-circle">
+            </div>
+            <span class="fs-2 fs-md-3 fw-medium mt-3">兔子</span>
+          </label>
+          <input type="radio" class="btn-check" name="type" id="type-bird" autocomplete="off">
+          <label class="head me-5 text-center" for="type-bird">
+            <div class="head-bird rounded-circle">
+            </div>
+            <span class="fs-2 fs-md-3 fw-medium mt-3">鳥</span>
+          </label>
+        </div>
+      </section>
+      <section class="banner-2 section-container mx-auto dog-paw mb-6 mb-md-8">
+      </section>
+      <section class="base-infor">
+        <div class="container px-md-0 px-5 pb-6 pb-md-8">
+          <div class="d-flex align-items-center mb-5">
+            <img class="me-2 d-md-none" src="../assets/images/icon/Outline  Fill/fish-outline.svg" alt="魚符號">
+            <img class="me-3 d-none d-md-block" src="../assets/images/icon/Outline  Fill/dog-outline.svg" alt="骨頭符號">
+            <h2 class="fs-md-6 fs-4 text-primary-300 fw-medium">第二步：<span
+                class="text-neutral-800 ms-2 ms-md-3 fs-3 fs-md-6">填寫基本資料</span></h2>
+          </div>
+          <form class="needs-validation" novalidate>
+            <div class="mb-5">
+              <label class="form-label fs-2 fs-md-3 fw-medium" for="dog-name">寶貝的名字</label>
+              <input class="form-control fs-3" id="dog-name" type="email" placeholder="請輸入毛孩名稱">
+            </div>
+            <div class="mb-5">
+              <label class="form-label fs-2 fs-md-3 fw-medium" for="dog-kg"><span
+                  class="text-primary-300 fs-1 align-top">*</span>
+                體重 <span class="fs-1">(kg)</span> </label>
+              <input class="form-control fs-3 " id="dog-kg" type="text" placeholder="請輸入體重">
+            </div>
+            <div class="mb-5">
+              <label class="form-label fs-2 fs-md-3 fw-medium" for="dog-size-1"><span
+                  class="text-primary-300 fs-1 align-top">*</span>
+                體型 </label>
+              <div class="mb-2 d-flex text-nowrap flex-wrap gap-3">
+                <input type="radio" class="btn-check" name="size" id="dog-size-1" autocomplete="off">
+                <label class="input-btn " for="dog-size-1">小型</label>
+
+                <input type="radio" class="btn-check" name="size" id="dog-size-2" autocomplete="off">
+                <label class="input-btn " for="dog-size-2">中型</label>
+
+                <input type="radio" class="btn-check" name="size" id="dog-size-3" autocomplete="off">
+                <label class="input-btn " for="dog-size-3">大型</label>
+              </div>
+              <a class="text-neutral-600 fs-2" href="">
+                <span>
+                  <img class="align-center me-2" src="../assets/images/icon/Outline  Fill/answer.svg"
+                    alt=""></span>點我看寵物體型介紹
+              </a>
+            </div>
+            <div class="mb-5">
+              <label class="form-label fs-2 fs-md-3 fw-medium" for="age-1"><span
+                  class="text-primary-300 fs-1 align-top">*</span>
+                年齡 </label>
+              <div class="mb-2 d-flex text-nowrap flex-wrap gap-3">
+                <input type="radio" class="btn-check" name="age" id="age-1" autocomplete="off">
+                <label class="input-btn " for="age-1">0~4 個月</label>
+
+                <input type="radio" class="btn-check" name="age" id="age-2" autocomplete="off">
+                <label class="input-btn " for="age-2">5~12 個月</label>
+
+                <input type="radio" class="btn-check" name="age" id="age-3" autocomplete="off">
+                <label class="input-btn " for="age-3">成年</label>
+
+                <input type="radio" class="btn-check" name="age" id="age-4" autocomplete="off">
+                <label class="input-btn " for="age-4">高齡</label>
+              </div>
+              <a class="text-neutral-600 fs-2" href="">
+                <span>
+                  <img class="align-center me-2" src="../assets/images/icon/Outline  Fill/answer.svg"
+                    alt=""></span>點我看寵物年齡階層介紹
+              </a>
+            </div>
+            <div class="mb-5">
+              <label class="form-label fs-2 fs-md-3 fw-medium" for="ligation-1"><span
+                  class="text-primary-300 fs-1 align-top">*</span>
+                結紮狀態 </label>
+              <div class="mb-2 d-flex text-nowrap flex-wrap gap-3">
+                <input type="radio" class="btn-check" name="ligation" id="ligation-1" autocomplete="off">
+                <label class="input-btn " for="ligation-1">未結紮</label>
+
+                <input type="radio" class="btn-check" name="ligation" id="ligation-2" autocomplete="off">
+                <label class="input-btn " for="ligation-2">已結紮</label>
+              </div>
+            </div>
+            <div class="mb-5">
+              <label class="form-label fs-2 fs-md-3 fw-medium" for="posture-1"><span
+                  class="text-primary-300 fs-1 align-top">*</span>
+                體態需求 </label>
+              <div class="mb-2 d-flex text-nowrap flex-wrap gap-3">
+                <input type="radio" class="btn-check" name="posture" id="posture-1" autocomplete="off">
+                <label class="input-btn " for="posture-1">需增食</label>
+
+                <input type="radio" class="btn-check" name="posture" id="posture-2" autocomplete="off">
+                <label class="input-btn " for="posture-2">需減重</label>
+
+                <input type="radio" class="btn-check" name="posture" id="posture-3" autocomplete="off">
+                <label class="input-btn " for="posture-3">無減/增需求</label>
+              </div>
+              <a class="text-neutral-600 fs-2" href="">
+                <span>
+                  <img class="align-center me-2" src="../assets/images/icon/Outline  Fill/answer.svg"
+                    alt=""></span>點我看寵物減重需求評估介紹
+              </a>
+            </div>
+          </form>
+        </div>
+      </section>
+      <section class="banner-2  container mx-auto dog-paw mb-6 mb-md-8 position-relative">
+        <div class="position-absolute p-cat-dog ">
+          <picture class="bg-dog-paw">
+            <source srcset="../assets/images/Illustration/Orange-dog/Dachshund.png" media="(min-width:768px)">
+            <img class="rotate-180 w-cat-dog" src="../assets/images/Illustration/Orange-cat/stand.png" alt="">
+          </picture>
+        </div>
+      </section>
+      <section class="adv-infor">
+        <div class="container px-md-0 px-5 pb-6 pb-md-8">
+          <div class="d-flex align-items-center mb-5">
+            <img class="me-2 d-md-none" src="../assets/images/icon/Outline  Fill/fish-outline.svg" alt="魚符號">
+            <img class="me-3 d-none d-md-block" src="../assets/images/icon/Outline  Fill/dog-outline.svg" alt="骨頭符號">
+            <h2 class="fs-md-6 fs-4 text-primary-300 fw-medium">第三步：<span
+                class="text-neutral-800 ms-2 ms-md-3 fs-3 fs-md-6">填寫進階資料</span></h2>
+          </div>
+          <form class="needs-validation" novalidate>
+            <div class="mb-5">
+              <label class="form-label fs-2 fs-md-3 fw-medium" for="healthy-1">
+                已知健康問題 <span class="fs-1 text-neutral-600">(可複選)</span></label>
+              <div class="mb-2 d-flex text-nowrap flex-wrap gap-3">
+                <input type="checkbox" class="btn-check" name="healthy" id="healthy-1" autocomplete="off">
+                <label class="input-btn " for="healthy-1">消化器官</label>
+
+                <input type="checkbox" class="btn-check" name="healthy" id="healthy-2" autocomplete="off">
+                <label class="input-btn " for="healthy-2">下泌尿道</label>
+
+                <input type="checkbox" class="btn-check" name="healthy" id="healthy-3" autocomplete="off">
+                <label class="input-btn " for="healthy-3">腎臟</label>
+
+                <input type="checkbox" class="btn-check" name="healthy" id="healthy-4" autocomplete="off">
+                <label class="input-btn " for="healthy-4">體重</label>
+
+                <input type="checkbox" class="btn-check" name="healthy" id="healthy-5" autocomplete="off">
+                <label class="input-btn " for="healthy-5">皮膚</label>
+
+                <input type="checkbox" class="btn-check" name="healthy" id="healthy-6" autocomplete="off">
+                <label class="input-btn " for="healthy-6">肝</label>
+
+                <input type="checkbox" class="btn-check" name="healthy" id="healthy-7" autocomplete="off">
+                <label class="input-btn " for="healthy-7">糖尿病</label>
+
+                <input type="checkbox" class="btn-check" name="healthy" id="healthy-8" autocomplete="off">
+                <label class="input-btn " for="healthy-8">術後恢復</label>
+
+                <input type="checkbox" class="btn-check" name="healthy" id="healthy-9" autocomplete="off">
+                <label class="input-btn " for="healthy-9">心臟</label>
+
+                <input type="checkbox" class="btn-check" name="healthy" id="healthy-10" autocomplete="off">
+                <label class="input-btn " for="healthy-10">口腔</label>
+
+                <input type="checkbox" class="btn-check" name="healthy" id="healthy-11" autocomplete="off">
+                <label class="input-btn " for="healthy-11">皮膚</label>
+              </div>
+              <a class="text-neutral-600 fs-2" href="">
+                <span>
+                  <img class="align-center me-2" src="../assets/images/icon/Outline  Fill/answer.svg"
+                    alt=""></span>點我看狗狗常見的健康問題
+              </a>
+            </div>
+            <div class="mb-5 ">
+              <label class="form-label fs-2 fs-md-3 fw-medium" for="allergy-1">
+                過敏類型 <span class="fs-1 text-neutral-600">(可複選)</span></label>
+              <div class="mb-2 d-flex text-nowrap flex-wrap gap-3">
+                <input type="checkbox" class="btn-check" name="allergy" id="allergy-1" autocomplete="off">
+                <label class="input-btn " for="allergy-1">大豆過敏</label>
+
+                <input type="checkbox" class="btn-check" name="allergy" id="allergy-2" autocomplete="off">
+                <label class="input-btn " for="allergy-2">小麥過敏</label>
+
+                <input type="checkbox" class="btn-check" name="allergy" id="allergy-3" autocomplete="off">
+                <label class="input-btn " for="allergy-3">玉米過敏</label>
+
+                <input type="checkbox" class="btn-check" name="allergy" id="allergy-4" autocomplete="off">
+                <label class="input-btn " for="allergy-4">魚類過敏</label>
+
+                <input type="checkbox" class="btn-check" name="allergy" id="allergy-5" autocomplete="off">
+                <label class="input-btn " for="allergy-5">塵蟎過敏</label>
+
+                <input type="checkbox" class="btn-check" name="allergy" id="allergy-6" autocomplete="off">
+                <label class="input-btn " for="allergy-6">跳蚤過敏</label>
+              </div>
+            </div>
+            <div class="mb-5 ">
+              <label class="form-label fs-2 fs-md-3 fw-medium" for="like-food-1">
+                飲食偏好 <span class="fs-1 text-neutral-600">(可複選)</span></label>
+              <div class="mb-2 d-flex text-nowrap flex-wrap gap-3">
+                <input type="checkbox" class="btn-check" name="like-food" id="like-food-1" autocomplete="off">
+                <label class="input-btn " for="like-food-1">高蛋白</label>
+
+                <input type="checkbox" class="btn-check" name="like-food" id="like-food-2" autocomplete="off">
+                <label class="input-btn " for="like-food-2">乾食</label>
+
+                <input type="checkbox" class="btn-check" name="like-food" id="like-food-3" autocomplete="off">
+                <label class="input-btn " for="like-food-3">濕食</label>
+
+                <input type="checkbox" class="btn-check" name="like-food" id="like-food-4" autocomplete="off">
+                <label class="input-btn " for="like-food-4">天然食材</label>
+
+                <input type="checkbox" class="btn-check" name="like-food" id="like-food-5" autocomplete="off">
+                <label class="input-btn " for="like-food-5">蔬食</label>
+
+                <input type="checkbox" class="btn-check" name="like-food" id="like-food-6" autocomplete="off">
+                <label class="input-btn " for="like-food-6">高油脂</label>
+              </div>
+            </div>
+            <div class="mb-5">
+              <label class="form-label fs-2 fs-md-3 fw-medium" for="toy-1">
+                玩具偏好 <span class="fs-1 text-neutral-600">(可複選)</span></label>
+              <div class="mb-2 d-flex text-nowrap flex-wrap gap-3">
+                <input type="checkbox" class="btn-check" name="toy" id="toy-1" autocomplete="off">
+                <label class="input-btn " for="toy-1">耐咬玩具</label>
+
+                <input type="checkbox" class="btn-check" name="toy" id="toy-2" autocomplete="off">
+                <label class="input-btn " for="toy-2">牙齒清潔玩具</label>
+
+                <input type="checkbox" class="btn-check" name="toy" id="toy-3" autocomplete="off">
+                <label class="input-btn " for="toy-3">拔河玩具</label>
+
+                <input type="checkbox" class="btn-check" name="toy" id="toy-4" autocomplete="off">
+                <label class="input-btn " for="toy-4">球類</label>
+
+                <input type="checkbox" class="btn-check" name="toy" id="toy-5" autocomplete="off">
+                <label class="input-btn " for="toy-5">飛盤</label>
+
+                <input type="checkbox" class="btn-check" name="toy" id="toy-6" autocomplete="off">
+                <label class="input-btn " for="toy-6">絨毛玩具</label>
+
+                <input type="checkbox" class="btn-check" name="toy" id="toy-7" autocomplete="off">
+                <label class="input-btn " for="toy-7">智力玩具</label>
+
+                <input type="checkbox" class="btn-check" name="toy" id="toy-8" autocomplete="off">
+                <label class="input-btn " for="toy-8">發聲玩具</label>
+
+                <input type="checkbox" class="btn-check" name="toy" id="toy-9" autocomplete="off">
+                <label class="input-btn " for="toy-9">智能互動玩具</label>
+              </div>
+            </div>
+          </form>
+        </div>
+      </section>
+      <div class="text-center mb-6 mb-md-7">
+        <a href="pairend.html" class="py-4 px-6 bg-primary-300 link-neutral-0 rounded-full pair-btn"
+          type="submit">開始配對</a>
+      </div>
+    </div>
+    <%- include('./layout/footer'); -%>
+
+      <script type="module" src="../main.js"></script>
+</body>
+
+</html>

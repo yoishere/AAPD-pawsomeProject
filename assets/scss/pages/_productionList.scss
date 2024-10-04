@@ -1,0 +1,195 @@
+.list-icon-24 {
+  color: #111111;
+  font-size: 24px;
+}
+.list-icon-20 {
+  color: #111111;
+  font-size: 20px;
+}
+.list-size-20 {
+  height: 20px;
+  width: 20px;
+}
+.m-card {
+  box-shadow: 0px 4.15px 12.46px -2.08px rgb(23, 38, 74, 0.08),
+    0px 3.11px 6.23px -3.11px rgb(23, 38, 74, 0.12);
+  border: 1px solid #f0f0f0;
+  border-radius: 12px;
+  overflow: hidden;
+}
+.cat-paw {
+  background-image: url(../images/banner/catpaw-sm.png);
+  width: 100%;
+  height: 32px;
+  background-repeat: repeat-x;
+  @include md {
+    height: 32px;
+    background-image: url(../images/banner/catpaw-lg.png);
+    background-repeat: repeat-x;
+    background-position-x: -150px;
+  }
+}
+
+.cat-nav {
+  .nav-link {
+    color: $neutral-800;
+  }
+  .nav-link:hover,
+  .nav-link:focus {
+    color: $primary-300;
+  }
+}
+.catColumn-p1 {
+  overflow: hidden;
+  height: 64px;
+}
+.catColumn-p2 {
+  text-overflow: ellipsis;
+  height: 26px;
+  overflow: hidden;
+}
+.productionList-swiper-1 {
+  .swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    max-width: 150px;
+    font-size: 16px;
+    background: #fff;
+    border-radius: 8px;
+    @include md {
+      max-width: 240px;
+    }
+  }
+
+  .swiper-slide img {
+    display: block;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+.productionList-swiper-2 {
+  .swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    max-width: 150px;
+    height: 300px;
+    font-size: 16px;
+    background: #fff;
+    border-radius: 8px;
+    @include md {
+      max-width: 250px;
+      height: 372.5px;
+    }
+    .swiper-slide img {
+      display: block;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}
+.productionList-swiper-3 {
+  .swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    max-width: 150px;
+    height: 340px;
+    font-size: 16px;
+    background: #fff;
+    border-radius: 8px;
+    @include md {
+      max-width: 250px;
+      height: 401.5px;
+    }
+  }
+  .swiper-slide img {
+    display: block;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+.nav-underline .nav-link.active,
+.nav-underline .show > .nav-link {
+  font-weight: 700;
+  color: $primary-300;
+  border-bottom-color: currentcolor;
+}
+
+.productionList-swiper-4 {
+  .swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    max-width: 240px;
+    height: 320px;
+    font-size: 16px;
+    background: #fff;
+    border-radius: 8px;
+  }
+
+  .swiper-slide img {
+    display: block;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+.scroll-hidden::-webkit-scrollbar {
+  display: none; /* 針對瀏覽器（如 Chrome、Safari）隱藏滾動條 */
+}
+.productionList-card-btn {
+  height: 44px;
+
+  box-shadow: 0 0 1px 1px #bbbbbb;
+  border: 1.5px solid transparent;
+  background: white;
+  border-radius: 8px;
+
+  &:hover,
+  &:focus,
+  &:active,
+  &.active {
+    border: 1.5px solid #ec5501;
+    color: #ec5501;
+    font-weight: 500;
+    box-shadow: none;
+  }
+
+  @include md {
+    padding: 4px 12px 4px 12px;
+    height: 30px;
+    width: auto;
+    box-shadow: 0 0 1px 1px #bbbbbb;
+    border: 2.5px solid transparent;
+    display: flex;
+    align-items: center;
+
+    &:hover,
+    &:focus,
+    &:active,
+    &.active {
+      border: 2.5px solid #ec5501;
+      color: #ec5501;
+      font-weight: 500;
+      box-shadow: none;
+    }
+  }
+}
+.productionList-card-btn.active:hover {
+  border: 1.5px solid #ec5501;
+  color: #ec5501;
+  font-weight: 500;
+
+  @include md {
+    border: 2.5px solid #ec5501;
+  }
+}

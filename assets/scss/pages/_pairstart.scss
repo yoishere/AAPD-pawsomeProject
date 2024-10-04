@@ -1,0 +1,188 @@
+.check-type{
+    ul{
+      overflow-x: scroll;
+      white-space: nowrap;
+      &::-webkit-scrollbar{
+          display: none;
+      }
+      @include lg{
+          white-space: wrap;
+      }
+    }
+    .label{
+        width: 64px;
+        height: 94px;
+        @include md{
+            width: 96px;
+            height: 130px;
+        }
+    }
+    .head{
+    //   width: 64px;
+    //   height: 64px;
+    //   background-color: #FFD591;
+    //   @include md{
+    //     width: 96px;
+    //   height: 96px;
+    //   }
+    cursor: pointer;
+    width: 64px;
+    height: 94px;
+    @include md{
+        width: 96px;
+        height: 130px;
+    }
+      &-dog{
+        border: 1px solid var(--functional-stroke-stroke-shadow, #F0F0F0);
+        width: 64px;
+        height: 64px;
+        background-color: #FFD591;
+        &:hover{
+          border: 2.5px solid #EC5501;
+        }
+        @include md{
+          width: 96px;
+        height: 96px;
+        }
+        background-image: url(../images/Illustration/White-dog/stand.png);
+        background-repeat: no-repeat;
+        background-position: 90% -30%;
+        background-size: 200%;
+      }
+      &-cat{
+        border: 1px solid var(--functional-stroke-stroke-shadow, #F0F0F0);
+        width: 64px;
+        height: 64px;
+        background-color: #FFD591;
+        &:hover{
+          border: 2.5px solid #EC5501;
+        }
+        @include md{
+          width: 96px;
+        height: 96px;
+        }
+        background-image: url(../images/Illustration/White-cat/sit.png);
+        background-repeat: no-repeat;
+        background-position: 30% -50%;
+        background-size: 200%;
+      }
+      &-fish{
+        border: 1px solid var(--functional-stroke-stroke-shadow, #F0F0F0);
+        width: 64px;
+        height: 64px;
+        background-color: #FFD591;
+        &:hover{
+          border: 2.5px solid #EC5501;
+        }
+        @include md{
+          width: 96px;
+        height: 96px;
+        }
+        background-image: url(../images/Illustration/fish/white.png);
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: 130%;
+      }
+      &-mouse{
+        border: 1px solid var(--functional-stroke-stroke-shadow, #F0F0F0);
+        width: 64px;
+        height: 64px;
+        background-color: #FFD591;
+        &:hover{
+          border: 2.5px solid #EC5501;
+        }
+        @include md{
+          width: 96px;
+        height: 96px;
+        }
+        background-image: url(../images/Illustration/hamster/white.png);
+        background-repeat: no-repeat;
+        background-position: center -30%;
+        background-size: 200%;
+      }
+      &-rabbit{
+        border: 1px solid var(--functional-stroke-stroke-shadow, #F0F0F0);
+        width: 64px;
+        height: 64px;
+        background-color: #FFD591;
+        &:hover{
+          border: 2.5px solid #EC5501;
+        }
+        @include md{
+          width: 96px;
+        height: 96px;
+        }
+        background-image: url(../images/Illustration/rabbit/white.png);
+        background-repeat: no-repeat;
+        background-position: 40% -20%;
+        background-size: 200%;
+    }
+    &-bird{
+        border: 1px solid var(--functional-stroke-stroke-shadow, #F0F0F0);
+        width: 64px;
+        height: 64px;
+        background-color: #FFD591;
+        &:hover{
+          border: 2.5px solid #EC5501;
+        }
+        @include md{
+          width: 96px;
+        height: 96px;
+        }
+        background-image: url(../images/Illustration/parrot/white-left.png);
+        background-repeat: no-repeat;
+        background-position: 45% -30%;
+        background-size: 200%;
+    }
+    }
+    .btn-check:checked + .head, :not(.btn-check) + .head:active, .head:first-child:active, .head.active, .head.show{
+        color: #EC5501;
+        .head-dog,.head-cat,.head-fish,.head-mouse,.head-rabbit,.head-bird{
+            border: 2.5px solid #EC5501;
+        }
+    }
+    
+}
+
+.base-infor,.adv-infor,.pair-container{
+    .input-btn{
+        padding: 8px 24px 8px 24px;
+        border: 1px solid #BBBBBB;
+        font-size: 16px;
+        border-radius: 1000px;
+        cursor: pointer;
+        &:hover{
+          border: 1px solid #EC5501;
+          color: #EC5501;
+          background: #FFF2EB;
+        }
+        @include md{
+          font-size: 16px;
+        }
+      }
+      .btn-check:checked + .input-btn, :not(.btn-check) + .input-btn:active, .input-btn:first-child:active, .input-btn.active, .input-btn.show{
+        border: 1px solid #EC5501;
+        color: #EC5501;
+        background: #FFF2EB;
+      }
+}
+.rotate-180{
+    transform: rotateY(180deg);
+}
+.w-cat-dog{
+    width: 161px;
+    height: 116px;
+    @include md{
+        width: 220px;
+        height: 159px;
+    }
+}
+.p-cat-dog{
+    bottom:-20px;
+    right:0;
+    @include md{
+        bottom:-15px;
+        right:0;
+    }
+
+}
