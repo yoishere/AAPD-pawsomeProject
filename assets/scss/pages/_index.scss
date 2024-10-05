@@ -246,6 +246,7 @@
   color: #EC5501;
   box-shadow: none;
   font-weight: 500;
+  
   @include md{
     padding: 4px 12px 4px 12px;
     height:auto;
@@ -265,6 +266,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  &:hover{
+    border: 1.5px solid #EC5501;
+    box-shadow: none;
+  }
   @include md{
     padding: 4px 12px 4px 12px;
     min-width: 0;
@@ -273,6 +278,10 @@
     width: auto;
     border: 2.5px solid #EC5501 transparent;
     font-weight: 500;
+    &:hover{
+      border: 2.5px solid #EC5501;
+      box-shadow: none;
+    }
   }
 }
 
@@ -282,7 +291,7 @@
   border: 1px solid #BBBBBB;
   background: white;
   border-radius: 8px;
-  
+   
   &:hover{
     border: 1.5px solid  #EC5501;
     color:#EC5501 ;
